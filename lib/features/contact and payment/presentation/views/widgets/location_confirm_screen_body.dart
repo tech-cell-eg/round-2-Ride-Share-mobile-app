@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_images.dart';
+import 'custom_divider.dart';
 import 'custom_map.dart';
 import 'drawer_notifications_icons_row.dart';
 import 'driver_info_row.dart';
@@ -54,10 +55,7 @@ class LocationConfirmScreenBody extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 15),
-                  child: Divider(
-                    thickness: 1,
-                    color: Color(0xffdddddd),
-                  ),
+                  child: CustomDivider(),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -96,6 +94,27 @@ class LocationConfirmScreenBody extends StatelessWidget {
                         fit: BoxFit.cover,
                         height: 93,
                       ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 15),
+                  child: CustomDivider(),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Payment method',
+                        style: AppTextStyles.styleBlack16Medium,
+                      ),
+                      Text(
+                        r"$220.00",
+                        style: AppTextStyles.styleBlack16Medium
+                            .copyWith(fontSize: 28),
+                      )
                     ],
                   ),
                 ),
