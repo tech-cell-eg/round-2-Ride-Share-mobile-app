@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.17
   yandex_maps_mapkit_lite:
     version: ^4.10.1-beta
 
