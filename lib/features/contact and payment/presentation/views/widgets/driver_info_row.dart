@@ -22,8 +22,8 @@ class DriverInfoRow extends StatelessWidget {
             width: 59,
           ),
         ),
-        SizedBox(width: 5),
-        Column(
+        const SizedBox(width: 5),
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
@@ -41,7 +41,7 @@ class DriverInfoRow extends StatelessWidget {
             ),
           ],
         ),
-        Spacer(),
+        const Spacer(),
         Image.asset(
           AppImages.imagesRealRedCar,
           fit: BoxFit.cover,

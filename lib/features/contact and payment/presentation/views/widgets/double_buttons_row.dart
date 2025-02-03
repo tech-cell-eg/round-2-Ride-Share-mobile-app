@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/features/contact%20and%20payment/presentation/views/widgets/green_button.dart';
 
-import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/constants/app_text_styles.dart';
 import 'white_button.dart';
 
 class DoubleButtonsRow extends StatelessWidget {
@@ -12,7 +10,7 @@ class DoubleButtonsRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Expanded(

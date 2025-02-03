@@ -10,7 +10,7 @@ class CloseIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Align(
+      child: const Align(
         alignment: Alignment.topRight,
         child: Icon(
           Icons.close,

@@ -28,7 +28,7 @@ class _CustomMapState extends State<CustomMap> {
         _mapWindow = mapWindow;
         setState(() {});
         _mapWindow!.map.move(
-          CameraPosition(
+          const CameraPosition(
             Point(latitude: 29.97728376936489, longitude: 31.132415741704243),
             zoom: 11.0,
             azimuth: 150.0,

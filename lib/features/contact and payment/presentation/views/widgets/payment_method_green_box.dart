@@ -28,8 +28,8 @@ class PaymentMethodGreenBox extends StatelessWidget {
           SvgPicture.asset(
             AppImages.imagesVisaCard,
           ),
-          SizedBox(width: 13),
-          Column(
+          const SizedBox(width: 13),
+          const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
