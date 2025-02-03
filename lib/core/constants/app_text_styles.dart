@@ -16,4 +16,10 @@ class AppTextStyles {
     fontSize: 10,
     fontWeight: FontWeight.w400,
   );
+
+  static const TextStyle styleGrey14Medium = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: Color(0xff888888),
+  );
 }

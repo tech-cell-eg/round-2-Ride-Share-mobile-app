@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_images.dart';
 import 'close_icon.dart';
@@ -8,12 +9,15 @@ import 'custom_divider.dart';
 import 'custom_map.dart';
 import 'drawer_notifications_icons_row.dart';
 import 'driver_info_row.dart';
+import 'payment_method_green_box.dart';
 
 class LocationConfirmScreenBody extends StatelessWidget {
   const LocationConfirmScreenBody({super.key});
 
   @override
   Widget build(BuildContext context) {
+    const defaultPadding = 16.0;
+
     return Stack(
       children: [
         CustomMap(),
@@ -37,7 +41,8 @@ class LocationConfirmScreenBody extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: defaultPadding),
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
@@ -47,19 +52,21 @@ class LocationConfirmScreenBody extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 15),
+                  padding: const EdgeInsets.symmetric(vertical: defaultPadding),
                   child: CustomDivider(),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: defaultPadding),
                   child: DriverInfoRow(),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 15),
+                  padding: const EdgeInsets.symmetric(vertical: defaultPadding),
                   child: CustomDivider(),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: defaultPadding),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -75,6 +82,12 @@ class LocationConfirmScreenBody extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 15),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: defaultPadding),
+                  child: PaymentMethodGreenBox(),
+                )
               ],
             ),
           ),
