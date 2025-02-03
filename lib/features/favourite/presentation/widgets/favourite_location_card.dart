@@ -27,11 +27,15 @@ class FavoriteLocationCard extends StatelessWidget {
               children: [
                 Text(
                   'Office',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   style: AppTextStyles.favCardTitleTextStyle,
                 ),
                 const SizedBox(height: AppSizes.spaceBtnItemInFavCard),
                 Text(
                   '2972 Westheimer Rd. Santa Ana, Illinois 85486',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   style: AppTextStyles.favCardSubTitleTextStyle,
                 ),
               ],
