@@ -8,7 +8,7 @@ class LocationConfirmScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SafeArea(child: LocationConfirmScreenBody()),
+      body: LocationConfirmScreenBody(),
     );
   }
 }

@@ -31,15 +31,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
-  
+  yandex_maps_mapkit_lite:
+    version: ^4.10.1-beta
 
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
@@ -93,9 +88,7 @@ flutter:
         - asset: assets/fonts/Poppins-BoldItalic.ttf
           weight: 800
           style: italic
-  
-  
-  
+
 flutter_assets:
   assets_path:
     - assets/icons/
@@ -103,6 +96,6 @@ flutter_assets:
     - assets/animations/
   output_path: lib/core/constants/generated/
   filename: app_images.dart
-  field_prefix:
+  field_prefix: null
   classname: AppImages
-  ignore_comments: true  
+  ignore_comments: true
