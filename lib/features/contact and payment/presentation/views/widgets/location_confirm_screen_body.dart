@@ -7,6 +7,7 @@ import 'package:ride_share/core/constants/generated/app_images.dart';
 import 'close_icon.dart';
 import 'custom_divider.dart';
 import 'custom_map.dart';
+import 'double_buttons_row.dart';
 import 'drawer_notifications_icons_row.dart';
 import 'driver_info_row.dart';
 import 'payment_method_green_box.dart';
@@ -16,7 +17,7 @@ class LocationConfirmScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const defaultPadding = 16.0;
+    const defaultPadding = 14.0;
 
     return Stack(
       children: [
@@ -36,10 +37,10 @@ class LocationConfirmScreenBody extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(9.0),
+                  padding: const EdgeInsets.all(5.0),
                   child: CloseIcon(onTap: () {}),
                 ),
-                SizedBox(height: 15),
+                SizedBox(height: 10),
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -87,7 +88,13 @@ class LocationConfirmScreenBody extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: defaultPadding),
                   child: PaymentMethodGreenBox(),
-                )
+                ),
+                SizedBox(height: 32),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: defaultPadding),
+                  child: DoubleButtonsRow(),
+                ),
               ],
             ),
           ),
