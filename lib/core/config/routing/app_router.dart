@@ -10,7 +10,10 @@ class AppRouter {
       case LocationConfirmScreen.routeName:
         return MaterialPageRoute(builder: (_) => const LocationConfirmScreen());
       default:
-        return MaterialPageRoute(builder: (_) => const Scaffold());
+        return MaterialPageRoute(
+            builder: (_) => const Scaffold(
+                  body: Center(child: Text('No route defined')),
+                ));
     }
   }
 }
