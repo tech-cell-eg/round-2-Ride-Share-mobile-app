@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_images.dart';
+import 'close_icon.dart';
 import 'custom_divider.dart';
 import 'custom_map.dart';
 import 'drawer_notifications_icons_row.dart';
@@ -20,7 +21,7 @@ class LocationConfirmScreenBody extends StatelessWidget {
         Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            height: 395,
+            height: MediaQuery.of(context).size.height * 0.5,
             decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
@@ -32,17 +33,9 @@ class LocationConfirmScreenBody extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(9.0),
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: Align(
-                      alignment: Alignment.topRight,
-                      child: Icon(
-                        Icons.close,
-                      ),
-                    ),
-                  ),
+                  child: CloseIcon(onTap: () {}),
                 ),
-                SizedBox(height: 25),
+                SizedBox(height: 15),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 17),
                   child: Align(
@@ -59,43 +52,7 @@ class LocationConfirmScreenBody extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Row(
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(4),
-                        child: Image.asset(
-                          AppImages.imagesDriverEx,
-                          height: 54,
-                          width: 59,
-                        ),
-                      ),
-                      SizedBox(width: 5),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Sergio Ramasis',
-                            style: AppTextStyles.styleBlack16Medium,
-                          ),
-                          DriverInfoRow(
-                            title: '800m (5mins away)',
-                            icon: FontAwesomeIcons.locationDot,
-                          ),
-                          DriverInfoRow(
-                            title: '4.9 (531 reviews)',
-                            icon: Icons.star,
-                            isReview: true,
-                          ),
-                        ],
-                      ),
-                      Spacer(),
-                      Image.asset(
-                        AppImages.imagesRealRedCar,
-                        fit: BoxFit.cover,
-                        height: 93,
-                      ),
-                    ],
-                  ),
+                  child: DriverInfoRow(),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 15),
