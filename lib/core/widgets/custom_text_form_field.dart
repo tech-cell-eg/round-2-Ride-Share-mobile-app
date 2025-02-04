@@ -8,14 +8,14 @@ import '../constants/app_colors.dart';
 
 class CustomTextField extends StatelessWidget {
   CustomTextField({
-    Key? key,
+    super.key,
     required this.controller,
       this.hintText,
       this.label,
       this.validator,
     this.isPassword = false, 
     this.suffixIcon, required this.hintStyle, required this.borderSideColor,
-  }) : super(key: key);
+  });
   TextEditingController controller;
   final String? hintText;
   final String? label;
