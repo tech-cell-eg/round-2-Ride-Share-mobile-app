@@ -9,6 +9,7 @@ abstract class CustomElevatedButtonTheme {
       ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
+      shadowColor: Colors.transparent,
       foregroundColor: Colors.white,
       backgroundColor: AppColors.primaryColor,
       side: const BorderSide(color: Colors.transparent),
@@ -24,6 +25,7 @@ abstract class CustomElevatedButtonTheme {
       ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
+      shadowColor: Colors.transparent,
       foregroundColor: Colors.white,
       backgroundColor: AppColors.primaryColor,
       side: const BorderSide(color: Colors.transparent),

@@ -33,10 +33,14 @@ class PaymentCard extends StatelessWidget {
                 children: [
                   Text(
                     '**** **** **** 8970',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     style: AppTextStyles.paymentTitleTextStyle,
                   ),
                   Text(
                     'Expires: 12/26',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     style: AppTextStyles.paymentSubTitleTextStyle,
                   ),
                 ],

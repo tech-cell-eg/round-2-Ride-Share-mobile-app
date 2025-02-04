@@ -30,6 +30,8 @@ class AddAmountScreenBody extends StatelessWidget {
               },
               child: Text(
                 'Add payment Method',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
                 style: AppTextStyles.addPaymentMethodTextStyle,
               ),
             ),
@@ -42,8 +44,6 @@ class AddAmountScreenBody extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           const PaymentMethodsListView(),
           const SizedBox(height: AppSizes.md),
-          //CustomElevetedButton(title: 'Confirm'),
-          //const SizedBox(height: AppSizes.md),
         ],
       ),
     );

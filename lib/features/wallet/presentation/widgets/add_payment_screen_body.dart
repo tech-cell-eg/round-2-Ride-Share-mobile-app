@@ -39,7 +39,7 @@ class AddPaymentScreenBody extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text('Save Payment Method'),
+                child: FittedBox(child: Text('Save Payment Method')),
               ),
             ),
           ),
