@@ -24,6 +24,7 @@ class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
         },
         child: Row(
           children: [
+            SizedBox(width: 5),
             Icon(Icons.chevron_left),
             Text(
               "Back",

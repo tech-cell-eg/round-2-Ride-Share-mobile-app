@@ -1,38 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/Features/list_available_vehicle/list_available_vehicle_same_type_page.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_constants.dart';
 import 'package:ride_share/core/constants/app_styles.dart';
 
-class TransportComponent extends StatelessWidget {
-  const TransportComponent({
+class CustomBorderButton extends StatelessWidget {
+  const CustomBorderButton({
     super.key,
-    required this.image,
-    required this.text,
     required this.onTap,
+    required this.title,
   });
-  final String image, text;
   final Function() onTap;
-
+  final String title;
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: onTap,
       child: Container(
+        width: double.infinity,
         decoration: BoxDecoration(
           border: Border.all(color: AppColors.containerBorder),
           borderRadius: BorderRadius.all(
               Radius.circular(AppConstants.containerBorderRediuse)),
-          color: AppColors.containerBackgraond,
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Spacer(),
-            Image.asset(image),
-            SizedBox(height: 10),
-            Text(text, style: AppStyles.medium16),
-            Spacer(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 15),
+          child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: AppStyles.medium16G,
+          ),
         ),
       ),
     );
