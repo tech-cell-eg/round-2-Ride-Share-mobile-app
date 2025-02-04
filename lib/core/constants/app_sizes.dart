@@ -20,6 +20,10 @@ class AppSizes {
   static const double spaceBtwWalletCards = 30.0;
   static const double spaceBtwTransCards = 16.0;
 
+  static const double spaceInPaymentCard = 13.0;
+
+  static const double spaceBtwPaymentCard = 8.0;
+
   static const double sm = 6.0;
   static const double md = 12.0;
   static const double lg = 16.0;

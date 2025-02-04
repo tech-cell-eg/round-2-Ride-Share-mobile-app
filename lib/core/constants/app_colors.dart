@@ -28,4 +28,12 @@ class AppColors {
   static const downVectorBgColor = Color(0xFFC8E6C9);
 
   static const transectionTitleColor = Color(0xFF121212);
+
+  static const lableTextColor = Color(0xFFD0D0D0);
+  static const inputDecorationBorderColor = Color(0xFFB8B8B8);
+
+  static const activePaymentColor = Color(0xFFE2F5ED);
+  static const inActivePaymentColor = Color(0xFFf3fbf8);
+
+  static const buttonColor = Color(0xFF304FFE);
 }

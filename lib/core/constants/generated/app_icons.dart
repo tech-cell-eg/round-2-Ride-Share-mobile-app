@@ -8,4 +8,6 @@ abstract class AppIcons {
 
   static const String upVector = 'assets/icons/up_vector.svg';
   static const String downVector = 'assets/icons/down_vector.svg';
+
+  static String visaIcon = 'assets/icons/visa_icon.svg';
 }
