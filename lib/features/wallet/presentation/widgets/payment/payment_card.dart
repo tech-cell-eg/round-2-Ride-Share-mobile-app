@@ -11,7 +11,9 @@ class PaymentCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
+      hoverColor: AppColors.primaryWalletBorderColor,
+      borderRadius: BorderRadius.circular(4),
       onTap: () {},
       child: Container(
         padding: const EdgeInsets.only(left: 17, top: 12, bottom: 13),
