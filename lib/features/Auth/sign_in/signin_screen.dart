@@ -71,7 +71,7 @@ class SigninScreen extends StatelessWidget {
                   height: 30.h,
                 ),
                 CustomButton(
-                  text: 'Sign Up',
+                  text: 'Sign In',
                   onPressed: () {},
                   height: 54.h,
                   width: 340.w,
