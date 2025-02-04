@@ -1,22 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_styles.dart';
 
-class ListTransportAppbar extends StatelessWidget
-    implements PreferredSizeWidget {
-  const ListTransportAppbar({
+class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
+  const ProjectAppbar({
     super.key,
+    this.title,
   });
+  final String? title;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(
-        "select transport",
-        style: AppStyles.medium18,
-      ),
+      title: title != null
+          ? Text(
+              title!,
+              style: AppStyles.medium18,
+            )
+          : SizedBox(),
       centerTitle: true,
       leading: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.pop(context);
+        },
         child: Row(
           children: [
             Icon(Icons.chevron_left),
