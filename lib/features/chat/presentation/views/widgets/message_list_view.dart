@@ -10,8 +10,14 @@ class MessageListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: const EdgeInsets.all(8),
+      reverse: true,
       itemCount: 5,
-      itemBuilder: (context, index) => const MessageListViewItem(),
+      itemBuilder: (context, index) => const MessageListViewItem(
+        isOther: true,
+        isFirstMessage: true,
+        isLastMessage: true,
+      ),
     );
   }
 }
