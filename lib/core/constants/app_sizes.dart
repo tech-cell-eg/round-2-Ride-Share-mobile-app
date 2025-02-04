@@ -23,6 +23,7 @@ class AppSizes {
   static const double spaceInPaymentCard = 13.0;
 
   static const double spaceBtwPaymentCard = 8.0;
+  static const double spaceBtwTextFields = 16.0;
 
   static const double sm = 6.0;
   static const double md = 12.0;

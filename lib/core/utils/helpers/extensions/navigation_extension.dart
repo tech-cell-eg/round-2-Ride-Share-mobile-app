@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 
 extension NavigationExtension on BuildContext {
-  void navigateTo(String routeName) {
-    Navigator.pushNamedAndRemoveUntil(this, routeName, (route) => false);
-  }
+  void push(Widget screen) => Navigator.push(
+        this,
+        MaterialPageRoute(builder: (context) => screen),
+      );
+
+  void pushReplacement(Widget screen) => Navigator.pushReplacement(
+        this,
+        MaterialPageRoute(builder: (context) => screen),
+      );
+
+  void pushAndRemoveAll(Widget screen) => Navigator.pushAndRemoveUntil(
+        this,
+        MaterialPageRoute(builder: (context) => screen),
+        (route) => false,
+      );
+
+  void pop() => Navigator.pop(this);
 }
