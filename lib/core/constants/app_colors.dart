@@ -14,4 +14,18 @@ class AppColors {
   static const favCardBorderColor = Color(0xFFB9E5D1);
   static const favCartTitleColor = Color(0xFF414141);
   static const favCartSubTitleColor = Color(0xFFB8B8B8);
+
+  static const walletMoneyColor = Color(0xFF5A5A5A);
+  static const walletCardTitleColor = Color(0xFF414141);
+  static const walletCardSubTitleColor = Color(0xFFB8B8B8);
+
+  static const walletCardColor = Color(0xFFE2F5ED);
+  static const primaryWalletBorderColor = Color(0xFF08B783);
+
+  static const seeAllColor = Color(0xFF007848);
+
+  static const upVectorBgColor = Color(0xFFFFCDD2);
+  static const downVectorBgColor = Color(0xFFC8E6C9);
+
+  static const transectionTitleColor = Color(0xFF121212);
 }
