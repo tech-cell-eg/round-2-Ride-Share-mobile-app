@@ -13,37 +13,43 @@ class AddAmountScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
-      child: Column(
-        children: [
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          const TextField(
-            decoration: InputDecoration(
-              labelText: 'Enter Amount',
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+                const TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Enter Amount',
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Align(
+                  alignment: AlignmentDirectional.centerEnd,
+                  child: InkWell(
+                    onTap: () {
+                      context.push(AddPaymentScreen());
+                    },
+                    child: Text(
+                      'Add payment Method',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTextStyles.addPaymentMethodTextStyle,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+                const SectionHeading(
+                  title: 'Select Payment Method',
+                  showActionButton: false,
+                ),
+                const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+              ],
             ),
           ),
-          const SizedBox(height: 8),
-          Align(
-            alignment: AlignmentDirectional.centerEnd,
-            child: InkWell(
-              onTap: () {
-                context.push(AddPaymentScreen());
-              },
-              child: Text(
-                'Add payment Method',
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTextStyles.addPaymentMethodTextStyle,
-              ),
-            ),
-          ),
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          const SectionHeading(
-            title: 'Select Payment Method',
-            showActionButton: false,
-          ),
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           const PaymentMethodsListView(),
-          const SizedBox(height: AppSizes.md),
+          SliverToBoxAdapter(child: const SizedBox(height: AppSizes.md)),
         ],
       ),
     );

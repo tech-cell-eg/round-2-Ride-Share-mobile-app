@@ -11,40 +11,47 @@ class AddPaymentScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
-      child: Column(
-        children: [
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          TextField(
-            decoration: InputDecoration(
-              labelText: 'Select Payment Method',
-              suffixIcon: InkWell(
-                onTap: () {},
-                borderRadius:
-                    BorderRadius.circular(AppSizes.outlinedButtonRadius),
-                child:
-                    SvgPicture.asset(AppIcons.arrowDown, fit: BoxFit.scaleDown),
-              ),
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+                TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Select Payment Method',
+                    suffixIcon: InkWell(
+                      onTap: () {},
+                      borderRadius:
+                          BorderRadius.circular(AppSizes.outlinedButtonRadius),
+                      child: SvgPicture.asset(AppIcons.arrowDown,
+                          fit: BoxFit.scaleDown),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSizes.spaceBtwTextFields),
+                const TextField(
+                  decoration: InputDecoration(
+                    labelText: 'Account Number',
+                  ),
+                ),
+                const SizedBox(height: 24),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 26 - 15),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: FittedBox(child: Text('Save Payment Method')),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+              ],
             ),
           ),
-          const SizedBox(height: AppSizes.spaceBtwTextFields),
-          const TextField(
-            decoration: InputDecoration(
-              labelText: 'Account Number',
-            ),
-          ),
-          const SizedBox(height: 24),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 26 - 15),
-            child: SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: FittedBox(child: Text('Save Payment Method')),
-              ),
-            ),
-          ),
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           const PaymentMethodsListView(),
+          SliverToBoxAdapter(child: const SizedBox(height: AppSizes.md)),
         ],
       ),
     );
