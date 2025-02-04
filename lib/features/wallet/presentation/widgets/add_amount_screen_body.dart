@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/shared/sections/section_heading.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/wallet/presentation/screens/add_payment_screen.dart';
 import 'package:ride_share/features/wallet/presentation/widgets/payment/payment_methods_list_view.dart';
 
 class AddAmountScreenBody extends StatelessWidget {
@@ -23,7 +25,9 @@ class AddAmountScreenBody extends StatelessWidget {
           Align(
             alignment: AlignmentDirectional.centerEnd,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                context.push(AddPaymentScreen());
+              },
               child: Text(
                 'Add payment Method',
                 style: AppTextStyles.addPaymentMethodTextStyle,

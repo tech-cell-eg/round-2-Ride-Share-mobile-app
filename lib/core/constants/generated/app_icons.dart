@@ -9,5 +9,8 @@ abstract class AppIcons {
   static const String upVector = 'assets/icons/up_vector.svg';
   static const String downVector = 'assets/icons/down_vector.svg';
 
+  static const String arrowDown = 'assets/icons/arrow_down_icon.svg';
+  static const String arrowLeft = 'assets/icons/arrow_left_icon.svg';
+
   static String visaIcon = 'assets/icons/visa_icon.svg';
 }
