@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  dashed_circular_progress_bar: ^0.0.6
   flutter:
     sdk: flutter
 
@@ -103,16 +104,16 @@ flutter:
 #   assets_path:
 #     - assets/icons/
 #   output_path: lib/core/constants/generated/
-#   filename: icons.dart
+#   filename: app_icons.dart
 #   field_prefix:
-#   classname: MyIcons
+#   classname: AppIcons
 #   ignore_comments: true
 
 # flutter_assets:
 #   assets_path:
 #     - assets/images/
 #   output_path: lib/core/constants/generated/
-#   filename: images.dart
+#   filename: app_images.dart
 #   field_prefix:
 #   classname: AppImages
 #   ignore_comments: true
@@ -121,7 +122,7 @@ flutter:
 #   assets_path:
 #     - assets/animations/
 #   output_path: lib/core/constants/generated/
-#   filename: animation.dart
+#   filename: app_animation.dart
 #   field_prefix:
 #   classname: AppAnimations
 #   ignore_comments: true  
