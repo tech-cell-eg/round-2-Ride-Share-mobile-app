@@ -11,10 +11,20 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static const TextStyle styleBlack18Medium = TextStyle(
+    color: AppColors.customBlack,
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+  );
+
+  static const TextStyle styleBlack16Regular = TextStyle(
+    color: AppColors.customBlack,
+    fontSize: 16,
+  );
+
   static const TextStyle styleGrey10Regular = TextStyle(
     color: AppColors.customGrey,
     fontSize: 10,
-    fontWeight: FontWeight.w400,
   );
 
   static const TextStyle styleGrey14Medium = TextStyle(

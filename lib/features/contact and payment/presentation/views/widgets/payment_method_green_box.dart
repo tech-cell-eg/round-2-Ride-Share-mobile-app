@@ -3,7 +3,8 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_text_styles.dart';
-import '../../../../../core/constants/generated/app_images.dart';
+
+import '../../../../../core/constants/generated/images.dart';
 
 class PaymentMethodGreenBox extends StatelessWidget {
   const PaymentMethodGreenBox({

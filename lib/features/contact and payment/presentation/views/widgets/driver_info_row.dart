@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/constants/app_text_styles.dart';
-import '../../../../../core/constants/generated/app_images.dart';
+
+import '../../../../../core/constants/generated/images.dart';
 import 'driver_info_sub_title_row.dart';
 
 class DriverInfoRow extends StatelessWidget {

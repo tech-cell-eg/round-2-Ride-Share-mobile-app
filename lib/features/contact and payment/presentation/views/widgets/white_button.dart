@@ -17,13 +17,13 @@ class WhiteButton extends StatelessWidget {
         backgroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
-          side: const BorderSide(color: AppColors.primaryColor),
+          side: const BorderSide(color: Color(0xff008955)),
         ),
       ),
       child: Text(
         'Call',
         style: AppTextStyles.styleBlack16Medium.copyWith(
-          color: AppColors.primaryColor,
+          color: const Color(0xff008955),
         ),
       ),
     );
