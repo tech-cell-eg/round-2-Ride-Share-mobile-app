@@ -28,4 +28,16 @@ class AppTextStyles {
     color: AppColors.gray41,
     fontWeight: AppFontWeights.medium,
   );
+
+  static TextStyle font12Grey41Medium = TextStyle(
+    fontSize: 12,
+    color: AppColors.gray41,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font12MainColorMedium = TextStyle(
+    fontSize: 12,
+    color: AppColors.mainColor,
+    fontWeight: AppFontWeights.medium,
+  );
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/config/routing/routes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_images.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
-import 'package:ride_share/core/utils/helpers/spacing.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/on_boarding_pages.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/prograss_button.dart';
 
@@ -30,45 +30,47 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: Column(
-          children: [
-            verticalSpace(50),
-            Align(
-              alignment: Alignment.topRight,
-              child: TextButton(
-                onPressed: () {
-                  context.pushNamed(Routes.login);
-                },
-                child: Text('Skip', style: AppTextStyles.font16Grey41Regular),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            children: [
+              Align(
+                alignment: Alignment.topRight,
+                child: TextButton(
+                  onPressed: () {
+                    context.pushNamed(Routes.main);
+                  },
+                  child: Text(AppStrings.skip, style: AppTextStyles.font16Grey41Regular),
+                ),
               ),
-            ),
-            verticalSpace(70),
-            Expanded(
-              child: PageView(
-                controller: pageController,
-                children: [
-                  OnBoardingPages(
-                    image: AppImages.imagesOnBoarding1,
-                    mainText: 'AnyWhere you are',
-                  ),
-                  OnBoardingPages(
-                    image: AppImages.imagesOnBoarding2,
-                    mainText: 'At any time',
-                  ),
-                  OnBoardingPages(
-                      image: AppImages.imagesOnBoarding3,
-                      mainText: 'Take your car'),
-                ],
+              SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+              Expanded(
+                child: PageView(
+                  controller: pageController,
+                  children: [
+                    OnBoardingPages(
+                      image: AppImages.imagesOnBoarding1,
+                      mainText: AppStrings.anyWhereYouAre,
+                    ),
+                    OnBoardingPages(
+                      image: AppImages.imagesOnBoarding2,
+                      mainText: AppStrings.atAnyTime,
+                    ),
+                    OnBoardingPages(
+                        image: AppImages.imagesOnBoarding3,
+                        mainText: AppStrings.takeYourCar),
+                  ],
+                ),
               ),
-            ),
-            PrograssButton(
-              prograss: prograss,
-              onPressed: nextPage,
-            ),
-            verticalSpace(80),
-          ],
+              SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+              PrograssButton(
+                prograss: prograss,
+                onPressed: nextPage,
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+            ],
+          ),
         ),
       ),
     );
