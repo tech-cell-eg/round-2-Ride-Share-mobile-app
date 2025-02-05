@@ -21,10 +21,12 @@ class WhiteButton extends StatelessWidget {
           side: const BorderSide(color: Color(0xff008955)),
         ),
       ),
-      child: Text(
+      child: const Text(
         AppStrings.call,
-        style: AppTextStyles.styleBlack16Medium.copyWith(
-          color: const Color(0xff008955),
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
+          color: Color(0xff008955),
         ),
       ),
     );

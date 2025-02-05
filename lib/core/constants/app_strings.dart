@@ -13,4 +13,10 @@ class AppStrings {
   static const String wallat = 'Wallat    ';
   static const String offers = 'Offers';
   static const String profile = 'Profile';
+  static const String chat = 'Chat';
+  static const String paymentMethod = 'Payment Method';
+  static const String yourDriverIsComingIn = 'Your Driver Is Coming In';
+  static const String message = 'Message';
+  static const String expires = 'Expires:';
+  static const String call = 'Call';
 }

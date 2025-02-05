@@ -19,7 +19,7 @@ class DrawerNotificationsIconsRow extends StatelessWidget {
         children: [
           HeaderIcon(
             icon: Icons.menu,
-            backgroundColor: AppColors.primary200,
+            backgroundColor: AppColors.mainColor,
             onTap: () {},
           ),
           HeaderIcon(

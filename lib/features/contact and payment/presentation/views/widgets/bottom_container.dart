@@ -40,7 +40,10 @@ class BottomContainer extends StatelessWidget {
                 alignment: Alignment.topLeft,
                 child: Text(
                   '${AppStrings.yourDriverIsComingIn} 3:35',
-                  style: AppTextStyles.styleBlack16Medium,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
             ),
@@ -56,20 +59,25 @@ class BottomContainer extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: defaultPadding),
               child: CustomDivider(),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     AppStrings.paymentMethod,
-                    style: AppTextStyles.styleBlack16Medium,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                   Text(
                     r"$220.00",
-                    style:
-                        AppTextStyles.styleBlack16Medium.copyWith(fontSize: 28),
-                  )
+                    style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 ],
               ),
             ),

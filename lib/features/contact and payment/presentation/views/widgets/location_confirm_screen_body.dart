@@ -16,7 +16,7 @@ class LocationConfirmScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Stack(
       children: [
-        CustomMap(),
+        // CustomMap(),
         DrawerNotificationsIconsRow(),
         BottomContainer(),
       ],

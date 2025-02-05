@@ -29,7 +29,10 @@ class DriverInfoRow extends StatelessWidget {
           children: [
             Text(
               'Sergio Ramasis',
-              style: AppTextStyles.styleBlack16Medium,
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
             ),
             DriverInfoSubTitleRow(
               title: '800m (5mins away)',

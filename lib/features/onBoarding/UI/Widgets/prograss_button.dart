@@ -28,18 +28,18 @@ class PrograssButton extends StatelessWidget {
       backgroundStrokeWidth: 4,
       animation: true,
       child: Padding(
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         child: Center(
           child: Container(
             height: 70,
             width: 70,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.mainColor,
             ),
             child: prograss < 3
                 ? IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.arrow_forward,
                       color: AppColors.gray5A,
                     ),
