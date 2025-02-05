@@ -2,6 +2,8 @@ class AppSizes {
   AppSizes._();
   static const double screenPadding = 15.0;
 
+  static const double appBarSpace = 30.0;
+
   static const double favCardBorderRadius = 8.0;
   static const double favCardBorderWidth = 0.5;
 
@@ -32,4 +34,6 @@ class AppSizes {
   static const double successDialogRadius = 8.0;
 
   static const double successDialogPadding = 11.0;
+
+  static const double spaceBtwOfferCards = 24.0;
 }
