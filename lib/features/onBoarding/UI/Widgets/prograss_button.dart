@@ -50,8 +50,12 @@ class PrograssButton extends StatelessWidget {
                       context.pushNamed(Routes.main);
                     },
                     child: Center(
-                        child: Text(AppStrings.go,
-                            style: AppTextStyles.font16Grey41Regular))),
+                      child: Text(
+                        AppStrings.go,
+                        style: AppTextStyles.font16Grey41Regular,
+                      ),
+                    ),
+                  ),
           ),
         ),
       ),
