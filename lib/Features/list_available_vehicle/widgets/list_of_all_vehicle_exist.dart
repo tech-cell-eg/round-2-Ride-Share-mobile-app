@@ -7,7 +7,8 @@ class ListOfAllVehicleExist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      primary: true,
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
       itemCount: 10,
       itemBuilder: (context, index) {
         return Padding(

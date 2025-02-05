@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/Features/list_available_vehicle/list_available_vehicle_same_type_page.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_constants.dart';
 import 'package:ride_share/core/constants/app_styles.dart';
