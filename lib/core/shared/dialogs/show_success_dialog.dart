@@ -23,71 +23,73 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
               color: AppColors.white,
               borderRadius: BorderRadius.circular(AppSizes.successDialogRadius),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const SizedBox(height: 1),
-                Align(
-                  alignment: AlignmentDirectional.topEnd,
-                  child: IconButton(
-                    onPressed: () {
-                      context.pop();
-                    },
-                    icon: Image.asset(
-                      AppImages.closeIcon,
-                      fit: BoxFit.scaleDown,
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const SizedBox(height: 1),
+                  Align(
+                    alignment: AlignmentDirectional.topEnd,
+                    child: IconButton(
+                      onPressed: () {
+                        context.pop();
+                      },
+                      icon: Image.asset(
+                        AppImages.closeIcon,
+                        fit: BoxFit.scaleDown,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 12),
-                Flexible(
-                  child: SvgPicture.asset(AppIcons.successIcon),
-                ),
-                const SizedBox(height: 23),
-                Column(
-                  children: [
-                    Text(
-                      'Add Success',
-                      maxLines: 1,
-                      style: AppTextStyles.successDialogTitleStyle,
-                    ),
-                    const SizedBox(height: 7),
-                    Text(
-                      'Your money has been add successfully ',
-                      maxLines: 1,
-                      style: AppTextStyles.successDialogSubTitleStyle,
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 24),
-                Column(
-                  children: [
-                    Text(
-                      'Amount',
-                      style: AppTextStyles.successDialogAmountStyle,
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      '\$$amount',
-                      style: AppTextStyles.successDialogMoneyStyle,
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSizes.successDialogPadding,
-                    vertical: 32,
+                  const SizedBox(height: 12),
+                  Flexible(
+                    child: SvgPicture.asset(AppIcons.successIcon),
                   ),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: FittedBox(child: Text('Back Home')),
+                  const SizedBox(height: 23),
+                  Column(
+                    children: [
+                      Text(
+                        'Add Success',
+                        maxLines: 1,
+                        style: AppTextStyles.successDialogTitleStyle,
+                      ),
+                      const SizedBox(height: 7),
+                      Text(
+                        'Your money has been add successfully ',
+                        maxLines: 1,
+                        style: AppTextStyles.successDialogSubTitleStyle,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 24),
+                  Column(
+                    children: [
+                      Text(
+                        'Amount',
+                        style: AppTextStyles.successDialogAmountStyle,
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        '\$$amount',
+                        style: AppTextStyles.successDialogMoneyStyle,
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSizes.successDialogPadding,
+                      vertical: 32,
+                    ),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: FittedBox(child: Text('Back Home')),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
