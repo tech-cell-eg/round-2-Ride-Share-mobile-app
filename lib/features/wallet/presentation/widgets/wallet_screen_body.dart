@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/shared/sections/section_heading.dart';
-import 'package:ride_share/features/wallet/presentation/widgets/transactions/transaction_history_list_view%20.dart';
+import 'package:ride_share/features/wallet/presentation/widgets/transactions/transaction_history_list_view.dart';
 import 'package:ride_share/features/wallet/presentation/widgets/wallet_money/wallet_money_section.dart';
 
 class WalletScreenBody extends StatelessWidget {

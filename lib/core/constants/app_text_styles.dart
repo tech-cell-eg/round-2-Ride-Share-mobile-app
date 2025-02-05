@@ -98,4 +98,29 @@ class AppTextStyles {
     color: AppColors.white,
     fontWeight: FontWeight.w500,
   );
+
+  static const successDialogTitleStyle = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+
+  static const successDialogSubTitleStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.successDialogSubTitleColor,
+  );
+
+  static const successDialogAmountStyle = TextStyle(
+     fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+  static const successDialogMoneyStyle = TextStyle(
+     fontSize: 34,
+    fontWeight: FontWeight.w400,
+    color: AppColors.walletMoneyColor,
+  );
+
+  
 }

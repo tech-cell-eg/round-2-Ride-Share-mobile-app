@@ -36,4 +36,6 @@ class AppColors {
   static const inActivePaymentColor = Color(0xFFf3fbf8);
 
   static const buttonColor = Color(0xFF304FFE);
+
+  static const successDialogSubTitleColor = Color(0xFF898989);
 }
