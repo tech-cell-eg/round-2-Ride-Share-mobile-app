@@ -33,6 +33,9 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.17
   font_awesome_flutter: ^10.8.0
+  google_maps_flutter: ^2.10.0
+  location: ^8.0.0
+  permission_handler: ^11.3.1
   yandex_maps_mapkit_lite:
     version: ^4.10.1-beta
 
@@ -99,13 +102,12 @@ flutter:
 #   field_prefix:
 #   classname: MyIcons
 #   ignore_comments: true
-
 flutter_assets:
   assets_path:
     - assets/images/
   output_path: lib/core/constants/generated/
   filename: images.dart
-  field_prefix:
+  field_prefix: null
   classname: AppImages
   ignore_comments: true
 
@@ -116,4 +118,4 @@ flutter_assets:
 #   filename: animation.dart
 #   field_prefix:
 #   classname: AppAnimations
-#   ignore_comments: true  
+#   ignore_comments: true

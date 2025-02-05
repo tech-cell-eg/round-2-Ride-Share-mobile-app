@@ -41,7 +41,10 @@
             android:name="com.yandex.mapkit.apikey"
             android:value="9b214a7b-b858-431c-b059-a66412553859" 
         />
-        
+        <meta-data 
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCuTilAfnGfkZtIx0T3qf-eOmWZ_N2LpoY"
+        />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
