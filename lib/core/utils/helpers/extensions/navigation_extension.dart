@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
 
-extension Navigation on BuildContext {
-  Future<dynamic> pushNamed(String routeName, {Object? arguments}) async {
-    await Navigator.of(this).pushNamed(routeName, arguments: arguments);
+extension NavigationExtension on BuildContext {
+  Future<void> pushNamed(routeName, {arguments}) async {
+    await Navigator.pushNamed(this, routeName, arguments: arguments);
   }
 
-  Future<dynamic> pushReplacementNamed(String routeName,
-      {Object? arguments}) async {
-    return await Navigator.of(this)
-        .pushReplacementNamed(routeName, arguments: arguments);
+  Future<void> pushReplacementNamed(routeName, {arguments}) async {
+    await Navigator.pushReplacementNamed(this, routeName, arguments: arguments);
   }
 
-  Future<dynamic> pushNamedAndRemoveUntil(String routeName,
-      {Object? arguments, required RoutePredicate predicate}) async {
-    return await Navigator.of(this)
-        .pushNamedAndRemoveUntil(routeName, arguments: arguments, predicate);
+  Future<void> pushNamedAndRemoveUntil(routeName, {arguments}) async {
+    await Navigator.pushNamedAndRemoveUntil(this, routeName, (route) => false,
+        arguments: arguments);
   }
 
-  void pop() => Navigator.of(this).pop();
+  void pop() => Navigator.pop(this);
 }

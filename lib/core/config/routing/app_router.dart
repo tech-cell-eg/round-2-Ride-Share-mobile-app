@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/features/chat/presentation/views/chat_screen.dart';
-import 'package:ride_share/features/contact%20and%20payment/presentation/views/location_confirm_screen.dart';
+import 'package:ride_share/core/config/routing/routes.dart';
+import 'package:ride_share/features/main/UI/screens/main_screen.dart';
+import 'package:ride_share/features/onBoarding/UI/Screens/onBoarding_screen.dart';
 
 class AppRouter {
-  AppRouter._();
-
-  static Route onGenerateRoute(RouteSettings settings) {
-    final argument = settings.arguments;
+  Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case LocationConfirmScreen.routeName:
-        return MaterialPageRoute(builder: (_) => const LocationConfirmScreen());
-      case ChatScreen.routeName:
-        return MaterialPageRoute(builder: (_) => const ChatScreen());
-      default:
-        return MaterialPageRoute(
-          builder: (_) => const Scaffold(
-            body: Center(child: Text('No route defined')),
-          ),
-        );
+      case Routes.onBoarding:
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
+      case Routes.main:
+        return MaterialPageRoute(builder: (_) => const MainScreen());
     }
+
+    return null;
   }
 }

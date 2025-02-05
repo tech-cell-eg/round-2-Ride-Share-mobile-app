@@ -1,1 +1,4 @@
-const defaultHorizontalPadding = 16.0;
+class AppConstants {
+  AppConstants._();
+  static const String appFont = 'Poppins';
+}

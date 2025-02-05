@@ -1,35 +1,43 @@
 import 'package:flutter/material.dart';
-
-import 'app_colors.dart';
+import 'package:ride_share/core/constants/app_colors.dart';
+import 'package:ride_share/core/constants/app_font_weights.dart';
 
 class AppTextStyles {
   AppTextStyles._();
 
-  static const TextStyle styleBlack16Medium = TextStyle(
-    color: AppColors.customBlack,
+  static TextStyle font16Grey41Regular = const TextStyle(
     fontSize: 16,
-    fontWeight: FontWeight.w500,
+    color: AppColors.gray41,
+    fontWeight: AppFontWeights.regular,
   );
 
-  static const TextStyle styleBlack18Medium = TextStyle(
-    color: AppColors.customBlack,
-    fontSize: 18,
-    fontWeight: FontWeight.w500,
+  static TextStyle font24Grey41Medium = const TextStyle(
+    fontSize: 24,
+    color: AppColors.gray41,
+    fontWeight: AppFontWeights.medium,
   );
 
-  static const TextStyle styleBlack16Regular = TextStyle(
-    color: AppColors.customBlack,
-    fontSize: 16,
-  );
-
-  static const TextStyle styleGrey10Regular = TextStyle(
-    color: AppColors.customGrey,
-    fontSize: 10,
-  );
-
-  static const TextStyle styleGrey14Medium = TextStyle(
+  static TextStyle font14GreyA0Medium = const TextStyle(
     fontSize: 14,
-    fontWeight: FontWeight.w500,
-    color: Color(0xff888888),
+    color: AppColors.grayA0,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font20Grey41Medium = const TextStyle(
+    fontSize: 20,
+    color: AppColors.gray41,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font12Grey41Medium = const TextStyle(
+    fontSize: 12,
+    color: AppColors.gray41,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font12MainColorMedium = const TextStyle(
+    fontSize: 12,
+    color: AppColors.mainColor,
+    fontWeight: AppFontWeights.medium,
   );
 }
