@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_text_styles.dart';
@@ -38,7 +39,7 @@ class PaymentMethodGreenBox extends StatelessWidget {
                 style: AppTextStyles.styleBlack16Medium,
               ),
               Text(
-                'Expires: 12/26',
+                '${AppStrings.expires} 12/26',
                 style: AppTextStyles.styleGrey14Medium,
               ),
             ],

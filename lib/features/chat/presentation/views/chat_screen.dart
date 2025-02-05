@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 
 import '../../../../core/widgets/default_app_bar.dart';
@@ -10,7 +11,7 @@ class ChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: DefaultAppBar(title: 'Chat'),
+      appBar: DefaultAppBar(title: AppStrings.chat),
       body: ChatScreenBody(),
     );
   }

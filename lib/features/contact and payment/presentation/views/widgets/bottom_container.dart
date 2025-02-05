@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 
 import '../../../../../core/constants/app_text_styles.dart';
 import 'close_icon.dart';
@@ -38,7 +39,7 @@ class BottomContainer extends StatelessWidget {
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Text(
-                  'Your driver is coming in 3:35',
+                  '${AppStrings.yourDriverIsComingIn} 3:35',
                   style: AppTextStyles.styleBlack16Medium,
                 ),
               ),
@@ -61,7 +62,7 @@ class BottomContainer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'Payment method',
+                    AppStrings.paymentMethod,
                     style: AppTextStyles.styleBlack16Medium,
                   ),
                   Text(

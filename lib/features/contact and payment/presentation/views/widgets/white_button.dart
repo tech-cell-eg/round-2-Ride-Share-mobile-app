@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_text_styles.dart';
@@ -21,7 +22,7 @@ class WhiteButton extends StatelessWidget {
         ),
       ),
       child: Text(
-        'Call',
+        AppStrings.call,
         style: AppTextStyles.styleBlack16Medium.copyWith(
           color: const Color(0xff008955),
         ),
