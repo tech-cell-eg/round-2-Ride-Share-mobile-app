@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
 import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
 
-import '../../core/constants/app_text_styles.dart';
 
 class HelpAndSupportScreen extends StatelessWidget {
   const HelpAndSupportScreen({super.key});
