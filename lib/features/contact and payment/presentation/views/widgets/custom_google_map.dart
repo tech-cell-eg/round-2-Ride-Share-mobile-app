@@ -48,7 +48,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
       markers: markers,
       onMapCreated: (controller) {
         googleMapController = controller;
-        updateCurrentLocation();
+        // updateCurrentLocation();
       },
     );
   }
