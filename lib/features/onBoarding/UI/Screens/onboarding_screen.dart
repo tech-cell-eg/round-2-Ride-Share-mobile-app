@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_images.dart';
+
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/on_boarding_pages.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/prograss_button.dart';
+
+import '../../../../core/constants/generated/images.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -23,7 +25,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         prograss++;
       });
       pageController.nextPage(
-          duration: Duration(milliseconds: 300), curve: Curves.easeIn);
+          duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
     }
   }
 
@@ -41,7 +43,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onPressed: () {
                     context.pushNamed(Routes.main);
                   },
-                  child: Text(AppStrings.skip, style: AppTextStyles.font16Grey41Regular),
+                  child: Text(AppStrings.skip,
+                      style: AppTextStyles.font16Grey41Regular),
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.05),
@@ -49,15 +52,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: PageView(
                   controller: pageController,
                   children: [
-                    OnBoardingPages(
+                    const OnBoardingPages(
                       image: AppImages.imagesOnBoarding1,
                       mainText: AppStrings.anyWhereYouAre,
                     ),
-                    OnBoardingPages(
+                    const OnBoardingPages(
                       image: AppImages.imagesOnBoarding2,
                       mainText: AppStrings.atAnyTime,
                     ),
-                    OnBoardingPages(
+                    const OnBoardingPages(
                         image: AppImages.imagesOnBoarding3,
                         mainText: AppStrings.takeYourCar),
                   ],
