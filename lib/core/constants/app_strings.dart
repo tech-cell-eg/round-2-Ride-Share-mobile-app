@@ -19,4 +19,5 @@ class AppStrings {
   static const String message = 'Message';
   static const String expires = 'Expires:';
   static const String call = 'Call';
+  static const String typeYourMessage = 'Type your message';
 }
