@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 
+import '../../../../../core/services/google map service/exceptions.dart';
+import '../../../../../core/services/google map service/location_service.dart';
+import '../../../../../core/services/google map service/map_services.dart';
+
 class CustomGoogleMap extends StatefulWidget {
   const CustomGoogleMap({super.key});
 
@@ -12,47 +16,65 @@ class CustomGoogleMap extends StatefulWidget {
 }
 
 class _CustomGoogleMapState extends State<CustomGoogleMap> {
+  late CameraPosition initialCameraPosition;
+  Set<Polyline> polyLines = {};
+  Set<Marker> markers = {};
+  late GoogleMapController googleMapController;
+  late MapServices mapServices;
+
   @override
-  initState() {
+  void initState() {
     super.initState();
-    _getCurrentLocation();
+    initCameraPosition();
+    mapServices = MapServices(
+      locationService: LocationService(
+        location: Location(),
+      ),
+    );
   }
 
-  final Set<Marker> _markers = {};
-  late LatLng _currentLocation;
-
-  Future<void> _getCurrentLocation() async {
-    Location location = Location();
-
-    // Request permission to access location
-    PermissionStatus permissionStatus = await location.hasPermission();
-
-    if (permissionStatus == PermissionStatus.granted) {
-      LocationData locationData = await location.getLocation();
-      setState(() {
-        _currentLocation =
-            LatLng(locationData.latitude!, locationData.longitude!);
-      });
-    } else {
-      // Handle case when permission is denied
-      print('Location permission denied');
-    }
+  @override
+  void dispose() {
+    super.dispose();
+    googleMapController.dispose();
   }
 
-  final Completer<GoogleMapController> _controller =
-      Completer<GoogleMapController>();
   @override
   Widget build(BuildContext context) {
     return GoogleMap(
-      initialCameraPosition: const CameraPosition(
-        target: LatLng(29.97981158837924, 31.134218186032324),
-        zoom: 6,
-      ),
-      mapType: MapType.hybrid,
-      markers: _markers,
-      onMapCreated: (GoogleMapController controller) {
-        _controller.complete(controller);
+      initialCameraPosition: initialCameraPosition,
+      polylines: polyLines,
+      zoomControlsEnabled: false,
+      markers: markers,
+      onMapCreated: (controller) {
+        googleMapController = controller;
+        updateCurrentLocation();
       },
     );
+  }
+
+  void initCameraPosition() {
+    initialCameraPosition = const CameraPosition(
+      target: LatLng(29.99552098735423, 31.205921201848618),
+      zoom: 11,
+    );
+  }
+
+  void updateCurrentLocation() async {
+    try {
+      mapServices.updateCurrentLocation(
+        googleMapController: googleMapController,
+        markers: markers,
+        onUpdate: () {
+          setState(() {});
+        },
+      );
+    } on LocationServiceException catch (e) {
+      // TODO
+    } on LocationPermissionException catch (e) {
+      // TODO
+    } catch (e) {
+      // TODO
+    }
   }
 }
