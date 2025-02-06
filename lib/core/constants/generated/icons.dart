@@ -6,7 +6,7 @@ class AppIcons {
 
   static const String iconsCallingDots = "assets/icons/calling_dots.svg";
 
-  static const String iconsCallingMicpng = "assets/icons/calling_micpng.png";
+  static const String iconsCallingMic = "assets/icons/calling_mic.svg";
 
   static const String iconsCallingPhone = "assets/icons/calling_phone.svg";
 
