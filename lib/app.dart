@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'features/Auth/complete_profie/complete_profie_screen.dart';
+import 'features/Auth/delete_account/delete_account_screen.dart';
+import 'features/Auth/get_user_location/get_user_location_screen.dart';
 import 'features/Auth/send_verification/send_verification_screen.dart';
 import 'features/Auth/set_new_password/set_new_password_screen.dart';
 import 'features/Auth/sign_in/signin_screen.dart';
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
           
         ),
-        home:   SetNewPasswordScreen( ),
+        home:   DeleteAccountScreen(),
       ),
     );
   }
