@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
@@ -24,7 +25,7 @@ class SetPasswordScreen extends StatelessWidget {
                     AppTextStyles.s24w500.copyWith(color: AppColors.blackColor),
               ),
               SizedBox(
-                height: 10,
+                height: 10.h,
               ),
               Text(
                 'Set your password',
@@ -32,7 +33,7 @@ class SetPasswordScreen extends StatelessWidget {
                     AppTextStyles.s16w400.copyWith(color: AppColors.greyColor),
               ),
               SizedBox(
-                height: 20,
+                height: 20.h,
               ),
               CustomTextField(
                 suffixIcon: Icon(Icons.password),
@@ -44,7 +45,7 @@ class SetPasswordScreen extends StatelessWidget {
               ),
 
               SizedBox(
-                height: 20,
+                height: 20.h,
               ),
 
               CustomTextField(
@@ -56,16 +57,16 @@ class SetPasswordScreen extends StatelessWidget {
                 borderSideColor: AppColors.mediumGray,
               ),
               SizedBox(
-                height: 20,
+                height: 20.h,
               ),
               Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
               Spacer(),
               CustomButton(text: 'Register', 
               onPressed: (){},
-              height: 54, 
-              width: 340, 
+              height: 54.h, 
+              width: 340.w, 
               color: AppColors.primaryColor, 
-              borderRadius: 8, 
+              borderRadius: 8.w, 
               textStyle: AppTextStyles.s16w500.copyWith(color: AppColors.whiteColor,),),
             ],
           ),

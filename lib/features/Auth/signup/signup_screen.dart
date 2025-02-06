@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_images.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
-
 import '../widgets/back_arrow_widget.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -19,12 +19,12 @@ class SignupScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0).w,
             child: Column(
               children: [
                 ArrowBackWidget(),
                 SizedBox(
-                  height: 30,
+                  height: 30.h,
                 ),
                 Text(
                   'Sign up with your email or phone number',
@@ -32,7 +32,7 @@ class SignupScreen extends StatelessWidget {
                       .copyWith(color: AppColors.blackColor),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 30.h,
                 ),
                 CustomTextField(
                   controller: emailController,
@@ -42,7 +42,7 @@ class SignupScreen extends StatelessWidget {
                   borderSideColor: AppColors.mediumGray,
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 30.h,
                 ),
                 CustomTextField(
                   controller: genderController,
@@ -52,7 +52,7 @@ class SignupScreen extends StatelessWidget {
                   borderSideColor: AppColors.mediumGray,
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 30.h,
                 ),
                 CustomTextField(
                   controller: nameController,
@@ -66,24 +66,24 @@ class SignupScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 20.h,
                 ),
                 PrivaceAndTermsWidget(),
                 SizedBox(
-                  height: 20,
+                  height: 20.h,
                 ),
                 CustomButton(
                   text: 'Sign Up',
                   onPressed: () {},
-                  height: 54,
-                  width: 340,
+                  height: 54.h,
+                  width: 340.w,
                   color: AppColors.primaryColor,
                   borderRadius: 8,
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.whiteColor),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 15.h,
                 ),
                 Row(
                   children: [
@@ -109,13 +109,13 @@ class SignupScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 15.h,
                 ),
                 CustomButton(
                   text: 'Sign up with Gmail',
                   onPressed: () {},
-                  height: 48,
-                  width: 360,
+                  height: 48.h,
+                  width: 360.w,
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
@@ -124,13 +124,13 @@ class SignupScreen extends StatelessWidget {
                       .copyWith(color: AppColors.blackColor),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 10.h,
                 ),
                 CustomButton(
                   text: 'Sign up with FaceBook',
                   onPressed: () {},
-                  height: 48,
-                  width: 360,
+                   height: 48.h,
+                  width: 360.w,
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
@@ -144,8 +144,8 @@ class SignupScreen extends StatelessWidget {
                 CustomButton(
                   text: 'Sign up with Apple',
                   onPressed: () {},
-                  height: 48,
-                  width: 360,
+                   height: 48.h,
+                  width: 360.w,
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
@@ -153,7 +153,7 @@ class SignupScreen extends StatelessWidget {
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),
-               SizedBox(height:20),
+               SizedBox(height:20.h),
                 RichText(
               text: TextSpan(
             style: AppTextStyles.s12w500,
@@ -191,7 +191,7 @@ class PrivaceAndTermsWidget extends StatelessWidget {
       children: [
         Image.asset(AppImages.checkCircle),
         SizedBox(
-          width: 5,
+          width: 5.w,
         ),
         Expanded(
           child: RichText(
