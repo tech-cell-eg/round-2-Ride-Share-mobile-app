@@ -37,5 +37,3 @@ class WalletScreenBody extends StatelessWidget {
     );
   }
 }
-
-

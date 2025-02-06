@@ -43,5 +43,10 @@ class AppColors {
 
   static const successDialogSubTitleColor = Color(0xFF898989);
 
+  static const dividerColor = Color(0xFFB8B8B8);
+
+  static const bottomDialogTitleColor = Color(0xFF5A5A5A);
+  static const bottomDialogSubTitleColor = Color(0xFFA0A0A0);
+
   static const helpAndSupportColor = Color(0xFF414141);
 }

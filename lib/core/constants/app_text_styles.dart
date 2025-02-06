@@ -152,5 +152,17 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: Color(0xFF717171),
   );
+  
+  static const bottomDialogTitleTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.bottomDialogTitleColor,
+  );
+
+  static const bottomDialogSubTitleTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.bottomDialogSubTitleColor,
+  );
 
 }
