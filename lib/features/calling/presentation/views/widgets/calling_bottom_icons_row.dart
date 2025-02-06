@@ -4,13 +4,14 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/generated/icons.dart';
 import 'calling_icon_circle.dart';
-import 'big_phone_calling.dart';
+import 'big_phone_calling_talking.dart';
 
 class CallingBottomIconsRow extends StatelessWidget {
   const CallingBottomIconsRow({
     super.key,
+    required this.isCalling,
   });
-
+  final bool isCalling;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -29,8 +30,8 @@ class CallingBottomIconsRow extends StatelessWidget {
             onTap: () {},
           ),
           // phone icon
-          BigPhoneCalling(
-            iconPath: AppIcons.iconsCallingPhone,
+          BigPhoneCallingTalking(
+            isCalling: isCalling,
             onTap: () {},
           ),
           // video icon

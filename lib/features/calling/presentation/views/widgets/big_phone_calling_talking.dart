@@ -3,14 +3,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../core/constants/generated/icons.dart';
 
-class BigPhoneCalling extends StatelessWidget {
-  const BigPhoneCalling({
+class BigPhoneCallingTalking extends StatelessWidget {
+  const BigPhoneCallingTalking({
     super.key,
-    required this.iconPath,
     required this.onTap,
+    required this.isCalling,
   });
-  final String iconPath;
+
   final Function() onTap;
+  final bool isCalling;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -19,13 +20,15 @@ class BigPhoneCalling extends StatelessWidget {
         height: 70,
         width: 70,
         decoration: BoxDecoration(
-          color: const Color(0xff4CAF51),
+          color: isCalling ? const Color(0xff4CAF51) : const Color(0xffEF5350),
           borderRadius: BorderRadius.circular(50),
         ),
         child: FittedBox(
           fit: BoxFit.scaleDown,
           child: SvgPicture.asset(
-            iconPath,
+            isCalling
+                ? AppIcons.iconsCallingPhone
+                : AppIcons.iconsCallingPhoneDown,
             height: 30,
             colorFilter: const ColorFilter.mode(
               Colors.white,

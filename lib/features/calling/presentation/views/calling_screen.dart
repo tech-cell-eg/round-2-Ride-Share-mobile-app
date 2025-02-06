@@ -10,7 +10,9 @@ class CallingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: DefaultAppBar(title: ''),
-      body: CallingScreenBody(),
+      body: CallingScreenBody(
+        isCalling: true,
+      ),
     );
   }
 }

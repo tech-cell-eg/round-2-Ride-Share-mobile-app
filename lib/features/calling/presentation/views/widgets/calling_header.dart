@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import '../../../../../core/constants/app_strings.dart';
 import '../../../../../core/constants/generated/images.dart';
 
-class CallingHeader extends StatelessWidget {
-  const CallingHeader({
+class CallingTalkingHeader extends StatelessWidget {
+  const CallingTalkingHeader({
     super.key,
+    required this.isCalling,
   });
-
+  final bool isCalling;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,14 +27,21 @@ class CallingHeader extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
-        const Text(
-          AppStrings.calling,
-          style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w500,
-            color: Color(0xffB8B8B8),
-          ),
-        ),
+        isCalling
+            ? const Text(
+                AppStrings.calling,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xffB8B8B8),
+                ),
+              )
+            : const Text(
+                '01:23',
+                style: TextStyle(
+                  fontSize: 34,
+                ),
+              ),
       ],
     );
   }
