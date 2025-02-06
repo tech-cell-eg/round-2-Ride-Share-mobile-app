@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ride_share/core/constants/app_colors.dart';
-import 'package:ride_share/core/constants/app_images.dart';
-import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/widgets/custom_button.dart';
-import 'package:ride_share/core/widgets/custom_text_form_field.dart';
+
+import '../../../core/constants/app_colors.dart';
+import '../../../core/constants/app_text_styles.dart';
+import '../../../core/widgets/custom_button.dart';
+import '../../../core/widgets/custom_text_form_field.dart';
 import '../widgets/back_arrow_widget.dart';
 
-class SignupScreen extends StatelessWidget {
-  SignupScreen({super.key});
-  TextEditingController nameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController genderController = TextEditingController();
-  
+class SigninScreen extends StatelessWidget {
+  SigninScreen({super.key});
+  TextEditingController emailOrPhonecontroller = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,13 +20,14 @@ class SignupScreen extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(20.0).w,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 ArrowBackWidget(),
                 SizedBox(
                   height: 30.h,
                 ),
                 Text(
-                  'Sign up with your email or phone number',
+                  'Sign in with your email or phone number',
                   style: AppTextStyles.s24w500
                       .copyWith(color: AppColors.blackColor),
                 ),
@@ -35,8 +35,8 @@ class SignupScreen extends StatelessWidget {
                   height: 30.h,
                 ),
                 CustomTextField(
-                  controller: emailController,
-                  hintText: 'Name',
+                  controller: emailOrPhonecontroller,
+                  hintText: 'Email or Phone Number',
                   hintStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
@@ -45,32 +45,30 @@ class SignupScreen extends StatelessWidget {
                   height: 30.h,
                 ),
                 CustomTextField(
-                  controller: genderController,
-                  hintText: 'Email',
-                  hintStyle: AppTextStyles.s16w500
-                      .copyWith(color: AppColors.lightGray),
-                  borderSideColor: AppColors.mediumGray,
-                ),
-                SizedBox(
-                  height: 30.h,
-                ),
-                CustomTextField(
-                  controller: nameController,
-                  hintText: 'Gender',
+                  controller: passwordController,
+                  hintText: 'Enter Your Password',
                   hintStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
                   suffixIcon: Icon(
-                    Icons.keyboard_arrow_down_sharp,
-                    size: 33.sp,
+                    Icons.visibility_off_outlined,
                   ),
                 ),
                 SizedBox(
-                  height: 20.h,
+                  height: 10.h,
                 ),
-                PrivaceAndTermsWidget(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      'Forget password?',
+                      style:
+                          AppTextStyles.s14w500.copyWith(color: AppColors.red,),
+                    ),
+                  ],
+                ),
                 SizedBox(
-                  height: 20.h,
+                  height: 30.h,
                 ),
                 CustomButton(
                   text: 'Sign Up',
@@ -129,7 +127,7 @@ class SignupScreen extends StatelessWidget {
                 CustomButton(
                   text: 'Sign up with FaceBook',
                   onPressed: () {},
-                   height: 48.h,
+                  height: 48.h,
                   width: 360.w,
                   color: AppColors.whiteColor,
                   borderRadius: 8,
@@ -144,7 +142,7 @@ class SignupScreen extends StatelessWidget {
                 CustomButton(
                   text: 'Sign up with Apple',
                   onPressed: () {},
-                   height: 48.h,
+                  height: 48.h,
                   width: 360.w,
                   color: AppColors.whiteColor,
                   borderRadius: 8,
@@ -153,75 +151,28 @@ class SignupScreen extends StatelessWidget {
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),
-               SizedBox(height:20.h),
+                SizedBox(height: 20.h),
                 RichText(
-              text: TextSpan(
-            style: AppTextStyles.s12w500,
-            children: [
-              TextSpan(
-                text: 'Already have an account? ',
-                style:
-                    AppTextStyles.s16w500.copyWith(color: AppColors.darkGray),
-              ),
-              TextSpan(
-                text: 'Sign in',
-                style: AppTextStyles.s12w500
-                    .copyWith(color: AppColors.primaryColor),
-              ),
-              
-            ],
-          )),
+                    text: TextSpan(
+                  style: AppTextStyles.s12w500,
+                  children: [
+                    TextSpan(
+                      text: 'Don’t have an account? ',
+                      style: AppTextStyles.s16w500
+                          .copyWith(color: AppColors.darkGray),
+                    ),
+                    TextSpan(
+                      text: 'Sign up',
+                      style: AppTextStyles.s16w500
+                          .copyWith(color: AppColors.primaryColor),
+                    ),
+                  ],
+                )),
               ],
             ),
           ),
         ),
       ),
-    );
-  }
-}
-
-class PrivaceAndTermsWidget extends StatelessWidget {
-  const PrivaceAndTermsWidget({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Image.asset(AppImages.checkCircle),
-        SizedBox(
-          width: 5.w,
-        ),
-        Expanded(
-          child: RichText(
-              text: TextSpan(
-            style: AppTextStyles.s12w500,
-            children: [
-              TextSpan(
-                text: 'By signing up. you agree to the ',
-                style:
-                    AppTextStyles.s12w500.copyWith(color: AppColors.mediumGray),
-              ),
-              TextSpan(
-                text: 'Terms of service ',
-                style: AppTextStyles.s12w500
-                    .copyWith(color: AppColors.primaryColor),
-              ),
-              TextSpan(
-                text: 'and ',
-                style:
-                    AppTextStyles.s12w500.copyWith(color: AppColors.mediumGray),
-              ),
-              TextSpan(
-                text: 'Privacy policy.',
-                style: AppTextStyles.s12w500
-                    .copyWith(color: AppColors.primaryColor),
-              ),
-            ],
-          )),
-        ),
-      ],
     );
   }
 }
