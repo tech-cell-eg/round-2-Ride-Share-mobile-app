@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
-import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/generated/icons.dart';
 import 'calling_icon_circle.dart';
 import 'big_phone_calling_talking.dart';
