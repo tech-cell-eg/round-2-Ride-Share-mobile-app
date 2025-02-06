@@ -29,10 +29,18 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.8
+<<<<<<< HEAD
   device_preview: ^1.2.0
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.17
+=======
+  dashed_circular_progress_bar: ^0.0.6
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.17
+  font_awesome_flutter: ^10.8.0
+>>>>>>> 3a0989026f2a147c7860094a426ea6b50930877b
 
 dev_dependencies:
   flutter_lints: ^5.0.0
@@ -54,7 +62,10 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/animations/
+<<<<<<< HEAD
     
+=======
+>>>>>>> 3a0989026f2a147c7860094a426ea6b50930877b
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -89,7 +100,11 @@ flutter:
         - asset: assets/fonts/Poppins-BoldItalic.ttf
           weight: 800
           style: italic
+<<<<<<< HEAD
   # flutter_assets:
+=======
+  #flutter_assets:
+>>>>>>> 3a0989026f2a147c7860094a426ea6b50930877b
   #   assets_path:
   #     - assets/icons/
   #   output_path: lib/core/constants/generated/
@@ -97,6 +112,7 @@ flutter:
   #   field_prefix:
   #   classname: MyIcons
   #   ignore_comments: true
+<<<<<<< HEAD
 flutter_assets:
   assets_path:
     - assets/images/
@@ -105,6 +121,16 @@ flutter_assets:
   field_prefix:
   classname: AppImages
   ignore_comments: true
+=======
+  # flutter_assets:
+  #   assets_path:
+  #     - assets/images/
+  #   output_path: lib/core/constants/generated/
+  #   filename: images.dart
+  #   field_prefix:
+  #   classname: AppImages
+  #   ignore_comments: true
+>>>>>>> 3a0989026f2a147c7860094a426ea6b50930877b
   # flutter_assets:
   #   assets_path:
   #     - assets/animations/
