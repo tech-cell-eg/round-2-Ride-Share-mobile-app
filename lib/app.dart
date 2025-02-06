@@ -1,22 +1,12 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:ride_share/Features/list_transportion/list_transportion_page.dart';
-=======
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'features/Auth/complete_profie/complete_profie_screen.dart';
-import 'features/Auth/send_verification/send_verification_screen.dart';
-import 'features/Auth/set_new_password/set_new_password_screen.dart';
-import 'features/Auth/sign_in/signin_screen.dart';
-import 'features/welcome_screen/welcome_screen.dart';
->>>>>>> ecbee85f9e55ebc417a356ead2da47a11eb70472
+import 'package:ride_share/Features/list_transportion/list_transportion_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
@@ -50,8 +40,6 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTransportionPage();
-=======
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
@@ -60,16 +48,11 @@ class MyHomePage extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
-           
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
-          
         ),
-        home:   SetNewPasswordScreen( ),
+        home: const ListTransportionPage(),
       ),
     );
->>>>>>> ecbee85f9e55ebc417a356ead2da47a11eb70472
   }
 }
-
- 
