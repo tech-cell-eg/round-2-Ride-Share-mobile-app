@@ -10,9 +10,9 @@ class ChatScreen extends StatelessWidget {
   static const routeName = '/chat';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: DefaultAppBar(title: AppStrings.chat),
-      body: const ChatScreenBody(),
+      body: ChatScreenBody(),
     );
   }
 }
