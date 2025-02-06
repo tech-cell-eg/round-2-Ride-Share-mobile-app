@@ -16,13 +16,13 @@ class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
               title!,
               style: AppStyles.medium18,
             )
-          : SizedBox(),
+          : const SizedBox(),
       centerTitle: true,
       leading: InkWell(
         onTap: () {
           Navigator.pop(context);
         },
-        child: Row(
+        child: const Row(
           children: [
             SizedBox(width: 5),
             Icon(Icons.chevron_left),

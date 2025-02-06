@@ -14,14 +14,15 @@ class AvailableVehicleContainerBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
       child: Column(
         children: [
-          VehicleInformation(),
-          SizedBox(height: 24),
+          const VehicleInformation(),
+          const SizedBox(height: 24),
           CustomBorderButton(
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ListAvailableVehicleSameTypePage(),
+                      builder: (context) =>
+                          const ListAvailableVehicleSameTypePage(),
                     ));
               },
               title: "View car list")

@@ -8,8 +8,8 @@ class ListTransportionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: const ProjectAppbar(title: "Select transport"),
-      body: const ListTransportBody(),
+      appBar: ProjectAppbar(title: "Select transport"),
+      body: ListTransportBody(),
     );
   }
 }
