@@ -10,14 +10,16 @@ class VehicleDetailsBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.all(15.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CustomTitlePage(
-              title: "Mustang Shelby GT", subTitle: "4.9 (531 reviews)"),
-          VehicleImages(),
-          VehicleDetailesSpecification()
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            CustomTitlePage(
+                title: "Mustang Shelby GT", subTitle: "4.9 (531 reviews)"),
+            VehicleImages(),
+            VehicleDetailesSpecification()
+          ],
+        ),
       ),
     );
   }
