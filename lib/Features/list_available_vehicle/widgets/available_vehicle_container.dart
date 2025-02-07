@@ -11,24 +11,15 @@ class AvailableVehicleContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const VehicleDetailsPage(),
-            ));
-      },
-      child: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(
-          border: Border.all(color: AppColors.containerBorder),
-          borderRadius: const BorderRadius.all(
-              const Radius.circular(AppConstants.containerBorderRediuse)),
-          color: AppColors.containerBackgraond,
-        ),
-        child: const AvailableVehicleContainerBody(),
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        border: Border.all(color: AppColors.containerBorder),
+        borderRadius: const BorderRadius.all(
+            Radius.circular(AppConstants.containerBorderRediuse)),
+        color: AppColors.containerBackgraond,
       ),
+      child: const AvailableVehicleContainerBody(),
     );
   }
 }

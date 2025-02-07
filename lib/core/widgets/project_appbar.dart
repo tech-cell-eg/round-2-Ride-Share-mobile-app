@@ -14,7 +14,7 @@ class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
       title: title != null
           ? Text(
               title!,
-              style: AppStyles.medium18,
+              style: AppStyles.medium18A2,
             )
           : const SizedBox(),
       centerTitle: true,
@@ -38,5 +38,5 @@ class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
