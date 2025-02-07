@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/widgets/custom_border_button.dart';
-import 'package:ride_share/core/widgets/custom_fill_button.dart';
 import 'package:ride_share/Features/vehicle_details/widgets/bottoms_actions.dart';
 import 'package:ride_share/Features/vehicle_details/widgets/vehicle_details_body.dart';
 import 'package:ride_share/core/widgets/project_appbar.dart';
