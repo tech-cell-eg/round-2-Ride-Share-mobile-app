@@ -1,4 +1,3 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -48,7 +47,7 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
       markers: markers,
       onMapCreated: (controller) {
         googleMapController = controller;
-        // updateCurrentLocation();
+        updateCurrentLocation();
       },
     );
   }
@@ -69,9 +68,9 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
           setState(() {});
         },
       );
-    } on LocationServiceException catch (e) {
+    } on LocationServiceException {
       // TODO
-    } on LocationPermissionException catch (e) {
+    } on LocationPermissionException {
       // TODO
     } catch (e) {
       // TODO
