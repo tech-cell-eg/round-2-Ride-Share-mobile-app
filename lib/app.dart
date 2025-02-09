@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/Features/list_transportion/list_transportion_page.dart';
 =======
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ride_share/core/constants/app_colors.dart';
 
 import 'features/Auth/complete_profie/complete_profie_screen.dart';
 import 'features/Auth/send_verification/send_verification_screen.dart';
@@ -10,6 +11,9 @@ import 'features/Auth/set_new_password/set_new_password_screen.dart';
 import 'features/Auth/sign_in/signin_screen.dart';
 import 'features/welcome_screen/welcome_screen.dart';
 >>>>>>> ecbee85f9e55ebc417a356ead2da47a11eb70472
+
+import 'core/config/routing/app_router.dart';
+import 'features/contact and payment/presentation/views/location_confirm_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -58,18 +62,14 @@ class MyHomePage extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
         theme: ThemeData(
-           
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(seedColor: AppColors.mainColor),
           useMaterial3: true,
-          
         ),
-        home:   SetNewPasswordScreen( ),
+        onGenerateRoute: AppRouter().generateRoute,
+        initialRoute: LocationConfirmScreen.routeName,
       ),
     );
 >>>>>>> ecbee85f9e55ebc417a356ead2da47a11eb70472
   }
 }
-
- 

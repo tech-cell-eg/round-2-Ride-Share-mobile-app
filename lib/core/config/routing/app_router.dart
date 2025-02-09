@@ -11,7 +11,6 @@ class AppRouter {
       case Routes.main:
         return MaterialPageRoute(builder: (_) => const MainScreen());
     }
-
     return null;
   }
 }
