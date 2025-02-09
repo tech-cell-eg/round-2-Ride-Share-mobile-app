@@ -42,6 +42,13 @@ dependencies:
   flutter_svg: ^2.0.17
   font_awesome_flutter: ^10.8.0
 
+  google_maps_flutter: ^2.10.0
+  location: ^8.0.0
+  permission_handler: ^11.3.1
+  yandex_maps_mapkit_lite:
+    version: ^4.10.1-beta
+
+
 dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_test:
@@ -97,6 +104,17 @@ flutter:
         - asset: assets/fonts/Poppins-BoldItalic.ttf
           weight: 800
           style: italic
+
+
+#flutter_assets:
+#   assets_path:
+#     - assets/icons/
+#   output_path: lib/core/constants/generated/
+#   filename: icons.dart
+#   field_prefix:
+#   classname: MyIcons
+#   ignore_comments: true
+
   #flutter_assets:
   #   assets_path:
   #     - assets/icons/
@@ -105,14 +123,26 @@ flutter:
   #   field_prefix:
   #   classname: MyIcons
   #   ignore_comments: true
+
 flutter_assets:
   assets_path:
     - assets/images/
   output_path: lib/core/constants/generated/
   filename: images.dart
-  field_prefix:
+  field_prefix: null
   classname: AppImages
   ignore_comments: true
+
+
+# flutter_assets:
+#   assets_path:
+#     - assets/animations/
+#   output_path: lib/core/constants/generated/
+#   filename: animation.dart
+#   field_prefix:
+#   classname: AppAnimations
+#   ignore_comments: true
+
   # flutter_assets:
   #   assets_path:
   #     - assets/images/
@@ -132,3 +162,4 @@ flutter_assets:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+

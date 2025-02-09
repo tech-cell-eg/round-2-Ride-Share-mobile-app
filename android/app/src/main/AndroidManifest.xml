@@ -37,11 +37,14 @@
             android:name="io.flutter.embedding.android.EnableImpeller"
             android:value="false" 
         />
-        <meta-data
+        <!-- <meta-data
             android:name="com.yandex.mapkit.apikey"
             android:value="9b214a7b-b858-431c-b059-a66412553859" 
+        /> -->
+        <meta-data 
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBWHwSxgwbm53T2pxzygusXZ0ioDpIlTz4"
         />
-        
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
