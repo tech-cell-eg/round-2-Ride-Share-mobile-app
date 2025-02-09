@@ -21,8 +21,8 @@ class PaymentMethodGreenBox extends StatelessWidget {
         horizontal: 17,
       ),
       decoration: BoxDecoration(
-        color: AppColors.primaryColor.withValues(alpha: 0.1),
-        border: Border.all(color: AppColors.primaryColor),
+        color: AppColors.mainColor.withValues(alpha: 0.1),
+        border: Border.all(color: AppColors.mainColor),
         borderRadius: BorderRadius.circular(4),
       ),
       child: Row(
@@ -36,11 +36,18 @@ class PaymentMethodGreenBox extends StatelessWidget {
             children: [
               Text(
                 '**** **** **** 8970',
-                style: AppTextStyles.styleBlack16Medium,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
               Text(
                 '${AppStrings.expires} 12/26',
-                style: AppTextStyles.styleGrey14Medium,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.gray5A,
+                ),
               ),
             ],
           ),

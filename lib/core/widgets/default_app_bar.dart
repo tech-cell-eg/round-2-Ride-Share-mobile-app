@@ -25,14 +25,21 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
               size: 16,
             ),
             Text(
+
               AppStrings.back,
-              style: AppTextStyles.styleBlack16Regular,
+              style: TextStyle(
+                fontSize: 16,
+              ),
+
             ),
           ],
         ),
         title: Text(
           title,
-          style: AppTextStyles.styleBlack18Medium,
+          style: const TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w500,
+          ),
         ),
       ),
     );

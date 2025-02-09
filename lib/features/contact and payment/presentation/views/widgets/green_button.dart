@@ -21,9 +21,11 @@ class GreenButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
       ),
-      child: Text(
+      child: const Text(
         AppStrings.message,
-        style: AppTextStyles.styleBlack16Medium.copyWith(
+        style: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w500,
           color: Colors.white,
         ),
       ),

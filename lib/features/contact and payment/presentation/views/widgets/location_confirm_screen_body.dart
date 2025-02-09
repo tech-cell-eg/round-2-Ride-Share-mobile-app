@@ -11,7 +11,9 @@ class LocationConfirmScreenBody extends StatelessWidget {
     return const Stack(
       children: [
         // CustomMap(),
+
         CustomGoogleMap(),
+
         DrawerNotificationsIconsRow(),
         BottomContainer(),
       ],

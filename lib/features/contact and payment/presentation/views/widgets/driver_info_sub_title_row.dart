@@ -21,11 +21,16 @@ class DriverInfoSubTitleRow extends StatelessWidget {
         Icon(
           icon,
           size: 16,
-          color: isReview ? Colors.yellow : AppColors.customBlack,
+          color: isReview ? Colors.yellow : AppColors.black,
         ),
         Text(
           title,
-          style: AppTextStyles.styleGrey10Regular,
+          // style: AppTextStyles.styleGrey10Regular,
+          style: const TextStyle(
+            fontSize: 10,
+            fontWeight: FontWeight.w400,
+            color: AppColors.gray5A,
+          ),
         ),
       ],
     );
