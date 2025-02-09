@@ -22,4 +22,7 @@ class AppStrings {
   static const String typeYourMessage = 'Type your message';
   static const String calling = 'Calling....';
   static const String back = 'Back';
+  static const String payment = 'Payment';
+
+  static const String charge = 'Charge';
 }

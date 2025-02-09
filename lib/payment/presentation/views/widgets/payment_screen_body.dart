@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/images.dart';
 import 'package:ride_share/core/widgets/green_box.dart';
 
@@ -15,6 +16,15 @@ class PaymentScreenBody extends StatelessWidget {
         children: [
           SizedBox(height: 30),
           DriverRateBox(),
+          SizedBox(height: 30),
+          Text(
+            AppStrings.charge,
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          SizedBox(height: 10),
         ],
       ),
     );
