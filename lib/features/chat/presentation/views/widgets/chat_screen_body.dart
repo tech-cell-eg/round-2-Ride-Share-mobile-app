@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'message_list_view.dart';
+
 import 'send_message_box.dart';
 
 class ChatScreenBody extends StatelessWidget {
