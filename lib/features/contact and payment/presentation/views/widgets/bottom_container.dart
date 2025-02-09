@@ -48,7 +48,9 @@ class BottomContainer extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: defaultPadding),
-              child: CustomDivider(),
+              child: CustomDivider(
+                color: Color(0xffdddddd),
+              ),
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: defaultPadding),
@@ -56,7 +58,9 @@ class BottomContainer extends StatelessWidget {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: defaultPadding),
-              child: CustomDivider(),
+              child: CustomDivider(
+                color: Color(0xffdddddd),
+              ),
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: defaultPadding),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/images.dart';
 import 'package:ride_share/core/widgets/green_box.dart';
+import 'package:ride_share/features/contact%20and%20payment/presentation/views/widgets/custom_divider.dart';
 
 import 'driver_rate_box.dart';
 import 'info_line_row.dart';
@@ -38,11 +39,26 @@ class PaymentScreenBody extends StatelessWidget {
             subTitle: '  (5%)',
             amountTitle: r'$20',
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: 16),
+            child: CustomDivider(
+              color: Color(0xffE8E8E8),
+            ),
+          ),
           InfoLineRow(
             title: 'Total',
             subTitle: '',
             amountTitle: r'$220',
           ),
+          SizedBox(height: 30),
+          Text(
+            'Select payment method',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          SizedBox(height: 24),
         ],
       ),
     );
