@@ -22,7 +22,7 @@ class SigninScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                ArrowBackWidget(),
+                const ArrowBackWidget(),
                 SizedBox(
                   height: 30.h,
                 ),
@@ -50,7 +50,7 @@ class SigninScreen extends StatelessWidget {
                   hintStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
-                  suffixIcon: Icon(
+                  suffixIcon: const Icon(
                     Icons.visibility_off_outlined,
                   ),
                 ),
@@ -85,7 +85,7 @@ class SigninScreen extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Divider(
                         color: AppColors.mediumGray,
                         thickness: 2,
@@ -97,7 +97,7 @@ class SigninScreen extends StatelessWidget {
                       style: AppTextStyles.s16w500
                           .copyWith(color: AppColors.mediumGray),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Divider(
                         color: AppColors.mediumGray,
                         thickness: 2,
@@ -117,7 +117,7 @@ class SigninScreen extends StatelessWidget {
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
-                  image: Icon(Icons.email),
+                  image: const Icon(Icons.email),
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),
@@ -132,11 +132,11 @@ class SigninScreen extends StatelessWidget {
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
-                  image: Icon(Icons.facebook),
+                  image: const Icon(Icons.facebook),
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 CustomButton(
@@ -147,7 +147,7 @@ class SigninScreen extends StatelessWidget {
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
-                  image: Icon(Icons.apple_outlined),
+                  image: const Icon(Icons.apple_outlined),
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),

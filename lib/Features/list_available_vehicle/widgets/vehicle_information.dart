@@ -11,7 +11,7 @@ class VehicleInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
@@ -36,7 +36,7 @@ class VehicleInformation extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(width: 29),
+        const SizedBox(width: 29),
         Flexible(
             child: Image.asset(
           AppImages.imagesImage6,

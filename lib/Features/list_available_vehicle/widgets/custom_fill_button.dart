@@ -17,7 +17,7 @@ class CustomFillButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(
                 Radius.circular(AppConstants.containerBorderRediuse)),
             color: AppColors.buttonBackgraond),

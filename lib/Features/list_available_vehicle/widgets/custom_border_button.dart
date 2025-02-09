@@ -19,7 +19,7 @@ class CustomBorderButton extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           border: Border.all(color: AppColors.containerBorder),
-          borderRadius: BorderRadius.all(
+          borderRadius: const BorderRadius.all(
               Radius.circular(AppConstants.containerBorderRediuse)),
         ),
         child: Padding(

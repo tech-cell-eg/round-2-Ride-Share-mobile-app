@@ -12,19 +12,19 @@ class ListTransportBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         children: [
-          SizedBox(height: 30),
-          Align(
+          const SizedBox(height: 30),
+          const Align(
             alignment: AlignmentDirectional.center,
             child: Text("Select your transport", style: AppStyles.semiBold24),
           ),
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           Expanded(
             // Add Expanded here to prevent overflow
             child: GridView(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, // Number of columns
                 crossAxisSpacing: 20, // Horizontal space between items
                 mainAxisSpacing: 20, // Vertical space between items
@@ -35,7 +35,7 @@ class ListTransportBody extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ListAvailableVehiclePage(),
+                          builder: (context) => const ListAvailableVehiclePage(),
                         ));
                   },
                   image: AppImages.imagesCar,
