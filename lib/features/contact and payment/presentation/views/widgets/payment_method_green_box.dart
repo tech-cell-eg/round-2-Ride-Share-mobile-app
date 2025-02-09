@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
+import 'package:ride_share/core/widgets/green_box.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 
@@ -13,17 +14,7 @@ class PaymentMethodGreenBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(
-        vertical: 12,
-        horizontal: 17,
-      ),
-      decoration: BoxDecoration(
-        color: AppColors.mainColor.withValues(alpha: 0.1),
-        border: Border.all(color: AppColors.mainColor),
-        borderRadius: BorderRadius.circular(4),
-      ),
+    return GreenBox(
       child: Row(
         children: [
           SvgPicture.asset(
