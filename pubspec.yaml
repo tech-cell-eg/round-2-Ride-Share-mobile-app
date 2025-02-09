@@ -35,8 +35,7 @@ dependencies:
     sdk: flutter
 
   dashed_circular_progress_bar: ^0.0.6
-  flutter:
-    sdk: flutter
+  
 
   pin_code_fields:
   flutter_screenutil:
