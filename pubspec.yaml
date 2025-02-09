@@ -40,6 +40,7 @@ dependencies:
   pin_code_fields:
   flutter_screenutil:
   flutter_svg: ^2.0.17
+  
   font_awesome_flutter: ^10.8.0
 
   google_maps_flutter: ^2.10.0
@@ -105,6 +106,16 @@ flutter:
           weight: 800
           style: italic
 
+flutter_assets:
+  assets_path:
+    - assets/icons/
+  output_path: lib/core/constants/generated/
+  filename: icons.dart
+  field_prefix: null
+  classname: AppIcons
+  ignore_comments: true
+
+
 
 #flutter_assets:
 #   assets_path:
@@ -142,6 +153,7 @@ flutter_assets:
 #   field_prefix:
 #   classname: AppAnimations
 #   ignore_comments: true
+
 
   # flutter_assets:
   #   assets_path:

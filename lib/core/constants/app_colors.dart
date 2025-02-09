@@ -24,5 +24,6 @@ class AppColors{
   static const Color gray41 = Color(0xff414141);
   static const Color mainColor = Color(0xff08B783);
   static const Color lightGreen = Color(0xffB9E5D1);
+  static const Color callingIconsGreen = Color(0xffB9E5D1);
 }
 

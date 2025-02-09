@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+
 import 'package:ride_share/features/main/UI/widgets/nav_bar_item.dart';
+
+import '../../../../core/constants/generated/icons.dart';
 
 class AppBottomNavigationBar extends StatelessWidget {
   const AppBottomNavigationBar({
@@ -16,7 +18,7 @@ class AppBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
         topLeft: Radius.circular(40),
         topRight: Radius.circular(40),
       ),
@@ -27,7 +29,7 @@ class AppBottomNavigationBar extends StatelessWidget {
           valueListenable: selectedIndex,
           builder: (context, index, child) {
             return Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -44,7 +46,7 @@ class AppBottomNavigationBar extends StatelessWidget {
                     onTap: () => selectedIndex.value = 1,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: 29,
                     ),
                     child: Text(
