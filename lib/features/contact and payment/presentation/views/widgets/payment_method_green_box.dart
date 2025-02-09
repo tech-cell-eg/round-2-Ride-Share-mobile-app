@@ -28,7 +28,7 @@ class PaymentMethodGreenBox extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset(
-            AppImages.imagesVisaCard,
+            AppImages.imagesVisa,
           ),
           const SizedBox(width: 13),
           const Column(

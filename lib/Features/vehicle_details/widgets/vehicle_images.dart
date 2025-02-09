@@ -53,7 +53,7 @@ class _VehicleImagesState extends State<VehicleImages> {
                 },
                 itemBuilder: (context, index) {
                   return Image.asset(
-                    AppImages.imagesCar1,
+                    AppImages.imagesRealRedCar,
                     fit: BoxFit.contain,
                     filterQuality: FilterQuality.high,
                   );

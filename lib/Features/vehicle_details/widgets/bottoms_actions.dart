@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/Features/request_rent/pages/request_rent_page.dart';
 import 'package:ride_share/core/widgets/custom_border_button.dart';
 import 'package:ride_share/core/widgets/custom_fill_button.dart';
 
@@ -22,7 +23,13 @@ class BottomsAction extends StatelessWidget {
           const SizedBox(width: 10),
           Expanded(
             child: CustomFillButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const RequestRentPage(),
+                    ));
+              },
               title: 'Ride Now',
             ),
           )

@@ -92,22 +92,22 @@ flutter:
         - asset: assets/fonts/Poppins-BoldItalic.ttf
           weight: 800
           style: italic
+# flutter_assets:
+#   assets_path:
+#     - assets/icons/
+#   output_path: lib/core/constants/generated/
+#   filename: icons.dart
+#   field_prefix:
+#   classname: MyIcons
+#   ignore_comments: true
 flutter_assets:
   assets_path:
-    - assets/icons/
+    - assets/images/
   output_path: lib/core/constants/generated/
-  filename: icons.dart
+  filename: images.dart
   field_prefix:
-  classname: MyIcons
+  classname: AppImages
   ignore_comments: true
-  # flutter_assets:
-  #   assets_path:
-  #     - assets/images/
-  #   output_path: lib/core/constants/generated/
-  #   filename: images.dart
-  #   field_prefix:
-  #   classname: AppImages
-  #   ignore_comments: true
   # flutter_assets:
   #   assets_path:
   #     - assets/animations/

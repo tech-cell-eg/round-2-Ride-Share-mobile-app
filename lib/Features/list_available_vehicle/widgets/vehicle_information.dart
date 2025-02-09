@@ -11,24 +11,24 @@ class VehicleInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "BMW Cabrio",
               style: AppStyles.medium16,
             ),
-            Text(
+            const Text(
               "Automatic | 3 seats | Octane",
               style: AppStyles.medium12,
             ),
-            Row(
+            const Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.location_on,
                   size: 11,
                 ),
-                Text(
+                const Text(
                   " 800m (5mins away)",
                   style: AppStyles.medium12B,
                 )
@@ -36,10 +36,10 @@ class VehicleInformation extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(width: 29),
+        const SizedBox(width: 29),
         Flexible(
             child: Image.asset(
-          AppImages.imagesImage6,
+          AppImages.imagesRealRedCar,
         )),
       ],
     );

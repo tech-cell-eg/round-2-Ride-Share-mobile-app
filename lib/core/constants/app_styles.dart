@@ -13,6 +13,12 @@ abstract class AppStyles {
     color: Color(0xff5A5A5A),
     fontFamily: 'Poppins',
   );
+  static const TextStyle regular12 = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: Color(0xffBBBBBB),
+    fontFamily: 'Poppins',
+  );
   static const TextStyle medium18A2 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w500,
@@ -29,6 +35,12 @@ abstract class AppStyles {
     fontSize: 14,
     fontWeight: FontWeight.w500,
     color: Color(0xffB8B8B8),
+    fontFamily: 'Poppins',
+  );
+  static const TextStyle medium14B = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: Color(0xff5A5A5A),
     fontFamily: 'Poppins',
   );
   static const TextStyle medium9 = TextStyle(
@@ -55,10 +67,22 @@ abstract class AppStyles {
     color: Colors.white,
     fontFamily: 'Poppins',
   );
+  static const TextStyle medium16gr = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: Color(0xffD0D0D0),
+    fontFamily: 'Poppins',
+  );
   static const TextStyle medium12 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w500,
     color: Color(0xffB8B8B8),
+    fontFamily: 'Poppins',
+  );
+  static const TextStyle medium20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: Color(0xff5A5A5A),
     fontFamily: 'Poppins',
   );
   static const TextStyle medium12B = TextStyle(
