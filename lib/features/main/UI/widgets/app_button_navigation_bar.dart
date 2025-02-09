@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+
 import 'package:ride_share/features/main/UI/widgets/nav_bar_item.dart';
+
+import '../../../../core/constants/generated/icons.dart';
 
 class AppBottomNavigationBar extends StatelessWidget {
   const AppBottomNavigationBar({

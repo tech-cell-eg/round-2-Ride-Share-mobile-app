@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_images.dart';
+
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/on_boarding_pages.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/prograss_button.dart';
+
+import '../../../../core/constants/generated/images.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -41,7 +43,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onPressed: () {
                     context.pushNamed(Routes.main);
                   },
-                  child: Text(AppStrings.skip, style: AppTextStyles.font16Grey41Regular),
+                  child: Text(AppStrings.skip,
+                      style: AppTextStyles.font16Grey41Regular),
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.05),

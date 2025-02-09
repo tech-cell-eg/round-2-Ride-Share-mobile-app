@@ -4,6 +4,10 @@ import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.da
 import 'package:ride_share/features/chat/presentation/views/chat_screen.dart';
 
 
+import '../../../../../core/constants/app_text_styles.dart';
+
+
+
 class GreenButton extends StatelessWidget {
   const GreenButton({
     super.key,
