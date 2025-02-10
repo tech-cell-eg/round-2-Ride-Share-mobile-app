@@ -119,4 +119,19 @@ abstract class AppStrings {
 
   static const String howIsYourTripDescription =
       'Youe feedback will help us to improve your driving experience better';
+
+  static const String excellent = 'Excellent';
+
+  static const String writeYourText = 'Write your text';
+
+  static const String youRated = 'You rated';
+
+  static const String giveSomeTipsTo = 'Give some tips to';
+
+  static const String enterOtherAmount = 'Enter other amount';
+
+  static const String thankYou = 'Thank you';
+
+  static const String thankYouForFeedbackTip =
+      'Thank you for your valuable feedback and tip';
 }

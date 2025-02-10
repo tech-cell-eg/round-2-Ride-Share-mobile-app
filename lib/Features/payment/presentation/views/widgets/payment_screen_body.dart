@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/shared/dialogs/custom_success_dialog.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/features/contact%20and%20payment/presentation/views/widgets/green_button.dart';
 
 import 'add_rate_bottom_sheet.dart';
@@ -36,9 +37,11 @@ class PaymentScreenBody extends StatelessWidget {
                   AppStrings.moneySentSuccessfully,
                   AppStrings.pleaseFeedback,
                   () async {
+                    context.pop();
                     await showModalBottomSheet(
                       context: context,
                       builder: (context) => const AddRateBottomSheet(),
+                      isScrollControlled: true,
                     );
                   },
                   showAmount: true,
