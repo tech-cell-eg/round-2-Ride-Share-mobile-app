@@ -1,5 +1,9 @@
-class AppStrings {
+abstract class AppStrings {
   AppStrings._();
+  
+  static const String appName = 'Ride Share';
+  static const String favourite = 'Favourite';
+
 
   static const String anyWhereYouAre = 'Anywhare you are';
   static const String atAnyTime = 'At any time';
@@ -22,4 +26,5 @@ class AppStrings {
   static const String typeYourMessage = 'Type your message';
   static const String calling = 'Calling....';
   static const String back = 'Back';
+
 }

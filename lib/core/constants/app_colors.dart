@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 
-class AppColors{
+class AppColors {
   AppColors._();
+
+  static const primaryColor = Color(0xFF008955);
+  static const appBarTitleColor = Color(0xFF2A2A2A);
+  static const textFiledBorderColor = Color(0xFFB9E5D1);
+  static const menubgColor = Color(0xFF8AD4B5);
+
+  static const black = Color(0xFF000000);
+  static const white = Color(0xFFFFFFFF);
+
+  static const favCardBorderColor = Color(0xFFB9E5D1);
+  static const favCartTitleColor = Color(0xFF414141);
+  static const favCartSubTitleColor = Color(0xFFB8B8B8);
+
   static const Color containerBorder = Color(0xff08B783);
   static const Color containerBackgraond = Color(0xffE2F5ED);
   static const Color buttonBackgraond = Color(0xff008955);
@@ -16,7 +29,7 @@ class AppColors{
      static const Color darkGray  = Color(0xFF5A5A5A);
 
      static const Color red  = Color(0xFFF44336);
-  
+
   static const Color white = Colors.white;
   static const Color black = Colors.black;
   static const Color grayA0 = Color(0xffA0A0A0);
@@ -26,4 +39,5 @@ class AppColors{
   static const Color lightGreen = Color(0xffB9E5D1);
   static const Color callingIconsGreen = Color(0xffB9E5D1);
 }
+
 

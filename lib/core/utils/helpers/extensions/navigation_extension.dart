@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 extension NavigationExtension on BuildContext {
+  void navigateTo(String routeName) {
+    Navigator.pushNamedAndRemoveUntil(this, routeName, (route) => false);
+  }
+
   Future<void> pushNamed(routeName, {arguments}) async {
     await Navigator.pushNamed(this, routeName, arguments: arguments);
   }
