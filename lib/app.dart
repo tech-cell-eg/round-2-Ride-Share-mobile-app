@@ -7,6 +7,7 @@ import 'package:ride_share/core/constants/app_colors.dart';
 import 'core/config/routing/app_router.dart';
 
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -22,7 +23,6 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-
         onGenerateRoute: AppRouter().generateRoute,
         initialRoute: LocationConfirmScreen.routeName,
       ),
