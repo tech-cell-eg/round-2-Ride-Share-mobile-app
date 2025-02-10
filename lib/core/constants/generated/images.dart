@@ -6,6 +6,16 @@ class AppImages {
 
   static const String imagesGreenCar = "assets/images/green_car.svg";
 
+  static const String imagesMan = "assets/images/man.png";
+
+  static const String imagesMapp = "assets/images/mapp.png";
+
+  static const String imagesOnBoarding1 = "assets/images/onBoarding1.png";
+
+  static const String imagesOnBoarding2 = "assets/images/onBoarding2.png";
+
+  static const String imagesOnBoarding3 = "assets/images/onBoarding3.png";
+
   static const String imagesRealRedCar = "assets/images/real_red_car.png";
 
   static const String imagesRedCar = "assets/images/red_car.svg";

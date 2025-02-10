@@ -19,4 +19,15 @@ class AppStrings {
   static const String message = 'Message';
   static const String expires = 'Expires:';
   static const String call = 'Call';
+  static const String rental = 'Rental';
+  static const String transport = 'Transport';
+  static const String delivery = 'Delivery';
+  static const String whereWouldYouGo = 'Where would you go?';
+  static const String history = 'History';
+  static const String complain = 'Complain';
+  static const String  referral = 'Referral';
+  static const String aboutUs = 'About Us';
+  static const String settings= 'Settings';
+  static const String helpAndSuppory = 'Help And Support';
+  static const String logout = 'Log out';
 }

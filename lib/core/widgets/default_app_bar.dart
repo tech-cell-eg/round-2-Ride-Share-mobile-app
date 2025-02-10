@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
 import '../constants/app_text_styles.dart';
@@ -14,6 +15,7 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
     return GestureDetector(
       onTap: () => context.pop(),
       child: AppBar(
+        backgroundColor: AppColors.white,
         centerTitle: true,
         elevation: 0,
         leading: const Row(
