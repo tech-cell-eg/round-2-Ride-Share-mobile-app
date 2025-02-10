@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 
 class OfferCard extends StatelessWidget {
@@ -33,7 +34,7 @@ class OfferCard extends StatelessWidget {
                 ),
                 SizedBox(height: 2),
                 Text(
-                  'Black Friday',
+                  AppStrings.blackFriday,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: AppTextStyles.offerSubTitleTextStyle,
@@ -45,7 +46,7 @@ class OfferCard extends StatelessWidget {
             flex: 3,
             child: ElevatedButton(
               onPressed: () {},
-              child: FittedBox(child: Text('Collect')),
+              child: FittedBox(child: Text(AppStrings.collect)),
             ),
           )
         ],
