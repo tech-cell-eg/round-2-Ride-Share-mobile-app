@@ -15,81 +15,63 @@ class BottomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const defaultPadding = 14.0;
-    return Align(
-      alignment: Alignment.bottomCenter,
-      child: Container(
-        height: MediaQuery.of(context).size.height * 0.5,
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(30),
-            topRight: Radius.circular(30),
-          ),
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.5,
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
         ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.all(5.0),
+              padding: const EdgeInsets.only(top: defaultPadding),
               child: CloseIcon(onTap: () {}),
             ),
             const SizedBox(height: 10),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                  '${AppStrings.yourDriverIsComingIn} 3:35',
+            const Text(
+              '${AppStrings.yourDriverIsComingIn} 3:35',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            const Spacer(),
+            const CustomDivider(),
+            const Spacer(),
+            const DriverInfoRow(),
+            const Spacer(),
+            const CustomDivider(),
+            const Spacer(),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  AppStrings.paymentMethod,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-              ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: defaultPadding),
-              child: CustomDivider(),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: DriverInfoRow(),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: defaultPadding),
-              child: CustomDivider(),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    AppStrings.paymentMethod,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
+                Text(
+                  r"$220.00",
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w500,
                   ),
-                  Text(
-                    r"$220.00",
-                    style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
+            const Spacer(),
+            const PaymentMethodGreenBox(),
+            const Spacer(flex: 2),
+            const DoubleButtonsRow(),
             const SizedBox(height: 15),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: PaymentMethodGreenBox(),
-            ),
-            const SizedBox(height: 32),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: DoubleButtonsRow(),
-            ),
           ],
         ),
       ),

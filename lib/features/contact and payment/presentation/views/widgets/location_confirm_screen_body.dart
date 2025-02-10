@@ -3,7 +3,6 @@ import 'bottom_container.dart';
 
 import 'custom_google_map.dart';
 
-
 import 'drawer_notifications_icons_row.dart';
 
 class LocationConfirmScreenBody extends StatelessWidget {
@@ -13,12 +12,12 @@ class LocationConfirmScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Stack(
       children: [
-
         CustomGoogleMap(),
-
-
         DrawerNotificationsIconsRow(),
-        BottomContainer(),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: BottomContainer(),
+        ),
       ],
     );
   }
