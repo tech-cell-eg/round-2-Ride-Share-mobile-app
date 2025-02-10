@@ -4,6 +4,7 @@ import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/theme/app_theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+ 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/features/payment/presentation/views/payment_screen.dart';
@@ -20,6 +21,7 @@ import 'features/Auth/set_new_password/set_new_password_screen.dart';
 import 'features/Auth/sign_in/signin_screen.dart';
 import 'features/change_language/change_language_screen.dart';
 import 'features/welcome_screen/welcome_screen.dart';
+ 
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -38,6 +40,7 @@ class MyApp extends StatelessWidget {
         darkTheme: AppTheme.darkTheme,
         onGenerateRoute: AppRouter().generateRoute,
         initialRoute: PaymentScreen.routeName,
+ 
  
       ),
     );
