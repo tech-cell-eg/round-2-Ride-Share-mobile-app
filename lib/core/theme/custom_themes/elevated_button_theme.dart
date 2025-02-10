@@ -13,8 +13,9 @@ abstract class CustomElevatedButtonTheme {
       foregroundColor: Colors.white,
       backgroundColor: AppColors.primaryColor,
       side: const BorderSide(color: Colors.transparent),
-      padding: const EdgeInsets.symmetric(vertical: 16.5),
+      padding: const EdgeInsets.symmetric(vertical: 16.5), //16.5
       textStyle: AppTextStyles.elevatedButtonTextStyle,
+      minimumSize: Size(117, 43),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),
@@ -31,6 +32,7 @@ abstract class CustomElevatedButtonTheme {
       side: const BorderSide(color: Colors.transparent),
       padding: const EdgeInsets.symmetric(vertical: 16.5),
       textStyle: AppTextStyles.elevatedButtonTextStyle,
+      minimumSize: Size(117, 43),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8),
       ),

@@ -189,5 +189,17 @@ class AppTextStyles {
     color: AppColors.walletMoneyColor,
   );
 
+  static const offerTitleTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.offerTitleColor,
+  );
+
+  static const offerSubTitleTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.offerSubTitleColor,
+  );
+
   
 }

@@ -36,6 +36,10 @@ class AppColors {
   static const activePaymentColor = Color(0xFFE2F5ED);
   static const inActivePaymentColor = Color(0xFFf3fbf8);
 
+  static const offerTitleColor = Color(0xFFF57F17);
+  static const offerSubTitleColor = Color(0xFFB8B8B8);
+  
+
   static const buttonColor = Color(0xFF304FFE);
 
   static const successDialogSubTitleColor = Color(0xFF898989);

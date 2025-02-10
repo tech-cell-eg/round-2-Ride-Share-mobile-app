@@ -40,6 +40,12 @@ abstract class AppStrings {
 
   static const String savePaymentMethod = 'Save Payment Method';
   
+  static const String offer = 'Offer';
+
+  static const String collect = 'Collect';
+
+  static const String blackFriday = 'Black Friday';
+  
   static const String anyWhereYouAre = 'Anywhare you are';
   static const String atAnyTime = 'At any time';
   static const String takeYourCar = 'Take your car ';

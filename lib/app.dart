@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
         onGenerateRoute: AppRouter().generateRoute,
         initialRoute: LocationConfirmScreen.routeName,
       ),
-
     );
   }
 }
