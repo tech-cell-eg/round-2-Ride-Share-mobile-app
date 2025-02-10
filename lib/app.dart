@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/theme/app_theme.dart';
+import 'package:ride_share/features/help_and_support/help_and_support_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
+      home: HelpAndSupportScreen(),
     );
   }
 }

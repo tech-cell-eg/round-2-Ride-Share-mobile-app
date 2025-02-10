@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
 import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
-
 
 class HelpAndSupportScreen extends StatelessWidget {
   const HelpAndSupportScreen({super.key});
@@ -12,7 +12,7 @@ class HelpAndSupportScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
-        title: const Text('Help and Support'),
+        title: const Text(AppStrings.helpAndSupport),
         leadingWidth: 85,
         leading: ArrowBackIcon(),
       ),
@@ -24,12 +24,12 @@ class HelpAndSupportScreen extends StatelessWidget {
             children: [
               const SizedBox(height: AppSizes.appBarSpace),
               Text(
-                'Help and Support',
+                AppStrings.helpAndSupport,
                 style: AppTextStyles.helpAndSupportTextStyle,
               ),
               const SizedBox(height: 20),
               Text(
-                'Lorem ipsum dolor sit amet consectetur. Sit pulvinar mauris mauris eu nibh semper nisl pretium laoreet. Sed non faucibus ac lectus eu arcu. Nulla sit congue facilisis vestibulum egestas nisl feugiat pharetra. Odio sit tortor morbi at orci ipsum dapibus interdum. Lorem felis est aliquet arcu nullam pellentesque. Et habitasse ac arcu et nunc euismod rhoncus facilisis sollicitudin.',
+                AppStrings.helpAndSupportBody,
                 style: AppTextStyles.helpAndSupportSubTextStyle,
                 textAlign: TextAlign.justify,
               ),
