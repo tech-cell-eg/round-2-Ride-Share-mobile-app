@@ -15,7 +15,7 @@ class ChooseImageWidget extends StatelessWidget {
       
       children: [
         CircleAvatar(
-             backgroundImage:AssetImage(AppImages.checkCircle), 
+             backgroundImage:const AssetImage(AppImages.checkCircle), 
              radius: 55.sp,
         ),
         Positioned(
@@ -24,7 +24,7 @@ class ChooseImageWidget extends StatelessWidget {
           child: CircleAvatar(
              backgroundColor: AppColors.primaryColor,
                radius: 20.sp,
-               child: Icon(Icons.camera_alt_outlined,color: AppColors.whiteColor,),
+               child: const Icon(Icons.camera_alt_outlined,color: AppColors.whiteColor,),
           ),
         ),
       ],

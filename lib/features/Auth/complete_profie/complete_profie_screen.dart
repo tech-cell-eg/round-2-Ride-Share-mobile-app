@@ -27,11 +27,11 @@ class CompleteProfieScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    ArrowBackWidget(),
+                    const ArrowBackWidget(),
                     SizedBox(
                       width: 70.w,
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Text(
                         'profile',
                         style: AppTextStyles.s18w500,
@@ -42,7 +42,7 @@ class CompleteProfieScreen extends StatelessWidget {
                 SizedBox(
                   height: 25.h,
                 ),
-                ChooseImageWidget(),
+                const ChooseImageWidget(),
                 SizedBox(
                   height: 20.h,
                 ),

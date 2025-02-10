@@ -24,11 +24,11 @@ class WelcomeScreen extends StatelessWidget {
                 width: 356.w,
                 height: 276.h,
               ),
-              Text('Welcome', style: AppTextStyles.s24w500),
+              const Text('Welcome', style: AppTextStyles.s24w500),
               Text('Have a better sharing experience',
                   style: AppTextStyles.s16w400
                       .copyWith(color: AppColors.greyColor)),
-              Spacer(),
+              const Spacer(),
               CustomButton(
                 text: 'Create an account',
                 onPressed: () {},
