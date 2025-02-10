@@ -3,7 +3,7 @@ import 'package:geolocator/geolocator.dart';
 
 
 class GetUserLocationScreen extends StatefulWidget {
-    GetUserLocationScreen({super.key});
+    const GetUserLocationScreen({super.key});
 
   @override
   State<GetUserLocationScreen> createState() => _GetUserLocationScreenState();
