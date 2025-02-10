@@ -8,7 +8,6 @@ import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
-import '../../constants/generated/images.dart';
 
 void customSuccessDialog(
   BuildContext context,
