@@ -1,5 +1,6 @@
 class AppSizes {
   AppSizes._();
+
   static const double screenPadding = 15.0;
 
   static const double favCardBorderRadius = 8.0;
@@ -33,3 +34,4 @@ class AppSizes {
 
   static const double successDialogPadding = 11.0;
 }
+
