@@ -23,7 +23,7 @@ class PaymentCard extends StatelessWidget {
           children: [
             Flexible(
               child: SvgPicture.asset(
-                MyIcons.visaIcon,
+                AppIcons.visaIcon,
                 width: 45,
                 height: 35,
               ),

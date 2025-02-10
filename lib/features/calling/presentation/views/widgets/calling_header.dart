@@ -14,7 +14,7 @@ class CallingTalkingHeader extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          AppImages.imagesUserPic,
+          AppImages.userPic,
           width: 100,
           height: 100,
         ),

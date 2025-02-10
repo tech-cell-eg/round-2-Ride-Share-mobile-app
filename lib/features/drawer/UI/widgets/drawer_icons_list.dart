@@ -15,35 +15,32 @@ class DrawerIconsList extends StatelessWidget {
       padding: EdgeInsets.zero,
       children: [
         BuildDrawerItem(
-            icon: MyIcons.iconsHistory,
+            icon: AppIcons.history,
             title: AppStrings.history,
             onTap: () {
               context.pushNamed(Routes.history);
             }),
         BuildDrawerItem(
-            icon: MyIcons.iconsComplain,
+            icon: AppIcons.complain,
             title: AppStrings.complain,
             onTap: () {
               context.pushNamed(Routes.complain);
             }),
         BuildDrawerItem(
-            icon: MyIcons.iconsReferral,
-            title: AppStrings.referral,
-            onTap: () {}),
+            icon: AppIcons.referral, title: AppStrings.referral, onTap: () {}),
         BuildDrawerItem(
-            icon: MyIcons.iconsAboutUs,
-            title: AppStrings.aboutUs,
-            onTap: () {}),
+            icon: AppIcons.aboutUs, title: AppStrings.aboutUs, onTap: () {}),
         BuildDrawerItem(
-            icon: MyIcons.iconsSettings,
-            title: AppStrings.settings,
-            onTap: () {}),
+            icon: AppIcons.settings, title: AppStrings.settings, onTap: () {}),
         BuildDrawerItem(
-            icon: MyIcons.iconsHelpSupport,
+            icon: AppIcons.helpSupport,
             title: AppStrings.helpAndSuppory,
             onTap: () {}),
         BuildDrawerItem(
-            icon: MyIcons.iconsLogout, title: AppStrings.logout, onTap: () {}),
+          icon: AppIcons.logout,
+          title: AppStrings.logout,
+          onTap: () {},
+        ),
       ],
     );
   }

@@ -18,7 +18,7 @@ class FavoriteLocationCard extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 1),
-            child: SvgPicture.asset(MyIcons.locationIcon),
+            child: SvgPicture.asset(AppIcons.locationIcon),
           ),
           const SizedBox(width: AppSizes.spaceBtnItemInFavCard),
           const Expanded(
@@ -31,7 +31,7 @@ class FavoriteLocationCard extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: AppTextStyles.favCardTitleTextStyle,
                 ),
-                 SizedBox(height: AppSizes.spaceBtnItemInFavCard),
+                SizedBox(height: AppSizes.spaceBtnItemInFavCard),
                 Text(
                   '2972 Westheimer Rd. Santa Ana, Illinois 85486',
                   maxLines: 1,
@@ -41,7 +41,7 @@ class FavoriteLocationCard extends StatelessWidget {
               ],
             ),
           ),
-          SvgPicture.asset(MyIcons.removeIcon),
+          SvgPicture.asset(AppIcons.removeIcon),
         ],
       ),
     );

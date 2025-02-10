@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   return ScreenUtilInit(
+    return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
       splitScreenMode: true,
@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: AppRouter().generateRoute,
       initialRoute: Routes.onBoarding,
       ),
-
     );
   }
 }

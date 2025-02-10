@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
+
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 
-import 'package:ride_share/core/constants/generated/app_images.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+
+import '../../constants/generated/images.dart';
 
 void customSuccessDialog(
   BuildContext context,
@@ -48,15 +50,12 @@ void customSuccessDialog(
                       onPressed: () {
                         context.pop();
                       },
-                      icon: Image.asset(
-                        AppImages.closeIcon,
-                        fit: BoxFit.scaleDown,
-                      ),
+                      icon: const Icon(Icons.close),
                     ),
                   ),
                   const SizedBox(height: 12),
                   Flexible(
-                    child: SvgPicture.asset(MyIcons.successIcon),
+                    child: SvgPicture.asset(AppIcons.successIcon),
                   ),
                   const SizedBox(height: 23),
                   LayoutBuilder(

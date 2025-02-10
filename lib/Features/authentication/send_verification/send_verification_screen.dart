@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ride_share/features/Auth/widgets/back_arrow_widget.dart';
-
+import 'package:ride_share/Features/authentication/widgets/back_arrow_widget.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/widgets/custom_button.dart';
