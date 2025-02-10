@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../constants/app_colors.dart';
 
  
 
@@ -37,7 +36,7 @@ class CustomTextField extends StatelessWidget {
         labelText: label,
          hintStyle: hintStyle,
         suffixIcon:  suffixIcon   ,
-        disabledBorder: OutlineInputBorder(
+        disabledBorder: const OutlineInputBorder(
           
         ),
         border: OutlineInputBorder( borderRadius: BorderRadius.circular(10),borderSide: BorderSide(color: borderSideColor)),

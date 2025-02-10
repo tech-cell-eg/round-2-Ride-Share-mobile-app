@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 
 import '../../../../../core/constants/app_colors.dart';
-import '../../../../../core/constants/app_text_styles.dart';
 
 import '../../../../../core/constants/generated/images.dart';
 

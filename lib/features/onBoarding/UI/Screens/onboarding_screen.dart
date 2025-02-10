@@ -23,7 +23,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         prograss++;
       });
       pageController.nextPage(
-          duration: Duration(milliseconds: 300), curve: Curves.easeIn);
+          duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
     }
   }
 
@@ -49,15 +49,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: PageView(
                   controller: pageController,
                   children: [
-                    OnBoardingPages(
+                    const OnBoardingPages(
                       image: AppImages.imagesOnBoarding1,
                       mainText: AppStrings.anyWhereYouAre,
                     ),
-                    OnBoardingPages(
+                    const OnBoardingPages(
                       image: AppImages.imagesOnBoarding2,
                       mainText: AppStrings.atAnyTime,
                     ),
-                    OnBoardingPages(
+                    const OnBoardingPages(
                         image: AppImages.imagesOnBoarding3,
                         mainText: AppStrings.takeYourCar),
                   ],

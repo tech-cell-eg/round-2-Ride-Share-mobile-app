@@ -20,18 +20,18 @@ class TransportComponent extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           border: Border.all(color: AppColors.containerBorder),
-          borderRadius: BorderRadius.all(
+          borderRadius: const BorderRadius.all(
               Radius.circular(AppConstants.containerBorderRediuse)),
           color: AppColors.containerBackgraond,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Spacer(),
+            const Spacer(),
             Image.asset(image),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(text, style: AppStyles.medium16),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ),

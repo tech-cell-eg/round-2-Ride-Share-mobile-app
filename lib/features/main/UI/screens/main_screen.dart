@@ -27,11 +27,11 @@ class _MainScreenState extends State<MainScreen> {
           return IndexedStack(
             index: selectedIndex.value,
             children: [
-              HomeScreen(),
-              FavsScreen(),
-              WalletScreen(),
-              OfferScreen(),
-              ProfileScreen(),
+              const HomeScreen(),
+              const FavsScreen(),
+              const WalletScreen(),
+              const OfferScreen(),
+              const ProfileScreen(),
             ],
           );
         },

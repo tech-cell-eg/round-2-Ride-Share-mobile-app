@@ -22,7 +22,7 @@ class SignupScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20.0).w,
             child: Column(
               children: [
-                ArrowBackWidget(),
+                const ArrowBackWidget(),
                 SizedBox(
                   height: 30.h,
                 ),
@@ -68,7 +68,7 @@ class SignupScreen extends StatelessWidget {
                 SizedBox(
                   height: 20.h,
                 ),
-                PrivaceAndTermsWidget(),
+                const PrivaceAndTermsWidget(),
                 SizedBox(
                   height: 20.h,
                 ),
@@ -87,7 +87,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Divider(
                         color: AppColors.mediumGray,
                         thickness: 2,
@@ -99,7 +99,7 @@ class SignupScreen extends StatelessWidget {
                       style: AppTextStyles.s16w500
                           .copyWith(color: AppColors.mediumGray),
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Divider(
                         color: AppColors.mediumGray,
                         thickness: 2,
@@ -119,7 +119,7 @@ class SignupScreen extends StatelessWidget {
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
-                  image: Icon(Icons.email),
+                  image: const Icon(Icons.email),
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),
@@ -134,11 +134,11 @@ class SignupScreen extends StatelessWidget {
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
-                  image: Icon(Icons.facebook),
+                  image: const Icon(Icons.facebook),
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 CustomButton(
@@ -149,7 +149,7 @@ class SignupScreen extends StatelessWidget {
                   color: AppColors.whiteColor,
                   borderRadius: 8,
                   borderColor: AppColors.lightGray,
-                  image: Icon(Icons.apple_outlined),
+                  image: const Icon(Icons.apple_outlined),
                   textStyle: AppTextStyles.s16w500
                       .copyWith(color: AppColors.blackColor),
                 ),

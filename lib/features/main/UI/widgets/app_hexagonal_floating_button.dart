@@ -21,7 +21,7 @@ class AppHexagonalFloatingButton extends StatelessWidget {
         onPressed: () {
           selectedIndex.value = 2;
         },
-        shape: StarBorder.polygon(sides: 6),
+        shape: const StarBorder.polygon(sides: 6),
         child: Center(
           child: SvgPicture.asset(
             width: 24,

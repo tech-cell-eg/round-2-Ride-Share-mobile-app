@@ -14,21 +14,21 @@ class VehicleInformation extends StatelessWidget {
         const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               "BMW Cabrio",
               style: AppStyles.medium16,
             ),
-            const Text(
+            Text(
               "Automatic | 3 seats | Octane",
               style: AppStyles.medium12,
             ),
-            const Row(
+            Row(
               children: [
-                const Icon(
+                Icon(
                   Icons.location_on,
                   size: 11,
                 ),
-                const Text(
+                Text(
                   " 800m (5mins away)",
                   style: AppStyles.medium12B,
                 )

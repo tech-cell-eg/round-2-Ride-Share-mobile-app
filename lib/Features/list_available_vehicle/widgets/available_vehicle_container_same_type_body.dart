@@ -14,13 +14,13 @@ class AvailableVehicleContainerSameTypeBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
       child: Column(
         children: [
-          VehicleInformation(),
-          SizedBox(height: 24),
+          const VehicleInformation(),
+          const SizedBox(height: 24),
           Row(
             children: [
               Expanded(
                   child: CustomBorderButton(onTap: () {}, title: "Book later")),
-              SizedBox(width: 7),
+              const SizedBox(width: 7),
               Expanded(
                   child: CustomFillButton(onTap: () {}, title: "Ride Now")),
             ],

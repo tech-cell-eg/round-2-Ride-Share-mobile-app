@@ -19,7 +19,7 @@ class VehicleFeaturesComponent extends StatelessWidget {
         color: AppColors.containerBackgraond,
         border: Border.all(color: AppColors.containerBorder),
         borderRadius: const BorderRadius.all(
-            const Radius.circular(AppConstants.containerBorderRediuse)),
+            Radius.circular(AppConstants.containerBorderRediuse)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
-import '../constants/app_text_styles.dart';
 
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultAppBar({

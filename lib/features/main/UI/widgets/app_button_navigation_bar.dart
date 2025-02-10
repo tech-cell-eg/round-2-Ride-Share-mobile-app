@@ -16,7 +16,7 @@ class AppBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.only(
+      borderRadius: const BorderRadius.only(
         topLeft: Radius.circular(40),
         topRight: Radius.circular(40),
       ),
@@ -27,7 +27,7 @@ class AppBottomNavigationBar extends StatelessWidget {
           valueListenable: selectedIndex,
           builder: (context, index, child) {
             return Padding(
-              padding: EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -44,7 +44,7 @@ class AppBottomNavigationBar extends StatelessWidget {
                     onTap: () => selectedIndex.value = 1,
                   ),
                   Padding(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: 29,
                     ),
                     child: Text(
