@@ -11,7 +11,8 @@ void customSuccessDialog(
   BuildContext context,
   String title,
   String subTitle,
-  String buttonTitle, {
+  String buttonTitle,
+  Function()? buttonOnPressed, {
   double? amount,
   bool showAmount = false,
   bool showButtonWidget = false,
@@ -79,10 +80,10 @@ void customSuccessDialog(
                       ),
                     ),
                   ),
-                  const SizedBox(height: 24),
                   if (showAmount)
                     Column(
                       children: [
+                        const SizedBox(height: 24),
                         Text(
                           'Amount',
                           style: AppTextStyles.successDialogAmountStyle,
@@ -138,7 +139,7 @@ void customSuccessDialog(
                     child: SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: buttonOnPressed,
                         child: FittedBox(child: Text(buttonTitle)),
                       ),
                     ),

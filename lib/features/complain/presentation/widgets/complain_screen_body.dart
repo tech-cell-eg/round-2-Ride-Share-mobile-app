@@ -5,6 +5,7 @@ import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/shared/dialogs/custom_success_dialog.dart';
 
 class ComplainScreenBody extends StatefulWidget {
   const ComplainScreenBody({super.key});
@@ -102,7 +103,20 @@ class _ComplainScreenBodyState extends State<ComplainScreenBody> {
       ),
       child: SizedBox(
         width: double.infinity,
-        child: ElevatedButton(onPressed: () {}, child: Text(AppStrings.submit)),
+        child: ElevatedButton(
+          onPressed: () {
+            customSuccessDialog(
+              context,
+              AppStrings.sendSuccessful,
+              AppStrings.sendComplainSuccessful,
+              AppStrings.backHome,
+              () {
+                // Go to home screen
+              },
+            );
+          },
+          child: Text(AppStrings.submit),
+        ),
       ),
     );
   }

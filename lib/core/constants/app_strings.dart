@@ -5,4 +5,10 @@ abstract class AppStrings {
 
   static const writeYourComplain =
       'Write your complain here (minimum 10 characters)';
+
+      static const String backHome = 'Back Home';
+
+  static String sendSuccessful = 'Send successful';
+
+  static String sendComplainSuccessful = 'Your complain has been send successful';
 }
