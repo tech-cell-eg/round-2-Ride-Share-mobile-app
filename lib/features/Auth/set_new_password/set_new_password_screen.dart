@@ -18,8 +18,12 @@ class SetNewPasswordScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0).w,
           child: Column(
             children: [
-              const ArrowBackWidget(),
-              const SizedBox(height: 25,),
+ 
+              ArrowBackWidget(),
+              SizedBox(
+                height: 25.h,
+              ),
+ 
               Text(
                 'Set New password',
                 style:
@@ -37,34 +41,36 @@ class SetNewPasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
+ 
                  suffixIcon: const Icon(
                     Icons.visibility_off_outlined,
                   ),
+ 
                 controller: newPasscontroller,
                 hintText: 'Enter Your New Password',
                 hintStyle:
-                 AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
+                    AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
                 borderSideColor: AppColors.mediumGray,
               ),
-
               SizedBox(
                 height: 20.h,
               ),
-
               CustomTextField(
+ 
                 suffixIcon: const Icon(
                     Icons.visibility_off_outlined,
                   ),
+ 
                 controller: confirmNewPasscontroller,
                 hintText: 'Confirm Password',
                 hintStyle:
-                  AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
+                    AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
                 borderSideColor: AppColors.mediumGray,
-                 
               ),
               SizedBox(
                 height: 20.h,
               ),
+ 
               const Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
               const Spacer(),
               CustomButton(text: 'Save', 
@@ -75,6 +81,7 @@ class SetNewPasswordScreen extends StatelessWidget {
               borderRadius: 8.w, 
                
               textStyle: AppTextStyles.s16w500.copyWith(color: AppColors.whiteColor,),),
+ 
             ],
           ),
         ),
