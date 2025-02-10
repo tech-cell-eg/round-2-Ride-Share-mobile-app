@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
  
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({
+  const CustomTextField({
     super.key,
     required this.controller,
       this.hintText,
@@ -15,7 +15,7 @@ class CustomTextField extends StatelessWidget {
     this.isPassword = false, 
     this.suffixIcon, required this.hintStyle, required this.borderSideColor,
   });
-  TextEditingController controller;
+  final TextEditingController controller;
   final String? hintText;
   final String? label;
   final String? Function(String?)? validator;

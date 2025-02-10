@@ -11,7 +11,7 @@ class AddAmountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
-      body: AddAmountScreenBody(),
+      body: const AddAmountScreenBody(),
       
     );
   }

@@ -8,8 +8,9 @@ import 'package:ride_share/features/Auth/widgets/back_arrow_widget.dart';
 
 class SetNewPasswordScreen extends StatelessWidget {
   SetNewPasswordScreen({super.key});
-  TextEditingController newPasscontroller = TextEditingController();
-  TextEditingController confirmNewPasscontroller = TextEditingController();
+  final TextEditingController newPasscontroller = TextEditingController();
+  final TextEditingController confirmNewPasscontroller =
+      TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,12 +19,10 @@ class SetNewPasswordScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0).w,
           child: Column(
             children: [
- 
-              ArrowBackWidget(),
+              const ArrowBackWidget(),
               SizedBox(
                 height: 25.h,
               ),
- 
               Text(
                 'Set New password',
                 style:
@@ -41,11 +40,9 @@ class SetNewPasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
- 
-                 suffixIcon: const Icon(
-                    Icons.visibility_off_outlined,
-                  ),
- 
+                suffixIcon: const Icon(
+                  Icons.visibility_off_outlined,
+                ),
                 controller: newPasscontroller,
                 hintText: 'Enter Your New Password',
                 hintStyle:
@@ -56,11 +53,9 @@ class SetNewPasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
- 
                 suffixIcon: const Icon(
-                    Icons.visibility_off_outlined,
-                  ),
- 
+                  Icons.visibility_off_outlined,
+                ),
                 controller: confirmNewPasscontroller,
                 hintText: 'Confirm Password',
                 hintStyle:
@@ -70,18 +65,22 @@ class SetNewPasswordScreen extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
- 
-              const Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
+              const Text(
+                'Atleast 1 number or a special character',
+                style: AppTextStyles.s14w500,
+              ),
               const Spacer(),
-              CustomButton(text: 'Save', 
-              onPressed: (){},
-              height: 54.h, 
-              width: 340.w, 
-              color: AppColors.primaryColor, 
-              borderRadius: 8.w, 
-               
-              textStyle: AppTextStyles.s16w500.copyWith(color: AppColors.whiteColor,),),
- 
+              CustomButton(
+                text: 'Save',
+                onPressed: () {},
+                height: 54.h,
+                width: 340.w,
+                color: AppColors.primaryColor,
+                borderRadius: 8.w,
+                textStyle: AppTextStyles.s16w500.copyWith(
+                  color: AppColors.whiteColor,
+                ),
+              ),
             ],
           ),
         ),

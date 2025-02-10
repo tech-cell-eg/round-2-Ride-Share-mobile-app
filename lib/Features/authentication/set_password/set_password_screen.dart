@@ -8,8 +8,8 @@ import 'package:ride_share/features/Auth/widgets/back_arrow_widget.dart';
 
 class SetPasswordScreen extends StatelessWidget {
   SetPasswordScreen({super.key});
-  TextEditingController passcontroller = TextEditingController();
-  TextEditingController confirmPasscontroller = TextEditingController();
+  final TextEditingController passcontroller = TextEditingController();
+  final TextEditingController confirmPasscontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,34 +40,39 @@ class SetPasswordScreen extends StatelessWidget {
                 controller: passcontroller,
                 hintText: 'Enter Your Password',
                 hintStyle:
-                 AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
+                    AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
                 borderSideColor: AppColors.mediumGray,
               ),
-
               SizedBox(
                 height: 20.h,
               ),
-
               CustomTextField(
                 suffixIcon: const Icon(Icons.show_chart),
                 controller: confirmPasscontroller,
                 hintText: 'Confirm Password',
                 hintStyle:
-                  AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
+                    AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
                 borderSideColor: AppColors.mediumGray,
               ),
               SizedBox(
                 height: 20.h,
               ),
-              const Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
+              const Text(
+                'Atleast 1 number or a special character',
+                style: AppTextStyles.s14w500,
+              ),
               const Spacer(),
-              CustomButton(text: 'Register', 
-              onPressed: (){},
-              height: 54.h, 
-              width: 340.w, 
-              color: AppColors.primaryColor, 
-              borderRadius: 8.w, 
-              textStyle: AppTextStyles.s16w500.copyWith(color: AppColors.whiteColor,),),
+              CustomButton(
+                text: 'Register',
+                onPressed: () {},
+                height: 54.h,
+                width: 340.w,
+                color: AppColors.primaryColor,
+                borderRadius: 8.w,
+                textStyle: AppTextStyles.s16w500.copyWith(
+                  color: AppColors.whiteColor,
+                ),
+              ),
             ],
           ),
         ),

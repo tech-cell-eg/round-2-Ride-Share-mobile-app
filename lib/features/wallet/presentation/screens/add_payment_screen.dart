@@ -11,7 +11,7 @@ class AddPaymentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
-      body: AddPaymentScreenBody(),
+      body: const AddPaymentScreenBody(),
     );
   }
 

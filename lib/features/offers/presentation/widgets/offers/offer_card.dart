@@ -12,7 +12,7 @@ class OfferCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppSizes.favCardBorderRadius),
         border: Border.all(
@@ -23,7 +23,7 @@ class OfferCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(
+          const Expanded(
             flex: 5,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +48,7 @@ class OfferCard extends StatelessWidget {
             flex: 3,
             child: ElevatedButton(
               onPressed: () {},
-              child: FittedBox(child: Text(AppStrings.collect)),
+              child: const FittedBox(child: Text(AppStrings.collect)),
             ),
           )
         ],

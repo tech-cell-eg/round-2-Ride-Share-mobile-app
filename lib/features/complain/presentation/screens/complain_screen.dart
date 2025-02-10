@@ -10,15 +10,15 @@ class ComplainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
-      body: ComplainScreenBody(),
+      body: const ComplainScreenBody(),
     );
   }
 
   CustomAppBar _buildAppBar() {
-    return CustomAppBar(
-      title: const Text('Complain'),
+    return const CustomAppBar(
+      title: Text('Complain'),
       leadingWidth: 85,
-      leading: const ArrowBackIcon(),
+      leading: ArrowBackIcon(),
     );
   }
 }

@@ -8,8 +8,9 @@ import 'package:ride_share/features/Auth/widgets/back_arrow_widget.dart';
 
 class ChangePasswordScreen extends StatelessWidget {
   ChangePasswordScreen({super.key});
-  TextEditingController newPasscontroller = TextEditingController();
-  TextEditingController confirmNewPasscontroller = TextEditingController();
+  final TextEditingController newPasscontroller = TextEditingController();
+  final TextEditingController confirmNewPasscontroller =
+      TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,28 +21,25 @@ class ChangePasswordScreen extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  ArrowBackWidget(),
+                  const ArrowBackWidget(),
                   Padding(
-                    padding: const EdgeInsets.only(left:30).w,
+                    padding: const EdgeInsets.only(left: 30).w,
                     child: Text(
-                                    'Change password',
-                                    style:
-                      AppTextStyles.s18w500.copyWith(color: AppColors.blackColor),
-                                  ),
+                      'Change password',
+                      style: AppTextStyles.s18w500
+                          .copyWith(color: AppColors.blackColor),
+                    ),
                   ),
                 ],
               ),
               SizedBox(
                 height: 25.h,
               ),
-              
-              
-              
               SizedBox(
                 height: 20.h,
               ),
               CustomTextField(
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                   Icons.visibility_off_outlined,
                 ),
                 controller: newPasscontroller,
@@ -54,7 +52,7 @@ class ChangePasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                   Icons.visibility_off_outlined,
                 ),
                 controller: confirmNewPasscontroller,
@@ -63,11 +61,11 @@ class ChangePasswordScreen extends StatelessWidget {
                     AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
                 borderSideColor: AppColors.mediumGray,
               ),
-               SizedBox(
+              SizedBox(
                 height: 20.h,
               ),
               CustomTextField(
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                   Icons.visibility_off_outlined,
                 ),
                 controller: confirmNewPasscontroller,
@@ -79,8 +77,6 @@ class ChangePasswordScreen extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-             
-             
               CustomButton(
                 text: 'Save',
                 onPressed: () {},

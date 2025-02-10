@@ -10,24 +10,24 @@ class AboutUsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: CustomAppBar(
-        title: const Text(AppStrings.aboutUs),
+        title: Text(AppStrings.aboutUs),
         leadingWidth: 85,
         leading: ArrowBackIcon(),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 14),
+          padding: EdgeInsets.only(left: 20, right: 14),
           child: Column(
             children: [
-              const SizedBox(height: AppSizes.appBarSpace),
+              SizedBox(height: AppSizes.appBarSpace),
               Text(
                 AppStrings.aboutUsDescription,
                 style: AppTextStyles.aboutUsTextStyle,
                 textAlign: TextAlign.justify,
               ),
-              const SizedBox(height: AppSizes.md),
+              SizedBox(height: AppSizes.md),
             ],
           ),
         ),

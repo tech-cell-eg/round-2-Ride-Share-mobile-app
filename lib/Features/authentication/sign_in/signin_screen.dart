@@ -9,8 +9,8 @@ import '../widgets/back_arrow_widget.dart';
 
 class SigninScreen extends StatelessWidget {
   SigninScreen({super.key});
-  TextEditingController emailOrPhonecontroller = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailOrPhonecontroller = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -62,8 +62,9 @@ class SigninScreen extends StatelessWidget {
                   children: [
                     Text(
                       'Forget password?',
-                      style:
-                          AppTextStyles.s14w500.copyWith(color: AppColors.red,),
+                      style: AppTextStyles.s14w500.copyWith(
+                        color: AppColors.red,
+                      ),
                     ),
                   ],
                 ),

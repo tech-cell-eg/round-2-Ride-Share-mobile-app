@@ -49,13 +49,13 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                   const SizedBox(height: 23),
                   const Column(
                     children: [
-                      const Text(
+                      Text(
                         AppStrings.successDialogTitle,
                         maxLines: 1,
                         style: AppTextStyles.successDialogTitleStyle,
                       ),
-                      const SizedBox(height: 7),
-                      const Text(
+                      SizedBox(height: 7),
+                      Text(
                         AppStrings.successDialogSubTitle,
                         maxLines: 1,
                         style: AppTextStyles.successDialogSubTitleStyle,
@@ -86,7 +86,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                       child: ElevatedButton(
                         onPressed: () {},
                         child: const FittedBox(
-                            child: const Text(AppStrings.backHomeButtonTitle)),
+                            child: Text(AppStrings.backHomeButtonTitle)),
                       ),
                     ),
                   ),

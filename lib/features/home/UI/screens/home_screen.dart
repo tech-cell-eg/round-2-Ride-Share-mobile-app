@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/constants/generated/images.dart';
 import 'package:ride_share/features/contact%20and%20payment/presentation/views/widgets/custom_google_map.dart';
 import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
 import 'package:ride_share/features/home/UI/widgets/home_rental_location_buttons.dart';

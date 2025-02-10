@@ -9,7 +9,7 @@ import '../../../core/widgets/custom_text_form_field.dart';
 
 class SendVerificationScreen extends StatelessWidget {
   SendVerificationScreen({super.key});
-  TextEditingController emailOrPhonecontroller = TextEditingController();
+  final TextEditingController emailOrPhonecontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

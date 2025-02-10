@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
@@ -44,7 +45,9 @@ class VerifyOtpScreen extends StatelessWidget {
                 fieldWidth: 50.w,
                 fieldHeight: 55.h,
                 onCompleted: (code) {
-                  print("تم إدخال الكود: $code");
+                  if (kDebugMode) {
+                    print("تم إدخال الكود: $code");
+                  }
                 },
               ),
 

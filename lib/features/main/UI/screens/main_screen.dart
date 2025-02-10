@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ride_share/Features/offers/presentation/screens/offer_screen.dart';
 import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
@@ -8,7 +9,6 @@ import 'package:ride_share/features/favs/favs_screen.dart';
 import 'package:ride_share/features/home/UI/screens/home_screen.dart';
 import 'package:ride_share/features/main/UI/widgets/app_button_navigation_bar.dart';
 import 'package:ride_share/features/main/UI/widgets/app_hexagonal_floating_button.dart';
-import 'package:ride_share/features/offer/offer_screen.dart';
 import 'package:ride_share/features/profile/profile_screen.dart';
 import 'package:ride_share/features/wallet/wallet_screen.dart';
 

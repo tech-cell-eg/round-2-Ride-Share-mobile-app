@@ -9,9 +9,9 @@ import '../widgets/back_arrow_widget.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
-  TextEditingController nameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController genderController = TextEditingController();
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController genderController = TextEditingController();
   
   @override
   Widget build(BuildContext context) {

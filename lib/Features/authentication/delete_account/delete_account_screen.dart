@@ -17,9 +17,9 @@ class DeleteAccountScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0).w,
           child: Column(
             children: [
-              ArrowBackWidget(),
+              const ArrowBackWidget(),
               SizedBox(height: 30.h,),
-              Text('Are you sure you want to delete your account? Please read how account deletion will affect.\nDeleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.'),
+              const Text('Are you sure you want to delete your account? Please read how account deletion will affect.\nDeleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.'),
               SizedBox(height: 32.h,),
               CustomButton(text: 'Delete',
                onPressed: (){}, 

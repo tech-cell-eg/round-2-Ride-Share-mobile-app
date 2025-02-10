@@ -10,30 +10,30 @@ class HelpAndSupportScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: CustomAppBar(
-        title: const Text(AppStrings.helpAndSupport),
+        title: Text(AppStrings.helpAndSupport),
         leadingWidth: 85,
         leading: ArrowBackIcon(),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 15, right: 16),
+          padding: EdgeInsets.only(left: 15, right: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: AppSizes.appBarSpace),
+              SizedBox(height: AppSizes.appBarSpace),
               Text(
                 AppStrings.helpAndSupport,
                 style: AppTextStyles.helpAndSupportTextStyle,
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               Text(
                 AppStrings.helpAndSupportBody,
                 style: AppTextStyles.helpAndSupportSubTextStyle,
                 textAlign: TextAlign.justify,
               ),
-              const SizedBox(height: AppSizes.md),
+              SizedBox(height: AppSizes.md),
             ],
           ),
         ),

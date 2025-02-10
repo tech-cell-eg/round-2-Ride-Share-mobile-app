@@ -10,7 +10,7 @@ class TransactionHistoryListView extends StatelessWidget {
     return Expanded(
       child: ListView.separated(
         itemCount: 10,
-        itemBuilder: (context, index) => TransectionCard(),
+        itemBuilder: (context, index) => const TransectionCard(),
         separatorBuilder: (context, index) =>
             const SizedBox(height: AppSizes.spaceBtwTransCards),
       ),

@@ -29,9 +29,9 @@ class AddAmountScreenBody extends StatelessWidget {
             alignment: AlignmentDirectional.centerEnd,
             child: InkWell(
               onTap: () {
-                context.push(AddPaymentScreen());
+                context.push(const AddPaymentScreen());
               },
-              child: Text(
+              child: const Text(
                 AppStrings.addPaymentMethod,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -46,7 +46,7 @@ class AddAmountScreenBody extends StatelessWidget {
           ),
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           const PaymentMethodsListView(),
-          ConfirmButton(),
+          const ConfirmButton(),
         ],
       ),
     );

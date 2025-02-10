@@ -15,9 +15,9 @@ class OfferScreenBody extends StatelessWidget {
           Expanded(
             child: ListView.separated(
               itemCount: 10,
-              itemBuilder: (context, index) => OfferCard(),
+              itemBuilder: (context, index) => const OfferCard(),
               separatorBuilder: (context, index) =>
-                  SizedBox(height: AppSizes.spaceBtwOfferCards),
+                  const SizedBox(height: AppSizes.spaceBtwOfferCards),
             ),
           ),
           const SizedBox(height: AppSizes.md),

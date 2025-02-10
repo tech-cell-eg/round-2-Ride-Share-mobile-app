@@ -6,15 +6,15 @@ import 'package:ride_share/core/widgets/custom_text_form_field.dart';
 import 'package:ride_share/features/Auth/widgets/back_arrow_widget.dart';
 
 import '../../../core/constants/app_colors.dart';
-import '../widgets/Choose_Image_Widget.dart';
+import '../widgets/choose_Image_widget.dart';
 
 class CompleteProfieScreen extends StatelessWidget {
   CompleteProfieScreen({super.key});
-  TextEditingController fullNameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController streetController = TextEditingController();
-  TextEditingController cityController = TextEditingController();
-  TextEditingController districtController = TextEditingController();
+ final TextEditingController fullNameController = TextEditingController();
+ final TextEditingController emailController = TextEditingController();
+ final TextEditingController streetController = TextEditingController();
+ final TextEditingController cityController = TextEditingController();
+ final TextEditingController districtController = TextEditingController();
 
   @override  
   Widget build(BuildContext context) {
