@@ -18,6 +18,7 @@ import 'features/Auth/get_user_location/get_user_location_screen.dart';
 import 'features/Auth/send_verification/send_verification_screen.dart';
 import 'features/Auth/set_new_password/set_new_password_screen.dart';
 import 'features/Auth/sign_in/signin_screen.dart';
+import 'features/change_language/change_language_screen.dart';
 import 'features/welcome_screen/welcome_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         darkTheme: AppTheme.darkTheme,
         onGenerateRoute: AppRouter().generateRoute,
         initialRoute: PaymentScreen.routeName,
+ 
       ),
     );
   }
