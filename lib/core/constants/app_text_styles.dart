@@ -6,7 +6,7 @@ import 'package:ride_share/core/constants/app_font_weights.dart';
 
 
 class AppTextStyles {
-  AppTextStyles._();
+  const AppTextStyles._();
 
   static const appBarTextStyle = TextStyle(
     fontSize: 18,
@@ -88,4 +88,106 @@ class AppTextStyles {
     color: AppColors.mainColor,
     fontWeight: AppFontWeights.medium,
   );
+
+  static const outlinedTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primaryColor,
+  );
+
+  static const walletMoneyCardTitleStyle = TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+
+  static const walletMoneyCardSubTitleStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+
+  static const walletTransactionsStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: AppColors.favCartTitleColor,
+  );
+
+  static const seeAllTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.seeAllColor,
+  );
+
+  static const transTitleTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.transectionTitleColor,
+  );
+
+  static const transSubTitleTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: AppColors.walletMoneyColor,
+  );
+
+  static const leadingTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: AppColors.favCartTitleColor,
+  );
+
+  static const inputDecorationLabelStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.lableTextColor,
+  );
+
+  static const addPaymentMethodTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.buttonColor,
+  );
+
+  static const paymentTitleTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+  static const paymentSubTitleTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.favCartSubTitleColor,
+  );
+
+  static const elevatedButtonTextStyle = TextStyle(
+    fontSize: 16,
+    color: AppColors.white,
+    fontWeight: FontWeight.w500,
+  );
+
+  static const successDialogTitleStyle = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+
+  static const successDialogSubTitleStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.successDialogSubTitleColor,
+  );
+
+  static const successDialogAmountStyle = TextStyle(
+     fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.walletMoneyColor,
+  );
+  static const successDialogMoneyStyle = TextStyle(
+     fontSize: 34,
+    fontWeight: FontWeight.w400,
+    color: AppColors.walletMoneyColor,
+  );
+
+  
 }

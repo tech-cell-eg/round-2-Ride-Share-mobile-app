@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/features/favourite/presentation/widgets/custom_favourite_appbar.dart';
+import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
+import 'package:ride_share/core/shared/app_bar/menu_icon.dart';
 import 'package:ride_share/features/favourite/presentation/widgets/favourite_screen_body.dart';
 
 class FavouriteScreen extends StatelessWidget {
@@ -8,7 +9,10 @@ class FavouriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomFavouriteAppBar(),
+      appBar: CustomAppBar(
+        title: Text('Favourite'),
+        leading: MenuIcon(),
+      ),
       body: FavouriteScreenBody(),
     );
   }
