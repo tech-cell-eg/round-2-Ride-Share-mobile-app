@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_icons.dart';
 
@@ -12,7 +13,7 @@ class TransectionCard extends StatelessWidget {
   final double amount;
   const TransectionCard({
     super.key,
-    this.title = 'Welton',
+    this.title = AppStrings.welton,
     this.subTitle = 'Today at 09:20 am',
     this.onTap,
     this.amount = 570.00,
