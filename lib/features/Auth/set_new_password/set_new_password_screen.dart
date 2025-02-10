@@ -18,10 +18,12 @@ class SetNewPasswordScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0).w,
           child: Column(
             children: [
+ 
               ArrowBackWidget(),
               SizedBox(
                 height: 25.h,
               ),
+ 
               Text(
                 'Set New password',
                 style:
@@ -39,9 +41,11 @@ class SetNewPasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
-                suffixIcon: Icon(
-                  Icons.visibility_off_outlined,
-                ),
+ 
+                 suffixIcon: const Icon(
+                    Icons.visibility_off_outlined,
+                  ),
+ 
                 controller: newPasscontroller,
                 hintText: 'Enter Your New Password',
                 hintStyle:
@@ -52,9 +56,11 @@ class SetNewPasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
-                suffixIcon: Icon(
-                  Icons.visibility_off_outlined,
-                ),
+ 
+                suffixIcon: const Icon(
+                    Icons.visibility_off_outlined,
+                  ),
+ 
                 controller: confirmNewPasscontroller,
                 hintText: 'Confirm Password',
                 hintStyle:
@@ -64,22 +70,18 @@ class SetNewPasswordScreen extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Text(
-                'Atleast 1 number or a special character',
-                style: AppTextStyles.s14w500,
-              ),
-              Spacer(),
-              CustomButton(
-                text: 'Save',
-                onPressed: () {},
-                height: 54.h,
-                width: 340.w,
-                color: AppColors.primaryColor,
-                borderRadius: 8.w,
-                textStyle: AppTextStyles.s16w500.copyWith(
-                  color: AppColors.whiteColor,
-                ),
-              ),
+ 
+              const Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
+              const Spacer(),
+              CustomButton(text: 'Save', 
+              onPressed: (){},
+              height: 54.h, 
+              width: 340.w, 
+              color: AppColors.primaryColor, 
+              borderRadius: 8.w, 
+               
+              textStyle: AppTextStyles.s16w500.copyWith(color: AppColors.whiteColor,),),
+ 
             ],
           ),
         ),

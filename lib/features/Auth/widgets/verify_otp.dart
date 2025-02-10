@@ -45,7 +45,7 @@ class OtpInputField extends StatelessWidget {
         inactiveFillColor: Colors.grey,
       
       ),
-      animationDuration: Duration(milliseconds: 300),
+      animationDuration: const Duration(milliseconds: 300),
        enableActiveFill: true,
       onCompleted: onCompleted, // عند الانتهاء من الإدخال
       appContext: context,

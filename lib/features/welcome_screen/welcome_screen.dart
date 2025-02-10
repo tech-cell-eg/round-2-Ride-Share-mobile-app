@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
-import '../../core/constants/app_images.dart';
+
 import '../../core/constants/app_text_styles.dart';
+import '../../core/constants/generated/images.dart';
 import '../../core/widgets/custom_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -24,11 +25,11 @@ class WelcomeScreen extends StatelessWidget {
                 width: 356.w,
                 height: 276.h,
               ),
-              Text('Welcome', style: AppTextStyles.s24w500),
+              const Text('Welcome', style: AppTextStyles.s24w500),
               Text('Have a better sharing experience',
                   style: AppTextStyles.s16w400
                       .copyWith(color: AppColors.greyColor)),
-              Spacer(),
+              const Spacer(),
               CustomButton(
                 text: 'Create an account',
                 onPressed: () {},
