@@ -105,25 +105,8 @@ flutter:
           weight: 800
           style: italic
 
-flutter_assets:
-  assets_path:
-    - assets/icons/
-  output_path: lib/core/constants/generated/
-  filename: icons.dart
-  field_prefix: null
-  classname: AppIcons
-  ignore_comments: true
 
 
-
-#flutter_assets:
-#   assets_path:
-#     - assets/icons/
-#   output_path: lib/core/constants/generated/
-#   filename: icons.dart
-#   field_prefix:
-#   classname: MyIcons
-#   ignore_comments: true
 
   #flutter_assets:
   #   assets_path:
@@ -131,17 +114,17 @@ flutter_assets:
   #   output_path: lib/core/constants/generated/
   #   filename: icons.dart
   #   field_prefix:
-  #   classname: MyIcons
+  #   classname: AppIcons
   #   ignore_comments: true
 
-# flutter_assets:
-#   assets_path:
-#     - assets/images/
-#   output_path: lib/core/constants/generated/
-#   filename: images.dart
-#   field_prefix: null
-#   classname: AppImages
-#   ignore_comments: true
+flutter_assets:
+  assets_path:
+    - assets/images/
+  output_path: lib/core/constants/generated/
+  filename: images.dart
+  field_prefix: 
+  classname: AppImages
+  ignore_comments: true
 
 
 # flutter_assets:

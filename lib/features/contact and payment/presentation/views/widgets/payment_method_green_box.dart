@@ -10,38 +10,46 @@ import '../../../../../core/constants/generated/images.dart';
 class PaymentMethodGreenBox extends StatelessWidget {
   const PaymentMethodGreenBox({
     super.key,
+    required this.imagePath,
+    required this.paymentInfo,
+    required this.paymentExpiry,
+    this.isFade = false,
   });
-
+  final String imagePath, paymentInfo, paymentExpiry;
+  final bool isFade;
   @override
   Widget build(BuildContext context) {
-    return GreenBox(
-      child: Row(
-        children: [
-          SvgPicture.asset(
-            AppImages.imagesVisaCard,
-          ),
-          const SizedBox(width: 13),
-          const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '**** **** **** 8970',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
+    return Opacity(
+      opacity: isFade ? 0.5 : 1,
+      child: GreenBox(
+        child: Row(
+          children: [
+            SvgPicture.asset(
+              imagePath,
+            ),
+            const SizedBox(width: 13),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  paymentInfo,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-              Text(
-                '${AppStrings.expires} 12/26',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                  color: AppColors.gray5A,
+                Text(
+                  '${AppStrings.expires} $paymentExpiry',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: AppColors.gray5A,
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

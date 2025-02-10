@@ -23,6 +23,9 @@ class AppStrings {
   static const String calling = 'Calling....';
   static const String back = 'Back';
   static const String payment = 'Payment';
-
   static const String charge = 'Charge';
+  static const String vat = 'Vat';
+  static const String total = 'Total';
+  static const String selectPaymentMethod = 'Select payment method';
+  static const String confirmRide = 'Confirm Ride';
 }

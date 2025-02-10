@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 
+import '../../../../../core/constants/generated/images.dart';
 import 'close_icon.dart';
 import 'custom_divider.dart';
 import 'double_buttons_row.dart';
@@ -87,7 +88,11 @@ class BottomContainer extends StatelessWidget {
             const SizedBox(height: 15),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: PaymentMethodGreenBox(),
+              child: PaymentMethodGreenBox(
+                imagePath: AppImages.imagesVisaCard,
+                paymentInfo: '**** **** **** 8970',
+                paymentExpiry: '26/12',
+              ),
             ),
             const SizedBox(height: 32),
             const Padding(
