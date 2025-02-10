@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/app_icons.dart';
 import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
 import 'package:ride_share/core/shared/app_bar/menu_icon.dart';
@@ -19,7 +20,7 @@ class WalletScreen extends StatelessWidget {
 
   CustomAppBar _buildAppBar() {
     return CustomAppBar(
-      title: Text('Wallet'),
+      title: Text(AppStrings.wallet),
       leading: MenuIcon(),
       actions: [
         Padding(
