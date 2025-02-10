@@ -18,7 +18,7 @@ class SendVerificationScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0).w,
           child: Column(
             children: [
-              ArrowBackWidget(),
+              const ArrowBackWidget(),
               SizedBox(
                 height: 30.h,
               ),
@@ -37,7 +37,7 @@ class SendVerificationScreen extends StatelessWidget {
                     AppTextStyles.s16w500.copyWith(color: AppColors.lightGray),
                 borderSideColor: AppColors.mediumGray,
               ),
-              Spacer(),
+              const Spacer(),
               CustomButton(
                 text: 'Send OTP',
                 onPressed: () {},
