@@ -5,8 +5,6 @@ import 'package:ride_share/core/theme/app_theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
-
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
