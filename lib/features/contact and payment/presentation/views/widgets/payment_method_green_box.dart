@@ -5,7 +5,6 @@ import 'package:ride_share/core/widgets/green_box.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 
-import '../../../../../core/constants/generated/images.dart';
 
 class PaymentMethodGreenBox extends StatelessWidget {
   const PaymentMethodGreenBox({

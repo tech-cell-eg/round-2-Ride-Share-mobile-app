@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:ride_share/features/contact%20and%20payment/presentation/views/location_confirm_screen.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
