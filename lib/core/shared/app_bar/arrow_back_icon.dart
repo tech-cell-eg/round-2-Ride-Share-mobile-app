@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
@@ -21,7 +22,7 @@ class ArrowBackIcon extends StatelessWidget {
             SvgPicture.asset(AppIcons.arrowLeft, fit: BoxFit.scaleDown),
             const SizedBox(width: 10),
             Text(
-              'Back',
+              AppStrings.back,
               style: AppTextStyles.leadingTextStyle,
             ),
           ],
