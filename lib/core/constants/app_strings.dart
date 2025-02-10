@@ -1,6 +1,18 @@
 abstract class AppStrings {
   AppStrings._();
 
+
+  static const String submit = 'Submit';
+
+  static const writeYourComplain =
+      'Write your complain here (minimum 10 characters)';
+
+      static const String backHome = 'Back Home';
+
+  static String sendSuccessful = 'Send successful';
+
+  static String sendComplainSuccessful = 'Your complain has been send successful';
+
   static const String helpAndSupport = 'Help and Support';
 
   static const String helpAndSupportBody =
@@ -88,4 +100,5 @@ abstract class AppStrings {
   static const String logout = 'Log out';
   static const String typeYourMessage = 'Type your message';
   static const String calling = 'Calling....';
+
 }
