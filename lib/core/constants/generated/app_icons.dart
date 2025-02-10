@@ -1,19 +1,22 @@
-// ignore_for_file: prefer_single_quotes
-class AppIcons {
+abstract class AppIcons {
   AppIcons._();
-  
-  static const String iconsFavs = "assets/icons/favs.svg";
 
-  static const String iconsHouse = "assets/icons/house.svg";
+  static const String menuIcon = 'assets/icons/menu_icon.svg';
+  static const String locationIcon = 'assets/icons/location_icon.svg';
+  static const String removeIcon = 'assets/icons/remove_icon.svg';
+  static const String notificationIcon = 'assets/icons/notification_icon.svg';
 
-  static const String iconsNotification = "assets/icons/notification.svg";
+  static const String closeIcon = 'assets/icons/close_icon.svg';
 
-  static const String iconsOffer = "assets/icons/offer.svg";
+  static const String upVector = 'assets/icons/up_vector.svg';
+  static const String downVector = 'assets/icons/down_vector.svg';
 
-  static const String iconsProfile = "assets/icons/profile.svg";
+  static const String arrowDown = 'assets/icons/arrow_down_icon.svg';
+  static const String arrowLeft = 'assets/icons/arrow_left_icon.svg';
 
-  static const String iconsSidemenue = "assets/icons/sidemenue.svg";
+  static String visaIcon = 'assets/icons/visa_icon.svg';
 
-  static const String iconsWallet = "assets/icons/wallet.svg";
+  static String checkIcon = 'assets/icons/check_icon.svg';
+
+  static String successIcon = 'assets/icons/success_icon.svg';
 }
-

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
-import '../constants/app_text_styles.dart';
 
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultAppBar({
@@ -26,10 +26,12 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
               size: 16,
             ),
             Text(
-              'Back',
+
+              AppStrings.back,
               style: TextStyle(
                 fontSize: 16,
               ),
+
             ),
           ],
         ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+
+import '../../../../core/constants/generated/icons.dart';
 
 class AppHexagonalFloatingButton extends StatelessWidget {
   const AppHexagonalFloatingButton({
