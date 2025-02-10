@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/app_icons.dart';
 import 'package:ride_share/core/constants/generated/app_images.dart';
@@ -48,14 +49,14 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                   const SizedBox(height: 23),
                   Column(
                     children: [
-                      Text(
-                        'Add Success',
+                      const Text(
+                        AppStrings.successDialogTitle,
                         maxLines: 1,
                         style: AppTextStyles.successDialogTitleStyle,
                       ),
                       const SizedBox(height: 7),
-                      Text(
-                        'Your money has been add successfully ',
+                      const Text(
+                        AppStrings.successDialogSubTitle,
                         maxLines: 1,
                         style: AppTextStyles.successDialogSubTitleStyle,
                       ),
@@ -65,7 +66,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                   Column(
                     children: [
                       Text(
-                        'Amount',
+                        AppStrings.amount,
                         style: AppTextStyles.successDialogAmountStyle,
                       ),
                       const SizedBox(height: 10),
@@ -84,7 +85,8 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: FittedBox(child: Text('Back Home')),
+                        child: FittedBox(
+                            child: Text(AppStrings.backHomeButtonTitle)),
                       ),
                     ),
                   ),

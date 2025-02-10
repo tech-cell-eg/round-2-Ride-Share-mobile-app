@@ -1,5 +1,6 @@
 class AppSizes {
   AppSizes._();
+
   static const double screenPadding = 15.0;
 
   static const double appBarSpace = 30.0;
@@ -37,3 +38,4 @@ class AppSizes {
 
   static const double spaceBtwOfferCards = 24.0;
 }
+
