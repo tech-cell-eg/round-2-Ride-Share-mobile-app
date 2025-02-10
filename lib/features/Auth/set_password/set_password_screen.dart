@@ -18,7 +18,7 @@ class SetPasswordScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              ArrowBackWidget(),
+              const ArrowBackWidget(),
               Text(
                 'Set password',
                 style:
@@ -36,7 +36,7 @@ class SetPasswordScreen extends StatelessWidget {
                 height: 20.h,
               ),
               CustomTextField(
-                suffixIcon: Icon(Icons.password),
+                suffixIcon: const Icon(Icons.password),
                 controller: passcontroller,
                 hintText: 'Enter Your Password',
                 hintStyle:
@@ -49,7 +49,7 @@ class SetPasswordScreen extends StatelessWidget {
               ),
 
               CustomTextField(
-                suffixIcon: Icon(Icons.show_chart),
+                suffixIcon: const Icon(Icons.show_chart),
                 controller: confirmPasscontroller,
                 hintText: 'Confirm Password',
                 hintStyle:
@@ -59,8 +59,8 @@ class SetPasswordScreen extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
-              Spacer(),
+              const Text('Atleast 1 number or a special character',style:AppTextStyles.s14w500,),
+              const Spacer(),
               CustomButton(text: 'Register', 
               onPressed: (){},
               height: 54.h, 
