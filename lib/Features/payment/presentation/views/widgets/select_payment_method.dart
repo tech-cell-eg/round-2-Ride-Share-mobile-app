@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_strings.dart';
-import '../../../../core/constants/generated/images.dart';
-import '../../../../features/contact and payment/presentation/views/widgets/payment_method_green_box.dart';
+import '../../../../../core/constants/app_strings.dart';
+import '../../../../../core/constants/generated/images.dart';
+import '../../../../contact and payment/presentation/views/widgets/payment_method_green_box.dart';
 
 class SelectPaymentMethod extends StatelessWidget {
   const SelectPaymentMethod({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_strings.dart';
-import '../../../../features/contact and payment/presentation/views/widgets/custom_divider.dart';
+import '../../../../../core/constants/app_strings.dart';
+import '../../../../contact and payment/presentation/views/widgets/custom_divider.dart';
 import 'info_line_row.dart';
 
 class ReceptInfo extends StatelessWidget {

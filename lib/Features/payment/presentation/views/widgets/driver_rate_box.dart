@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/generated/images.dart';
-import '../../../../core/widgets/green_box.dart';
+import '../../../../../core/constants/generated/images.dart';
+import '../../../../../core/widgets/green_box.dart';
 
 class DriverRateBox extends StatelessWidget {
   const DriverRateBox({
