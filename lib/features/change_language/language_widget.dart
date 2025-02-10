@@ -20,11 +20,11 @@ class LanguageWidget extends StatelessWidget {
         ),
       ),
       child: ListTile(
-        leading: Icon(
+        leading: const Icon(
           Icons.flag,
           size: 40,
         ),
-        title: Text(
+        title: const Text(
           'English',
           style: AppTextStyles.s16w500,
         ),
@@ -34,7 +34,7 @@ class LanguageWidget extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
-        trailing: Icon(
+        trailing: const Icon(
           Icons.circle,
         ),
       ),

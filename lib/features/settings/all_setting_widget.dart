@@ -13,7 +13,7 @@ class SettingItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10).w,
+      padding: const EdgeInsets.all(10).w,
       height: 50.h,
       decoration: BoxDecoration(
           border: Border.all(color: AppColors.primaryColor),
@@ -27,7 +27,7 @@ class SettingItemWidget extends StatelessWidget {
               color: AppColors.blackColor,
             ),
           ),
-          Icon(
+          const Icon(
             Icons.arrow_forward,
           ),
         ],
