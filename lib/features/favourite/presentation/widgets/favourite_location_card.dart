@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 
 class FavoriteLocationCard extends StatelessWidget {
   const FavoriteLocationCard({super.key});
@@ -18,10 +18,10 @@ class FavoriteLocationCard extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 1),
-            child: SvgPicture.asset(AppIcons.locationIcon),
+            child: SvgPicture.asset(MyIcons.locationIcon),
           ),
           const SizedBox(width: AppSizes.spaceBtnItemInFavCard),
-          Expanded(
+          const Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -31,7 +31,7 @@ class FavoriteLocationCard extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: AppTextStyles.favCardTitleTextStyle,
                 ),
-                const SizedBox(height: AppSizes.spaceBtnItemInFavCard),
+                 SizedBox(height: AppSizes.spaceBtnItemInFavCard),
                 Text(
                   '2972 Westheimer Rd. Santa Ana, Illinois 85486',
                   maxLines: 1,
@@ -41,7 +41,7 @@ class FavoriteLocationCard extends StatelessWidget {
               ],
             ),
           ),
-          SvgPicture.asset(AppIcons.removeIcon),
+          SvgPicture.asset(MyIcons.removeIcon),
         ],
       ),
     );

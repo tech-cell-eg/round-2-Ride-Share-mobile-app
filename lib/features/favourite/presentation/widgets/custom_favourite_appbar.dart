@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 
 class CustomFavouriteAppBar extends StatelessWidget
     implements PreferredSizeWidget {
@@ -15,7 +15,7 @@ class CustomFavouriteAppBar extends StatelessWidget
       padding: const EdgeInsets.only(top: AppSizes.screenPadding),
       child: AppBar(
         centerTitle: true,
-        title: Text(AppStrings.favourite),
+        title: const  Text(AppStrings.favourite),
         automaticallyImplyLeading: false,
         leading: Container(
           margin: const EdgeInsets.only(left: AppSizes.screenPadding),
@@ -24,7 +24,7 @@ class CustomFavouriteAppBar extends StatelessWidget
             style: _menuButtonStyle(),
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(),
-            icon: SvgPicture.asset(AppIcons.menuIcon),
+            icon: SvgPicture.asset(MyIcons.menuIcon),
             onPressed: () {},
           ),
         ),

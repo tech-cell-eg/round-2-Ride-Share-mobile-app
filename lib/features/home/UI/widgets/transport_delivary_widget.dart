@@ -18,7 +18,7 @@ class _TransportDelivaryWidgetState extends State<TransportDelivaryWidget> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.84,
-      height: 48,
+      height: 46,
       decoration: BoxDecoration(
         border: Border.all(color: AppColors.mainColor),
         color: AppColors.lighterGreen,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/shared/dialogs/show_success_dialog.dart';
 import 'package:ride_share/features/wallet/presentation/widgets/payment/payment_methods_list_view.dart';
 
@@ -27,7 +27,7 @@ class AddPaymentScreenBody extends StatelessWidget {
                       borderRadius:
                           BorderRadius.circular(AppSizes.outlinedButtonRadius),
                       child: SvgPicture.asset(
-                        AppIcons.arrowDown,
+                        MyIcons.arrowDown,
                         fit: BoxFit.scaleDown,
                       ),
                     ),
@@ -59,7 +59,7 @@ class AddPaymentScreenBody extends StatelessWidget {
             ),
           ),
           const PaymentMethodsListView(),
-          SliverToBoxAdapter(child: const SizedBox(height: AppSizes.md)),
+          const SliverToBoxAdapter(child: SizedBox(height: AppSizes.md)),
         ],
       ),
     );
