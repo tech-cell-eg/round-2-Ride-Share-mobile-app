@@ -37,7 +37,6 @@ class AppColors {
 
   static const offerTitleColor = Color(0xFFF57F17);
   static const offerSubTitleColor = Color(0xFFB8B8B8);
-  
 
   static const buttonColor = Color(0xFF304FFE);
 
@@ -49,4 +48,6 @@ class AppColors {
   static const bottomDialogSubTitleColor = Color(0xFFA0A0A0);
 
   static const helpAndSupportColor = Color(0xFF414141);
+
+  static const dropDownTextColor = Color(0xFF414141);
 }

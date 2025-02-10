@@ -72,6 +72,7 @@ class AppTextStyles {
 
   static const inputDecorationLabelStyle = TextStyle(
     fontSize: 16,
+    overflow: TextOverflow.ellipsis,
     fontWeight: FontWeight.w500,
     color: AppColors.lableTextColor,
   );
@@ -112,12 +113,12 @@ class AppTextStyles {
   );
 
   static const successDialogAmountStyle = TextStyle(
-     fontSize: 12,
+    fontSize: 12,
     fontWeight: FontWeight.w500,
     color: AppColors.walletMoneyColor,
   );
   static const successDialogMoneyStyle = TextStyle(
-     fontSize: 34,
+    fontSize: 34,
     fontWeight: FontWeight.w400,
     color: AppColors.walletMoneyColor,
   );
@@ -140,7 +141,6 @@ class AppTextStyles {
     color: AppColors.walletMoneyColor,
   );
 
-
   static const helpAndSupportTextStyle = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w500,
@@ -152,7 +152,7 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: Color(0xFF717171),
   );
-  
+
   static const bottomDialogTitleTextStyle = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w500,
@@ -165,4 +165,9 @@ class AppTextStyles {
     color: AppColors.bottomDialogSubTitleColor,
   );
 
+  static const dropDownButtonStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.dropDownTextColor,
+  );
 }
