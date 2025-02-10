@@ -6,7 +6,7 @@ class ListAvailableVehicleTitlePage extends StatelessWidget {
   final String? title, subTitle;
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(

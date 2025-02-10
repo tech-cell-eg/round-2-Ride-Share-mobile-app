@@ -18,7 +18,7 @@ class VerifyOtpScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20.0).w,
           child: Column(
             children: [
-              ArrowBackWidget(),
+              const ArrowBackWidget(),
               SizedBox(
                 height: 20.h,
               ),
@@ -64,7 +64,7 @@ class VerifyOtpScreen extends StatelessWidget {
                   ),
                 ],
               )),
-              Spacer(),
+              const Spacer(),
               CustomButton(
                 text: 'Verify',
                 onPressed: () {},

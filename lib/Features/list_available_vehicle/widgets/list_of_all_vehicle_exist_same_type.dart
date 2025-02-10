@@ -10,8 +10,8 @@ class ListOfAllVehicleExistSameType extends StatelessWidget {
       primary: true,
       itemCount: 10,
       itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 20),
+        return const Padding(
+          padding: EdgeInsets.only(bottom: 20),
           child: AvailableVehicleContainerSameType(),
         );
       },

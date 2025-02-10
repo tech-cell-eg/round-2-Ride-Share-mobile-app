@@ -9,8 +9,8 @@ class ListAvailableVehicleSameTypeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.all(20),
+    return const Padding(
+        padding: EdgeInsets.all(20),
         child: CustomScrollView(
           slivers: [
             SliverToBoxAdapter(child: ListAvailableVehicleTitlePage()),

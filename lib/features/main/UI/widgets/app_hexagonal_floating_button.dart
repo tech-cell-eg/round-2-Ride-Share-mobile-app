@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+
+import '../../../../core/constants/generated/icons.dart';
 
 class AppHexagonalFloatingButton extends StatelessWidget {
   const AppHexagonalFloatingButton({
@@ -21,12 +22,12 @@ class AppHexagonalFloatingButton extends StatelessWidget {
         onPressed: () {
           selectedIndex.value = 2;
         },
-        shape: StarBorder.polygon(sides: 6),
+        shape: const StarBorder.polygon(sides: 6),
         child: Center(
           child: SvgPicture.asset(
             width: 24,
             height: 28,
-            AppIcons.iconsWallet,
+            MyIcons.iconsWallet,
           ),
         ),
       ),

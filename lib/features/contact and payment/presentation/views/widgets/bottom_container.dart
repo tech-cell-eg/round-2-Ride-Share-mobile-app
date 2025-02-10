@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 
-import '../../../../../core/constants/app_text_styles.dart';
 import 'close_icon.dart';
 import 'custom_divider.dart';
 import 'double_buttons_row.dart';

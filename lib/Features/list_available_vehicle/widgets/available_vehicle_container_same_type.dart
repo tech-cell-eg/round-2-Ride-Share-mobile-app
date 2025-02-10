@@ -14,11 +14,11 @@ class AvailableVehicleContainerSameType extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         border: Border.all(color: AppColors.containerBorder),
-        borderRadius: BorderRadius.all(
+        borderRadius: const BorderRadius.all(
             Radius.circular(AppConstants.containerBorderRediuse)),
         color: AppColors.containerBackgraond,
       ),
-      child: AvailableVehicleContainerSameTypeBody(),
+      child: const AvailableVehicleContainerSameTypeBody(),
     );
   }
 }

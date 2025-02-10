@@ -16,13 +16,13 @@ class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
               title!,
               style: AppStyles.medium18,
             )
-          : SizedBox(),
+          : const SizedBox(),
       centerTitle: true,
       leading: InkWell(
         onTap: () {
           Navigator.pop(context);
         },
-        child: Row(
+        child: const Row(
           children: [
             SizedBox(width: 5),
             Icon(Icons.chevron_left),
@@ -38,5 +38,5 @@ class ProjectAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
