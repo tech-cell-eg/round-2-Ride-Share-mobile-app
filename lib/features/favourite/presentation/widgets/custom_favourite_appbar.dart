@@ -15,7 +15,7 @@ class CustomFavouriteAppBar extends StatelessWidget
       padding: const EdgeInsets.only(top: AppSizes.screenPadding),
       child: AppBar(
         centerTitle: true,
-        title: const  Text(AppStrings.favourite),
+        title: const Text(AppStrings.favourite),
         automaticallyImplyLeading: false,
         leading: Container(
           margin: const EdgeInsets.only(left: AppSizes.screenPadding),
@@ -24,7 +24,7 @@ class CustomFavouriteAppBar extends StatelessWidget
             style: _menuButtonStyle(),
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(),
-            icon: SvgPicture.asset(MyIcons.menuIcon),
+            icon: SvgPicture.asset(AppIcons.menuIcon),
             onPressed: () {},
           ),
         ),

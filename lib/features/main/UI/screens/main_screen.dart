@@ -36,13 +36,13 @@ class _MainScreenState extends State<MainScreen> {
               onPressed: () {
                 context.pushNamed(Routes.notification);
               },
-              icon: SvgPicture.asset(MyIcons.iconsNotification))
+              icon: SvgPicture.asset(AppIcons.notification))
         ],
         leading: IconButton(
             onPressed: () {
               key.currentState!.openDrawer();
             },
-            icon: SvgPicture.asset(MyIcons.iconsSidemenue)),
+            icon: SvgPicture.asset(AppIcons.sidemenue)),
       ),
       resizeToAvoidBottomInset: false,
       body: ValueListenableBuilder<int>(

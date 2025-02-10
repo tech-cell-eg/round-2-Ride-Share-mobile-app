@@ -12,7 +12,7 @@ class CustomButton extends StatelessWidget {
     required this.textStyle,
     this.borderColor = Colors.transparent,
     this.borderWidth = 0,
-      this.image , // radius دايناميك
+    this.image, // radius دايناميك
   });
 
   final void Function() onPressed;
@@ -26,18 +26,17 @@ class CustomButton extends StatelessWidget {
   final TextStyle textStyle;
   final Color borderColor; // لون الحواف
   final double borderWidth; // عرض الحواف
-   final Widget ? image;
+  final Widget? image;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width,  
-      height: height,  
+      width: width,
+      height: height,
       child: TextButton(
         style: TextButton.styleFrom(
-          backgroundColor: color,  
+          backgroundColor: color,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(
-                borderRadius),  
+            borderRadius: BorderRadius.circular(borderRadius),
             side: BorderSide(color: borderColor, width: borderWidth),
           ),
         ),
@@ -45,8 +44,8 @@ class CustomButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-             if (image != null) image!  ,
-             if (image != null) const SizedBox(width: 8), 
+            if (image != null) image!,
+            if (image != null) const SizedBox(width: 8),
             Text(
               text,
               style: textStyle,

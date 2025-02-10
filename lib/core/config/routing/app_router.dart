@@ -12,6 +12,7 @@ import 'package:ride_share/features/contact%20and%20payment/presentation/views/l
 import 'package:ride_share/features/main/UI/screens/main_screen.dart';
 import 'package:ride_share/features/notifications/UI/Screens/notifications_screen.dart';
 import 'package:ride_share/features/onBoarding/UI/Screens/onBoarding_screen.dart';
+import 'package:ride_share/features/payment/presentation/views/payment_screen.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
@@ -37,6 +38,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const CallingScreen());
       case TalkScreen.routeName:
         return MaterialPageRoute(builder: (_) => const TalkScreen());
+      case PaymentScreen.routeName:
+        return MaterialPageRoute(builder: (_) => const PaymentScreen());
     }
     return null;
   }

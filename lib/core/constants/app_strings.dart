@@ -1,17 +1,17 @@
 abstract class AppStrings {
   AppStrings._();
 
-
   static const String submit = 'Submit';
 
   static const writeYourComplain =
       'Write your complain here (minimum 10 characters)';
 
-      static const String backHome = 'Back Home';
+  static const String backHome = 'Back Home';
 
   static String sendSuccessful = 'Send successful';
 
-  static String sendComplainSuccessful = 'Your complain has been send successful';
+  static String sendComplainSuccessful =
+      'Your complain has been send successful';
 
   static const String helpAndSupport = 'Help and Support';
 
@@ -101,4 +101,10 @@ abstract class AppStrings {
   static const String typeYourMessage = 'Type your message';
   static const String calling = 'Calling....';
 
+  static const String payment = 'Payment';
+  static const String charge = 'Charge';
+  static const String vat = 'Vat';
+  static const String total = 'Total';
+
+  static const String confirmRide = 'Confirm Ride';
 }

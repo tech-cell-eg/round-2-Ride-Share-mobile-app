@@ -22,7 +22,7 @@ class UserInfo extends StatelessWidget {
                 border: Border.all(color: AppColors.mainColor)),
             child: const CircleAvatar(
               radius: 35,
-              backgroundImage: AssetImage(AppImages.imagesMan),
+              backgroundImage: AssetImage(AppImages.man),
             ),
           ),
           const SizedBox(height: 15),

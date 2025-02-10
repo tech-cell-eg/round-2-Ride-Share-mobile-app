@@ -4,26 +4,30 @@ import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/theme/app_theme.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ride_share/core/constants/app_colors.dart';
+import 'package:ride_share/features/payment/presentation/views/payment_screen.dart';
+
+import 'core/config/routing/app_router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-   return ScreenUtilInit(
+    return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Ride Share',
-      themeMode: ThemeMode.system,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+        debugShowCheckedModeBanner: false,
+        title: 'Ride Share',
+        themeMode: ThemeMode.system,
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
         onGenerateRoute: AppRouter().generateRoute,
-        initialRoute: Routes.onBoarding,
+        initialRoute: PaymentScreen.routeName,
       ),
-
     );
   }
 }

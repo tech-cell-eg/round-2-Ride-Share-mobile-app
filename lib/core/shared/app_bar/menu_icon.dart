@@ -16,7 +16,7 @@ class MenuIcon extends StatelessWidget {
         style: _menuButtonStyle(),
         padding: EdgeInsets.zero,
         constraints: const BoxConstraints(),
-        icon: SvgPicture.asset(MyIcons.menuIcon),
+        icon: SvgPicture.asset(AppIcons.menuIcon),
         onPressed: () {},
       ),
     );

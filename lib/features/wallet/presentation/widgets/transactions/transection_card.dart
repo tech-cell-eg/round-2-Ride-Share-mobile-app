@@ -24,7 +24,8 @@ class TransectionCard extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.only(left: 11, right: 17, top: 12, bottom: 12),
+        padding:
+            const EdgeInsets.only(left: 11, right: 17, top: 12, bottom: 12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppSizes.favCardBorderRadius),
           border: Border.all(
@@ -43,7 +44,7 @@ class TransectionCard extends StatelessWidget {
                 shape: CircleBorder(),
                 color: AppColors.upVectorBgColor,
               ),
-              child: SvgPicture.asset(MyIcons.upVector),
+              child: SvgPicture.asset(AppIcons.upVector),
             ),
             const SizedBox(width: 13),
             Expanded(
