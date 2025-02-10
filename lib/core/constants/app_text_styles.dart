@@ -201,5 +201,24 @@ class AppTextStyles {
     color: AppColors.offerSubTitleColor,
   );
 
+  static const aboutUsTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.walletMoneyColor,
+  );
+
+
+  static const helpAndSupportTextStyle = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: AppColors.helpAndSupportColor,
+  );
+
+  static const helpAndSupportSubTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF717171),
+  );
+
   
 }

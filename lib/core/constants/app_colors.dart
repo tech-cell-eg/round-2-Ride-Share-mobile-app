@@ -44,6 +44,9 @@ class AppColors {
 
   static const successDialogSubTitleColor = Color(0xFF898989);
 
+
+  static const helpAndSupportColor = Color(0xFF414141);
+
   static const Color containerBorder = Color(0xff08B783);
   static const Color containerBackgraond = Color(0xffE2F5ED);
   static const Color buttonBackgraond = Color(0xff008955);
@@ -67,6 +70,7 @@ class AppColors {
   static const Color mainColor = Color(0xff08B783);
   static const Color lightGreen = Color(0xffB9E5D1);
   static const Color callingIconsGreen = Color(0xffB9E5D1);
+
 
 }
 
