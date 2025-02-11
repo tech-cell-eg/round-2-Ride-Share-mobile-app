@@ -13,7 +13,6 @@ class OfferScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(
-
         title: Text(AppStrings.offer),
 
         leading: MenuIcon(),
