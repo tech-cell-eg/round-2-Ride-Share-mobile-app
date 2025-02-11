@@ -8,7 +8,7 @@ class WalletMoneySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         Expanded(
           child: WalletMonyCard(
@@ -16,7 +16,7 @@ class WalletMoneySection extends StatelessWidget {
             title: AppStrings.availableBalance,
           ),
         ),
-        const SizedBox(width: AppSizes.spaceBtwWalletCards),
+        SizedBox(width: AppSizes.spaceBtwWalletCards),
         Expanded(
           child: WalletMonyCard(
             moneyQuantity: 200,

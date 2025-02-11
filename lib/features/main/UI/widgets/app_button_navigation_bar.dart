@@ -34,13 +34,13 @@ class AppBottomNavigationBar extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   NavBarItem(
-                    iconPath: AppIcons.iconsHouse,
+                    iconPath: AppIcons.house,
                     pageName: AppStrings.home,
                     isSelected: index == 0,
                     onTap: () => selectedIndex.value = 0,
                   ),
                   NavBarItem(
-                    iconPath: AppIcons.iconsFavs,
+                    iconPath: AppIcons.favs,
                     pageName: AppStrings.favourites,
                     isSelected: index == 1,
                     onTap: () => selectedIndex.value = 1,
@@ -57,13 +57,13 @@ class AppBottomNavigationBar extends StatelessWidget {
                     ),
                   ),
                   NavBarItem(
-                    iconPath: AppIcons.iconsOffer,
+                    iconPath: AppIcons.offer,
                     pageName: AppStrings.offers,
                     isSelected: index == 3,
                     onTap: () => selectedIndex.value = 3,
                   ),
                   NavBarItem(
-                    iconPath: AppIcons.iconsProfile,
+                    iconPath: AppIcons.profile,
                     pageName: AppStrings.profile,
                     isSelected: index == 4,
                     onTap: () => selectedIndex.value = 4,

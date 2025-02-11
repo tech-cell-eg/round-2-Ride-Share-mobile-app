@@ -4,7 +4,7 @@ import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 
 class TransectionCard extends StatelessWidget {
   final String title;
@@ -24,7 +24,8 @@ class TransectionCard extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        padding: EdgeInsets.only(left: 11, right: 17, top: 12, bottom: 12),
+        padding:
+            const EdgeInsets.only(left: 11, right: 17, top: 12, bottom: 12),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppSizes.favCardBorderRadius),
           border: Border.all(
@@ -38,8 +39,8 @@ class TransectionCard extends StatelessWidget {
             Container(
               width: 40,
               height: 40,
-              padding: EdgeInsets.all(13),
-              decoration: ShapeDecoration(
+              padding: const EdgeInsets.all(13),
+              decoration: const ShapeDecoration(
                 shape: CircleBorder(),
                 color: AppColors.upVectorBgColor,
               ),

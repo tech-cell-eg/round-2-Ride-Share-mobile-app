@@ -12,7 +12,7 @@ class PaymentMethodsListView extends StatelessWidget {
         itemCount: 4,
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) =>
-            index == 0 ? PaymentCard(isSelected: true) : PaymentCard(),
+            index == 0 ? const PaymentCard(isSelected: true) : const PaymentCard(),
         separatorBuilder: (context, index) =>
             const SizedBox(height: AppSizes.spaceBtwPaymentCard),
       ),

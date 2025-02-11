@@ -19,12 +19,12 @@ class CallingBottomIconsRow extends StatelessWidget {
         children: [
           // camera icon
           CallingIconCircle(
-            iconPath: AppIcons.iconsCallingCamsvg,
+            iconPath: AppIcons.callingCamsvg,
             onTap: () {},
           ),
           // mic icon
           CallingIconCircle(
-            iconPath: AppIcons.iconsCallingMic,
+            iconPath: AppIcons.callingMic,
             onTap: () {},
           ),
           // phone icon
@@ -34,12 +34,12 @@ class CallingBottomIconsRow extends StatelessWidget {
           ),
           // video icon
           CallingIconCircle(
-            iconPath: AppIcons.iconsCallingVid,
+            iconPath: AppIcons.callingVid,
             onTap: () {},
           ),
           // dots icon
           CallingIconCircle(
-            iconPath: AppIcons.iconsCallingDots,
+            iconPath: AppIcons.callingDots,
             onTap: () {},
           ),
         ],

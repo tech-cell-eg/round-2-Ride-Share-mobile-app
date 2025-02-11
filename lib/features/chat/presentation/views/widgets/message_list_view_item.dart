@@ -34,7 +34,7 @@ class MessageListViewItem extends StatelessWidget {
                 maintainAnimation: true,
                 maintainState: true,
                 child: Image.asset(
-                  AppImages.imagesUserPic,
+                  AppImages.userPic,
                   height: 34,
                   width: 36,
                 ),

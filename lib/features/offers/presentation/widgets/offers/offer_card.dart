@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+
 import 'package:ride_share/core/constants/app_strings.dart';
+
 import 'package:ride_share/core/constants/app_text_styles.dart';
 
 class OfferCard extends StatelessWidget {
@@ -10,7 +12,7 @@ class OfferCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppSizes.favCardBorderRadius),
         border: Border.all(
@@ -21,7 +23,7 @@ class OfferCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Expanded(
+          const Expanded(
             flex: 5,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,7 +48,7 @@ class OfferCard extends StatelessWidget {
             flex: 3,
             child: ElevatedButton(
               onPressed: () {},
-              child: FittedBox(child: Text(AppStrings.collect)),
+              child: const FittedBox(child: Text(AppStrings.collect)),
             ),
           )
         ],

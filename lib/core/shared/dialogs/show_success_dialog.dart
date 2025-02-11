@@ -4,8 +4,7 @@ import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
-import 'package:ride_share/core/constants/generated/app_images.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
 void showSuccessDialog(BuildContext context, {required double amount}) {
@@ -13,7 +12,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
     context: context,
     barrierDismissible: true,
     barrierLabel: "",
-    transitionDuration: Duration(milliseconds: 400),
+    transitionDuration: const Duration(milliseconds: 400),
     pageBuilder: (context, animation, secondaryAnimation) {
       return Center(
         child: Material(
@@ -36,10 +35,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                       onPressed: () {
                         context.pop();
                       },
-                      icon: Image.asset(
-                        AppImages.closeIcon,
-                        fit: BoxFit.scaleDown,
-                      ),
+                      icon: const Icon(Icons.close),
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -47,15 +43,15 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                     child: SvgPicture.asset(AppIcons.successIcon),
                   ),
                   const SizedBox(height: 23),
-                  Column(
+                  const Column(
                     children: [
-                      const Text(
+                      Text(
                         AppStrings.successDialogTitle,
                         maxLines: 1,
                         style: AppTextStyles.successDialogTitleStyle,
                       ),
-                      const SizedBox(height: 7),
-                      const Text(
+                      SizedBox(height: 7),
+                      Text(
                         AppStrings.successDialogSubTitle,
                         maxLines: 1,
                         style: AppTextStyles.successDialogSubTitleStyle,
@@ -65,7 +61,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                   const SizedBox(height: 24),
                   Column(
                     children: [
-                      Text(
+                      const Text(
                         AppStrings.amount,
                         style: AppTextStyles.successDialogAmountStyle,
                       ),
@@ -85,7 +81,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: FittedBox(
+                        child: const FittedBox(
                             child: Text(AppStrings.backHomeButtonTitle)),
                       ),
                     ),

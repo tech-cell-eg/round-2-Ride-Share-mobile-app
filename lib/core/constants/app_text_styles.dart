@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 
-
 import 'package:ride_share/core/constants/app_font_weights.dart';
-
 
 class AppTextStyles {
   const AppTextStyles._();
@@ -24,37 +22,36 @@ class AppTextStyles {
     fontSize: 12,
     fontWeight: FontWeight.w500,
     color: AppColors.favCartSubTitleColor,
+  );
 
   static const TextStyle s24w500 = TextStyle(
     fontSize: 24,
-    fontWeight: FontWeight.w500,  
+    fontWeight: FontWeight.w500,
   );
-   static const TextStyle s14w500 = TextStyle(
+  static const TextStyle s14w500 = TextStyle(
     fontSize: 14,
-    fontWeight: FontWeight.w500,  
+    fontWeight: FontWeight.w500,
   );
- static const TextStyle s18w500 = TextStyle(
+  static const TextStyle s18w500 = TextStyle(
     fontSize: 18,
-    fontWeight: FontWeight.w500,  
+    fontWeight: FontWeight.w500,
   );
   static const TextStyle s16w400 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400, // Regular
   );
 
-   static const TextStyle s16w500 = TextStyle(
+  static const TextStyle s16w500 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500, // Medium
-    
   );
 
   static const TextStyle s12w500 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w500, // Medium
-    
   );
-  
-    static TextStyle font16Grey41Regular = const TextStyle(
+
+  static TextStyle font16Grey41Regular = const TextStyle(
     fontSize: 16,
     color: AppColors.gray41,
     fontWeight: AppFontWeights.regular,
@@ -89,6 +86,41 @@ class AppTextStyles {
     fontWeight: AppFontWeights.medium,
   );
 
+  static TextStyle font16WhiteMedium = const TextStyle(
+    fontSize: 16,
+    color: AppColors.white,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font16GreyA0Medium = const TextStyle(
+    fontSize: 16,
+    color: AppColors.grayA0,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font16BlackMedium = const TextStyle(
+    fontSize: 16,
+    color: AppColors.black,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font12Gray89Regular = const TextStyle(
+    fontSize: 12,
+    color: AppColors.gray89,
+    fontWeight: AppFontWeights.regular,
+  );
+
+  static TextStyle font14BlackMedium = const TextStyle(
+    fontSize: 14,
+    color: AppColors.black,
+    fontWeight: AppFontWeights.medium,
+  );
+
+  static TextStyle font12RedMedium = TextStyle(
+    fontSize: 12,
+    color: Colors.red[900],
+    fontWeight: AppFontWeights.medium,
+  );
   static const outlinedTextStyle = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
@@ -139,6 +171,7 @@ class AppTextStyles {
 
   static const inputDecorationLabelStyle = TextStyle(
     fontSize: 16,
+    overflow: TextOverflow.ellipsis,
     fontWeight: FontWeight.w500,
     color: AppColors.lableTextColor,
   );
@@ -179,12 +212,12 @@ class AppTextStyles {
   );
 
   static const successDialogAmountStyle = TextStyle(
-     fontSize: 12,
+    fontSize: 12,
     fontWeight: FontWeight.w500,
     color: AppColors.walletMoneyColor,
   );
   static const successDialogMoneyStyle = TextStyle(
-     fontSize: 34,
+    fontSize: 34,
     fontWeight: FontWeight.w400,
     color: AppColors.walletMoneyColor,
   );
@@ -201,5 +234,40 @@ class AppTextStyles {
     color: AppColors.offerSubTitleColor,
   );
 
-  
+  static const aboutUsTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.walletMoneyColor,
+  );
+
+  static const helpAndSupportTextStyle = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: AppColors.helpAndSupportColor,
+  );
+
+  static const helpAndSupportSubTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF717171),
+  );
+
+  static const bottomDialogTitleTextStyle = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.bottomDialogTitleColor,
+  );
+
+  static const bottomDialogSubTitleTextStyle = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: AppColors.bottomDialogSubTitleColor,
+  );
+
+  static const dropDownButtonStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.dropDownTextColor,
+  );
+
 }

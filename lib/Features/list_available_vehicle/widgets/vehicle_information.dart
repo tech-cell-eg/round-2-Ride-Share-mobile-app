@@ -39,7 +39,7 @@ class VehicleInformation extends StatelessWidget {
         const SizedBox(width: 29),
         Flexible(
             child: Image.asset(
-          AppImages.imagesImage6,
+          AppImages.image6,
         )),
       ],
     );

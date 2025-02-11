@@ -27,7 +27,7 @@ class AppHexagonalFloatingButton extends StatelessWidget {
           child: SvgPicture.asset(
             width: 24,
             height: 28,
-            AppIcons.iconsWallet,
+            AppIcons.wallet,
           ),
         ),
       ),

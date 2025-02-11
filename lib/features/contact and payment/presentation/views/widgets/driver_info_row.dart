@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
 import '../../../../../core/constants/generated/images.dart';
 import 'driver_info_sub_title_row.dart';
 
@@ -17,7 +16,7 @@ class DriverInfoRow extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(4),
           child: Image.asset(
-            AppImages.imagesDriverEx,
+            AppImages.driverEx,
             height: 54,
             width: 59,
           ),
@@ -46,7 +45,7 @@ class DriverInfoRow extends StatelessWidget {
         ),
         const Spacer(),
         Image.asset(
-          AppImages.imagesRealRedCar,
+          AppImages.realRedCar,
           fit: BoxFit.cover,
           height: 93,
         ),

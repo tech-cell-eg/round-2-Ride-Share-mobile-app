@@ -53,15 +53,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   controller: pageController,
                   children: [
                     const OnBoardingPages(
-                      image: AppImages.imagesOnBoarding1,
+                      image: AppImages.onBoarding1,
                       mainText: AppStrings.anyWhereYouAre,
                     ),
                     const OnBoardingPages(
-                      image: AppImages.imagesOnBoarding2,
+                      image: AppImages.onBoarding2,
                       mainText: AppStrings.atAnyTime,
                     ),
                     const OnBoardingPages(
-                        image: AppImages.imagesOnBoarding3,
+                        image: AppImages.onBoarding3,
                         mainText: AppStrings.takeYourCar),
                   ],
                 ),

@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 
 class PaymentCard extends StatelessWidget {
   final bool isSelected;
@@ -29,7 +29,7 @@ class PaymentCard extends StatelessWidget {
               ),
             ),
             const SizedBox(width: AppSizes.spaceInPaymentCard),
-            Expanded(
+            const Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

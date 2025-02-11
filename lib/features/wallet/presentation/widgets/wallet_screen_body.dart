@@ -17,11 +17,11 @@ class WalletScreenBody extends StatelessWidget {
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           _buildAddMoneyButton(),
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          WalletMoneySection(),
+          const WalletMoneySection(),
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           SectionHeading(title: AppStrings.transactions, onTap: () {}),
           const SizedBox(height: AppSizes.spaceBtwTransCards),
-          TransactionHistoryListView(),
+          const TransactionHistoryListView(),
           const SizedBox(height: AppSizes.md),
         ],
       ),
@@ -37,4 +37,6 @@ class WalletScreenBody extends StatelessWidget {
       ),
     );
   }
+
 }
+

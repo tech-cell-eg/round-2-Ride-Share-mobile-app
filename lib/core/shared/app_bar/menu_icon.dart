@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
-import 'package:ride_share/core/constants/generated/app_icons.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 
 class MenuIcon extends StatelessWidget {
   const MenuIcon({super.key});

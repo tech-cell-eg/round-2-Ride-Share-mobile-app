@@ -14,7 +14,7 @@ class ConfirmButton extends StatelessWidget {
         width: double.infinity,
         child: ElevatedButton(
           onPressed: () {},
-          child: FittedBox(child: Text(AppStrings.confirm)),
+          child: const FittedBox(child: Text(AppStrings.confirm)),
         ),
       ),
     );

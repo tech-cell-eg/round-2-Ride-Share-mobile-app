@@ -26,6 +26,7 @@ class NavBarItem extends StatelessWidget {
             width: 24,
             height: 24,
             iconPath,
+            // ignore: deprecated_member_use
             color: isSelected ? AppColors.mainColor : AppColors.gray41,
           ),
           verticalSpace(5),

@@ -8,14 +8,14 @@ class FavouriteScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 30,
         left: AppSizes.screenPadding,
         right: AppSizes.screenPadding,
       ),
       child: ListView.separated(
         itemCount: 10,
-        itemBuilder: (context, index) => FavoriteLocationCard(),
+        itemBuilder: (context, index) => const FavoriteLocationCard(),
         separatorBuilder: (context, index) =>
             const SizedBox(height: AppSizes.spaceBtwFavCards),
       ),
