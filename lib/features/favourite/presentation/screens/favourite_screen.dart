@@ -4,16 +4,20 @@ import 'package:ride_share/core/shared/app_bar/menu_icon.dart';
 import 'package:ride_share/features/favourite/presentation/widgets/favourite_screen_body.dart';
 
 class FavouriteScreen extends StatelessWidget {
-  const FavouriteScreen({super.key});
+  const FavouriteScreen({super.key, required this.scaffoldKey});
+    final GlobalKey<ScaffoldState> scaffoldKey;
+
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       appBar: CustomAppBar(
-        title: Text('Favourite'),
-        leading: MenuIcon(),
+        title: const Text('Favourite'),
+        leading: MenuIcon(
+          scaffoldKey: scaffoldKey,
+        ),
       ),
-      body: FavouriteScreenBody(),
+      body: const FavouriteScreenBody(),
     );
   }
 }

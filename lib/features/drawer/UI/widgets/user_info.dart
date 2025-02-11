@@ -18,8 +18,9 @@ class UserInfo extends StatelessWidget {
           const SizedBox(height: 15),
           Container(
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(35),
-                border: Border.all(color: AppColors.mainColor)),
+              borderRadius: BorderRadius.circular(35),
+              border: Border.all(color: AppColors.mainColor),
+            ),
             child: const CircleAvatar(
               radius: 35,
               backgroundImage: AssetImage(AppImages.man),

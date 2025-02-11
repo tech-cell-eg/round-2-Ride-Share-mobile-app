@@ -7,15 +7,15 @@ class PaymentMethodsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.separated(
-        itemCount: 4,
-        padding: EdgeInsets.zero,
-        itemBuilder: (context, index) =>
-            index == 0 ? const PaymentCard(isSelected: true) : const PaymentCard(),
-        separatorBuilder: (context, index) =>
-            const SizedBox(height: AppSizes.spaceBtwPaymentCard),
-      ),
+    return SliverList.separated(
+      itemCount: 4,
+      // padding: EdgeInsets.zero,
+      // physics: const NeverScrollableScrollPhysics(),
+      itemBuilder: (context, index) => index == 0
+          ? const PaymentCard(isSelected: true)
+          : const PaymentCard(),
+      separatorBuilder: (context, index) =>
+          const SizedBox(height: AppSizes.spaceBtwPaymentCard),
     );
   }
 }

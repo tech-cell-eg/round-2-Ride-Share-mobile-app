@@ -11,9 +11,11 @@ class DrawerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: const BorderRadius.only(
-          topRight: Radius.circular(80), bottomRight: Radius.circular(80)),
+        topRight: Radius.circular(80),
+        bottomRight: Radius.circular(80),
+      ),
       child: Drawer(
-        width: MediaQuery.of(context).size.width * 0.67,
+        width: MediaQuery.of(context).size.width * 0.6,
         backgroundColor: AppColors.white,
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -16,36 +16,50 @@ class AddAmountScreenBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
       child: Column(
-        mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          const TextField(
-            decoration: InputDecoration(
-              labelText: AppStrings.enterAmount,
+          Expanded(
+            child: CustomScrollView(
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+                      const TextField(
+                        decoration: InputDecoration(
+                          labelText: AppStrings.enterAmount,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Align(
+                        alignment: AlignmentDirectional.centerEnd,
+                        child: InkWell(
+                          onTap: () {
+                            context.push(const AddPaymentScreen());
+                          },
+                          child: const Text(
+                            AppStrings.addPaymentMethod,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTextStyles.addPaymentMethodTextStyle,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+                      const SectionHeading(
+                        title: AppStrings.selectPaymentMethod,
+                        showActionButton: false,
+                      ),
+                      const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
+                      // const PaymentMethodsListView(),
+                      // const ConfirmButton(),
+                    ],
+                  ),
+                ),
+                const PaymentMethodsListView(),
+              ],
             ),
           ),
-          const SizedBox(height: 8),
-          Align(
-            alignment: AlignmentDirectional.centerEnd,
-            child: InkWell(
-              onTap: () {
-                context.push(const AddPaymentScreen());
-              },
-              child: const Text(
-                AppStrings.addPaymentMethod,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTextStyles.addPaymentMethodTextStyle,
-              ),
-            ),
-          ),
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          const SectionHeading(
-            title: AppStrings.selectPaymentMethod,
-            showActionButton: false,
-          ),
-          const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          const PaymentMethodsListView(),
           const ConfirmButton(),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/main/UI/screens/main_screen.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/widgets/custom_button.dart';
@@ -73,7 +74,9 @@ class SigninScreen extends StatelessWidget {
                 ),
                 CustomButton(
                   text: 'Sign In',
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push(const MainScreen());
+                  },
                   height: 54.h,
                   width: 340.w,
                   color: AppColors.primaryColor,

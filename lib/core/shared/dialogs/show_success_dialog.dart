@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
@@ -80,9 +81,12 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                     child: SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          context.pushNamedAndRemoveUntil(Routes.main);
+                        },
                         child: const FittedBox(
-                            child: Text(AppStrings.backHomeButtonTitle)),
+                          child: Text(AppStrings.backHomeButtonTitle),
+                        ),
                       ),
                     ),
                   ),

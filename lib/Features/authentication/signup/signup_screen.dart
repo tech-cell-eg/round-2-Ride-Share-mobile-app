@@ -1,10 +1,14 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 
 import 'package:ride_share/core/constants/app_text_styles.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
+import 'package:ride_share/features/authentication/sign_in/signin_screen.dart';
+import 'package:ride_share/features/authentication/verifyOtp/verify_otp_screen.dart';
 import '../../../core/constants/generated/images.dart';
 import '../widgets/back_arrow_widget.dart';
 
@@ -75,7 +79,9 @@ class SignupScreen extends StatelessWidget {
                 ),
                 CustomButton(
                   text: 'Sign Up',
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push(const VerifyOtpScreen());
+                  },
                   height: 54.h,
                   width: 340.w,
                   color: AppColors.primaryColor,
@@ -168,6 +174,10 @@ class SignupScreen extends StatelessWidget {
                       text: 'Sign in',
                       style: AppTextStyles.s12w500
                           .copyWith(color: AppColors.primaryColor),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          context.push(SigninScreen());
+                        },
                     ),
                   ],
                 )),

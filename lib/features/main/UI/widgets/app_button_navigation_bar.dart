@@ -45,16 +45,20 @@ class AppBottomNavigationBar extends StatelessWidget {
                     isSelected: index == 1,
                     onTap: () => selectedIndex.value = 1,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 29,
-                    ),
-                    child: Text(
-                      AppStrings.wallat,
-                      style: index == 2
-                          ? AppTextStyles.font12MainColorMedium
-                          : AppTextStyles.font12Grey41Medium,
-                    ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 29,
+                        ),
+                        child: Text(
+                          AppStrings.wallat,
+                          style: index == 2
+                              ? AppTextStyles.font12MainColorMedium
+                              : AppTextStyles.font12Grey41Medium,
+                        ),
+                      ),
+                    ],
                   ),
                   NavBarItem(
                     iconPath: AppIcons.offer,

@@ -3,8 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/Features/authentication/widgets/back_arrow_widget.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
+import 'package:ride_share/features/authentication/complete_profie/complete_profie_screen.dart';
 
 class SetPasswordScreen extends StatelessWidget {
   SetPasswordScreen({super.key});
@@ -64,7 +66,9 @@ class SetPasswordScreen extends StatelessWidget {
               const Spacer(),
               CustomButton(
                 text: 'Register',
-                onPressed: () {},
+                onPressed: () {
+                  context.push(CompleteProfieScreen());
+                },
                 height: 54.h,
                 width: 340.w,
                 color: AppColors.primaryColor,

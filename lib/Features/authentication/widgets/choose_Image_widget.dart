@@ -4,9 +4,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/generated/images.dart';
 
 class ChooseImageWidget extends StatelessWidget {
-  const ChooseImageWidget({
-    super.key,
-  });
+  const ChooseImageWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

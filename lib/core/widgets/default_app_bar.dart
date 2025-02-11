@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
-
 
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultAppBar({
@@ -18,20 +19,16 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
         backgroundColor: AppColors.white,
         centerTitle: true,
         elevation: 0,
-        leading: const Row(
+        leadingWidth: 85,
+        leading: Row(
           children: [
-            SizedBox(width: 3),
-            Icon(
-              Icons.arrow_back_ios_new,
-              size: 16,
-            ),
-            Text(
-
+            SvgPicture.asset(AppIcons.arrowLeftIcon),
+            const SizedBox(width: 8),
+            const Text(
               AppStrings.back,
               style: TextStyle(
                 fontSize: 16,
               ),
-
             ),
           ],
         ),

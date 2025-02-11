@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/authentication/signup/signup_screen.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/on_boarding_pages.dart';
 import 'package:ride_share/features/onBoarding/UI/Widgets/prograss_button.dart';
 
@@ -25,7 +25,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         prograss++;
       });
       pageController.nextPage(
-          duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeIn,
+      );
     }
   }
 
@@ -41,10 +43,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 alignment: Alignment.topRight,
                 child: TextButton(
                   onPressed: () {
-                    context.pushNamed(Routes.main);
+                    context.push(SignupScreen());
                   },
-                  child: Text(AppStrings.skip,
-                      style: AppTextStyles.font16Grey41Regular),
+                  child: Text(
+                    AppStrings.skip,
+                    style: AppTextStyles.font16Grey41Regular,
+                  ),
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height * 0.05),
@@ -61,8 +65,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       mainText: AppStrings.atAnyTime,
                     ),
                     const OnBoardingPages(
-                        image: AppImages.onBoarding3,
-                        mainText: AppStrings.takeYourCar),
+                      image: AppImages.onBoarding3,
+                      mainText: AppStrings.takeYourCar,
+                    ),
                   ],
                 ),
               ),

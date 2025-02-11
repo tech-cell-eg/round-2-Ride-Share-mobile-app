@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
-import 'package:ride_share/features/offers/presentation/widgets/offers/offer_card.dart';
+import 'package:ride_share/features/offer/presentation/widgets/offers/offer_card.dart';
 
 class OfferScreenBody extends StatelessWidget {
   const OfferScreenBody({super.key});

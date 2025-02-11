@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/shared/sections/section_heading.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/wallet/presentation/screens/add_amount_screen.dart';
 import 'package:ride_share/features/wallet/presentation/widgets/transactions/transaction_history_list_view.dart';
 import 'package:ride_share/features/wallet/presentation/widgets/wallet_money/wallet_money_section.dart';
 
@@ -15,7 +17,7 @@ class WalletScreenBody extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
-          _buildAddMoneyButton(),
+          _buildAddMoneyButton(context),
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
           const WalletMoneySection(),
           const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
@@ -28,15 +30,15 @@ class WalletScreenBody extends StatelessWidget {
     );
   }
 
-  Widget _buildAddMoneyButton() {
+  Widget _buildAddMoneyButton(BuildContext context) {
     return Align(
       alignment: AlignmentDirectional.centerEnd,
       child: OutlinedButton(
-        onPressed: () {},
+        onPressed: () {
+          context.push(const AddAmountScreen());
+        },
         child: const Text(AppStrings.addMoney),
       ),
     );
   }
-
 }
-

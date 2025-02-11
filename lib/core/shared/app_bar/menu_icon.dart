@@ -5,7 +5,8 @@ import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 
 class MenuIcon extends StatelessWidget {
-  const MenuIcon({super.key});
+  const MenuIcon({super.key, required this.scaffoldKey});
+  final GlobalKey<ScaffoldState> scaffoldKey;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,9 @@ class MenuIcon extends StatelessWidget {
         padding: EdgeInsets.zero,
         constraints: const BoxConstraints(),
         icon: SvgPicture.asset(AppIcons.menuIcon),
-        onPressed: () {},
+        onPressed: () {
+          scaffoldKey.currentState?.openDrawer();
+        },
       ),
     );
   }

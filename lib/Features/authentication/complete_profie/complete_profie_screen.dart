@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/Features/authentication/widgets/back_arrow_widget.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
+import 'package:ride_share/features/authentication/sign_in/signin_screen.dart';
 
 import '../../../core/constants/app_colors.dart';
-import '../widgets/choose_Image_widget.dart';
+import '../widgets/choose_image_widget.dart';
 
 class CompleteProfieScreen extends StatelessWidget {
   CompleteProfieScreen({super.key});
@@ -134,7 +136,9 @@ class CompleteProfieScreen extends StatelessWidget {
                     Expanded(
                       child: CustomButton(
                         text: 'save',
-                        onPressed: () {},
+                        onPressed: () {
+                          context.push(SigninScreen());
+                        },
                         height: 54,
                         width: 174,
                         color: AppColors.primaryColor,
