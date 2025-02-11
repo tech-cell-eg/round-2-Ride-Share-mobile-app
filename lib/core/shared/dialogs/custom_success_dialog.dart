@@ -71,7 +71,7 @@ void customSuccessDialog(
                           const SizedBox(height: 7),
                           Text(
                             subTitle,
-                            maxLines: 1,
+                            maxLines: showAmount ? 2 : 1,
                             textAlign: TextAlign.center,
                             style: AppTextStyles.successDialogSubTitleStyle,
                           ),

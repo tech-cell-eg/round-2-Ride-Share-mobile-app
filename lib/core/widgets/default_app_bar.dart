@@ -5,6 +5,7 @@ import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
+
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultAppBar({
     super.key,
