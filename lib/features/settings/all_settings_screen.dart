@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
 import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
@@ -10,8 +9,8 @@ class AllSettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const CustomAppBar(
+    return const Scaffold(
+      appBar: CustomAppBar(
         title: Text('Settings'),
         leadingWidth: 85,
         leading: ArrowBackIcon(),
@@ -19,30 +18,29 @@ class AllSettingsScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding:
-                const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
+            padding: EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
             child: Column(
               children: [
                 SizedBox(
-                  height: 16.h,
+                  height: AppSizes.spaceBtwTextFields,
                 ),
-                const SettingItemWidget(text: 'change password'),
+                SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 16.h,
+                  height: AppSizes.spaceBtwTextFields,
                 ),
-                const SettingItemWidget(text: 'change password'),
+                SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 16.h,
+                  height: AppSizes.spaceBtwTextFields,
                 ),
-                const SettingItemWidget(text: 'change password'),
+                SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 16.h,
+                  height: AppSizes.spaceBtwTextFields,
                 ),
-                const SettingItemWidget(text: 'change password'),
+                SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 16.h,
+                  height: AppSizes.spaceBtwTextFields,
                 ),
-                const SettingItemWidget(text: 'change password'),
+                SettingItemWidget(text: 'change password'),
               ],
             ),
           ),

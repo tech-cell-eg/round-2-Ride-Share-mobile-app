@@ -134,4 +134,6 @@ abstract class AppStrings {
 
   static const String thankYouForFeedbackTip =
       'Thank you for your valuable feedback and tip';
+
+  static const String notification = 'Notification';
 }
