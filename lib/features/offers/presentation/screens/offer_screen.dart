@@ -9,10 +9,10 @@ class OfferScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: CustomAppBar(
-        title: const Text(AppStrings.offer),
-        leading: const MenuIcon(),
+        title: Text(AppStrings.offer),
+        leading: MenuIcon(),
       ),
       body: OfferScreenBody(),
     );
