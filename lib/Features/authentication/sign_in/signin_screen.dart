@@ -61,10 +61,17 @@ class SigninScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text(
-                      'Forget password?',
-                      style: AppTextStyles.s14w500.copyWith(
-                        color: AppColors.red,
+                    GestureDetector(
+                      onTap: (){
+                        // TODO:: 
+                        //context.push();
+                      },
+                      child: Text(
+                        'Forget password?',
+                        style: AppTextStyles.s14w500.copyWith(
+                          color: AppColors.red,
+                        ),
+                        
                       ),
                     ),
                   ],

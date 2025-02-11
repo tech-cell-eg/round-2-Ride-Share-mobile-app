@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/about_us/about_us_screen.dart';
+import 'package:ride_share/features/complain/presentation/screens/complain_screen.dart';
 import 'package:ride_share/features/drawer/UI/widgets/build_drawe_item.dart';
+import 'package:ride_share/features/help_and_support/help_and_support_screen.dart';
+import 'package:ride_share/features/history/UI/Screens/history_screen.dart';
+import 'package:ride_share/features/settings/all_settings_screen.dart';
 
 class DrawerIconsList extends StatelessWidget {
   const DrawerIconsList({super.key});
@@ -18,7 +22,7 @@ class DrawerIconsList extends StatelessWidget {
           icon: AppIcons.history,
           title: AppStrings.history,
           onTap: () {
-            context.pushNamed(Routes.history);
+            context.push(const HistoryScreen());
           },
         ),
         _drawerDivider(),
@@ -26,7 +30,7 @@ class DrawerIconsList extends StatelessWidget {
           icon: AppIcons.complain,
           title: AppStrings.complain,
           onTap: () {
-            context.pushNamed(Routes.complain);
+            context.push(const ComplainScreen());
           },
         ),
         _drawerDivider(),
@@ -39,19 +43,25 @@ class DrawerIconsList extends StatelessWidget {
         BuildDrawerItem(
           icon: AppIcons.aboutUs,
           title: AppStrings.aboutUs,
-          onTap: () {},
+          onTap: () {
+            context.push(const AboutUsScreen());
+          },
         ),
         _drawerDivider(),
         BuildDrawerItem(
           icon: AppIcons.settings,
           title: AppStrings.settings,
-          onTap: () {},
+          onTap: () {
+            context.push(const AllSettingsScreen());
+          },
         ),
         _drawerDivider(),
         BuildDrawerItem(
           icon: AppIcons.helpSupport,
           title: AppStrings.helpAndSuppory,
-          onTap: () {},
+          onTap: () {
+            context.push(const HelpAndSupportScreen());
+          },
         ),
         _drawerDivider(),
         BuildDrawerItem(

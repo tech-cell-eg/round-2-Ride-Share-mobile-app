@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ride_share/Features/authentication/widgets/back_arrow_widget.dart';
+import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
+import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
 import 'all_setting_widget.dart';
 
 class AllSettingsScreen extends StatelessWidget {
@@ -9,31 +11,36 @@ class AllSettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const CustomAppBar(
+        title: Text('Settings'),
+        leadingWidth: 85,
+        leading: ArrowBackIcon(),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(right: 16, left: 16, top: 16).w,
+            padding:
+                const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
             child: Column(
               children: [
-                const ArrowBackWidget(),
                 SizedBox(
-                  height: 30.h,
+                  height: 16.h,
                 ),
                 const SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 30.h,
+                  height: 16.h,
                 ),
                 const SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 30.h,
+                  height: 16.h,
                 ),
                 const SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 30.h,
+                  height: 16.h,
                 ),
                 const SettingItemWidget(text: 'change password'),
                 SizedBox(
-                  height: 30.h,
+                  height: 16.h,
                 ),
                 const SettingItemWidget(text: 'change password'),
               ],

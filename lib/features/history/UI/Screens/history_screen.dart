@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
-import 'package:ride_share/features/history/UI/Widgets/arrow_back.dart';
+import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
 import 'package:ride_share/features/history/UI/Widgets/custom_tab_bar.dart';
 import 'package:ride_share/features/history/UI/Widgets/custom_tab_bar_view.dart';
 
@@ -16,7 +16,8 @@ class HistoryScreen extends StatelessWidget {
           backgroundColor: AppColors.white,
           centerTitle: true,
           elevation: 0,
-          leading: const ArrowBack(),
+          leading: const ArrowBackIcon(),
+          leadingWidth: 85,
           title: const Text(
             'History',
             style: TextStyle(

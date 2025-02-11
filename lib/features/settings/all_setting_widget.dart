@@ -16,8 +16,9 @@ class SettingItemWidget extends StatelessWidget {
       padding: const EdgeInsets.all(10).w,
       height: 50.h,
       decoration: BoxDecoration(
-          border: Border.all(color: AppColors.primaryColor),
-          borderRadius: BorderRadius.circular(10).w),
+        border: Border.all(color: AppColors.primaryColor),
+        borderRadius: BorderRadius.circular(10).w,
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
