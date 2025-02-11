@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/app_icons.dart';
 import 'package:ride_share/core/shared/dialogs/show_success_dialog.dart';
 import 'package:ride_share/features/wallet/presentation/widgets/payment/payment_methods_list_view.dart';
@@ -20,7 +21,7 @@ class AddPaymentScreenBody extends StatelessWidget {
                 const SizedBox(height: AppSizes.spaceBtnSectionsInWallet),
                 TextField(
                   decoration: InputDecoration(
-                    labelText: 'Select Payment Method',
+                    labelText: AppStrings.selectPaymentMethod,
                     suffixIcon: InkWell(
                       onTap: () {},
                       borderRadius:
@@ -35,7 +36,7 @@ class AddPaymentScreenBody extends StatelessWidget {
                 const SizedBox(height: AppSizes.spaceBtwTextFields),
                 const TextField(
                   decoration: InputDecoration(
-                    labelText: 'Account Number',
+                    labelText: AppStrings.accountNumber,
                   ),
                 ),
                 const SizedBox(height: 24),
@@ -47,7 +48,9 @@ class AddPaymentScreenBody extends StatelessWidget {
                       onPressed: () {
                         showSuccessDialog(context, amount: 220);
                       },
-                      child: FittedBox(child: Text('Save Payment Method')),
+                      child: const FittedBox(
+                        child: Text(AppStrings.savePaymentMethod),
+                      ),
                     ),
                   ),
                 ),

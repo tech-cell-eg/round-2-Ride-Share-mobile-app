@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_sizes.dart';
+import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 
 class SectionHeading extends StatelessWidget {
@@ -10,7 +11,7 @@ class SectionHeading extends StatelessWidget {
   const SectionHeading({
     super.key,
     required this.title,
-    this.buttonTitle = 'See All',
+    this.buttonTitle = AppStrings.seeAll,
     this.onTap,
     this.showActionButton = true,
   });
