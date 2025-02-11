@@ -107,4 +107,31 @@ abstract class AppStrings {
   static const String total = 'Total';
 
   static const String confirmRide = 'Confirm Ride';
+
+  static const String paymentSuccess = 'Payment Success';
+
+  static const String moneySentSuccessfully =
+      'Your money has been successfully sent to\n Sergio Ramasis';
+
+  static const String pleaseFeedback = 'Please Feedback';
+
+  static const String howIsYourTrip = 'How is your trip?';
+
+  static const String howIsYourTripDescription =
+      'Youe feedback will help us to improve your driving experience better';
+
+  static const String excellent = 'Excellent';
+
+  static const String writeYourText = 'Write your text';
+
+  static const String youRated = 'You rated';
+
+  static const String giveSomeTipsTo = 'Give some tips to';
+
+  static const String enterOtherAmount = 'Enter other amount';
+
+  static const String thankYou = 'Thank you';
+
+  static const String thankYouForFeedbackTip =
+      'Thank you for your valuable feedback and tip';
 }
