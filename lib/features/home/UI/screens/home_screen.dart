@@ -181,6 +181,8 @@ class _SearchTransportDelivaryBoxState
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(8),
                                 bottomRight: Radius.circular(8),
+                                topLeft: Radius.circular(8),
+                                bottomLeft: Radius.circular(8),
                               ),
                             ),
                             backgroundColor: const Color(0xFFE2F5ED),
@@ -217,6 +219,8 @@ class _SearchTransportDelivaryBoxState
                               borderRadius: BorderRadius.only(
                                 topRight: Radius.circular(8),
                                 bottomRight: Radius.circular(8),
+                                topLeft: Radius.circular(8),
+                                bottomLeft: Radius.circular(8),
                               ),
                             ),
                             backgroundColor: const Color(0xFFE2F5ED),
