@@ -19,7 +19,7 @@ class DrawerIconsList extends StatelessWidget {
       padding: EdgeInsets.zero,
       children: [
         BuildDrawerItem(
-          icon: AppIcons.history,
+          icon: MyIcons.history,
           title: AppStrings.history,
           onTap: () {
             context.push(const HistoryScreen());
@@ -27,7 +27,7 @@ class DrawerIconsList extends StatelessWidget {
         ),
         _drawerDivider(),
         BuildDrawerItem(
-          icon: AppIcons.complain,
+          icon: MyIcons.complain,
           title: AppStrings.complain,
           onTap: () {
             context.push(const ComplainScreen());
@@ -35,13 +35,13 @@ class DrawerIconsList extends StatelessWidget {
         ),
         _drawerDivider(),
         BuildDrawerItem(
-          icon: AppIcons.referral,
+          icon: MyIcons.referral,
           title: AppStrings.referral,
           onTap: () {},
         ),
         _drawerDivider(),
         BuildDrawerItem(
-          icon: AppIcons.aboutUs,
+          icon: MyIcons.aboutUs,
           title: AppStrings.aboutUs,
           onTap: () {
             context.push(const AboutUsScreen());
@@ -49,7 +49,7 @@ class DrawerIconsList extends StatelessWidget {
         ),
         _drawerDivider(),
         BuildDrawerItem(
-          icon: AppIcons.settings,
+          icon: MyIcons.settings,
           title: AppStrings.settings,
           onTap: () {
             context.push(const AllSettingsScreen());
@@ -57,7 +57,7 @@ class DrawerIconsList extends StatelessWidget {
         ),
         _drawerDivider(),
         BuildDrawerItem(
-          icon: AppIcons.helpSupport,
+          icon: MyIcons.helpSupport,
           title: AppStrings.helpAndSuppory,
           onTap: () {
             context.push(const HelpAndSupportScreen());
@@ -65,7 +65,7 @@ class DrawerIconsList extends StatelessWidget {
         ),
         _drawerDivider(),
         BuildDrawerItem(
-          icon: AppIcons.logout,
+          icon: MyIcons.logout,
           title: AppStrings.logout,
           onTap: () {},
         ),

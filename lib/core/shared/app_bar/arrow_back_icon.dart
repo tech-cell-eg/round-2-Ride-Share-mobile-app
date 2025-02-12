@@ -19,7 +19,7 @@ class ArrowBackIcon extends StatelessWidget {
         margin: const EdgeInsets.only(left: AppSizes.screenPadding),
         child: Row(
           children: [
-            SvgPicture.asset(AppIcons.arrowLeftIcon, fit: BoxFit.scaleDown),
+            SvgPicture.asset(MyIcons.iconsArrowLeftIcon, fit: BoxFit.scaleDown),
             const SizedBox(width: 10),
             const Text(
               AppStrings.back,

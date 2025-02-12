@@ -28,7 +28,7 @@ class HomeRentalButtonLocationButtons extends StatelessWidget {
           ),
         ),
         GestureDetector(
-            onTap: () {}, child: SvgPicture.asset(AppIcons.locationTarhget))
+            onTap: () {}, child: SvgPicture.asset(MyIcons.iconsLocationTarhget))
       ],
     );
   }

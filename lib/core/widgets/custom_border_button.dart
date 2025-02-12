@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_constants.dart';
+import 'package:ride_share/core/constants/app_decorations.dart';
 import 'package:ride_share/core/constants/app_styles.dart';
 
 class CustomBorderButton extends StatelessWidget {
@@ -17,11 +18,7 @@ class CustomBorderButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
-          border: Border.all(color: AppColors.containerBorder),
-          borderRadius: const BorderRadius.all(
-              Radius.circular(AppConstants.containerBorderRediuse)),
-        ),
+        decoration: AppDecorations.dafaultContainer,
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 15),
           child: Text(

@@ -49,7 +49,7 @@ class ListTransportBody extends StatelessWidget {
                 ),
                 TransportComponent(
                   onTap: () {},
-                  image: AppImages.cycle,
+                  image: AppImages.imagesCycle,
                   text: "Cycle",
                 ),
                 TransportComponent(

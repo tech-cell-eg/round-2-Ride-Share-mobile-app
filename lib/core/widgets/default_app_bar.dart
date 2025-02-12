@@ -5,7 +5,6 @@ import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
-
 class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DefaultAppBar({
     super.key,
@@ -23,7 +22,7 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
         leadingWidth: 85,
         leading: Row(
           children: [
-            SvgPicture.asset(AppIcons.arrowLeftIcon),
+            SvgPicture.asset(MyIcons.arrowLeftIcon),
             const SizedBox(width: 8),
             const Text(
               AppStrings.back,
