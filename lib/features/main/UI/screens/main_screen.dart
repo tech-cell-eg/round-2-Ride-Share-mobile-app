@@ -27,6 +27,7 @@ class _MainScreenState extends State<MainScreen> {
       drawer: const DrawerScreen(),
       resizeToAvoidBottomInset: false,
       key: _scaffoldKey,
+      extendBody: true,
       body: ValueListenableBuilder<int>(
         valueListenable: selectedIndex,
         builder: (context, index, child) {

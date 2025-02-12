@@ -18,6 +18,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       resizeToAvoidBottomInset: false,
+      extendBody: true,
       appBar: _buildAppBar(context, scaffoldKey),
       body: Stack(
         children: [
@@ -32,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 0,
+            bottom: 85,
             right: 0,
             left: 0,
             child: Padding(
@@ -125,9 +126,17 @@ class HomeRentalButtonLocationButtons extends StatelessWidget {
   }
 }
 
-class SearchTransportDelivaryBox extends StatelessWidget {
+class SearchTransportDelivaryBox extends StatefulWidget {
   const SearchTransportDelivaryBox({super.key});
 
+  @override
+  State<SearchTransportDelivaryBox> createState() =>
+      _SearchTransportDelivaryBoxState();
+}
+
+class _SearchTransportDelivaryBoxState
+    extends State<SearchTransportDelivaryBox> {
+  int selectedInedx = 0;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -164,24 +173,59 @@ class SearchTransportDelivaryBox extends StatelessWidget {
               children: [
                 Expanded(
                   child: ElevatedButton(
-                      onPressed: () {}, child: const Text('Transport')),
+                    style: selectedInedx == 0
+                        ? null
+                        : ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                              side: BorderSide(color: Color(0xFF8AD4B5)),
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(8),
+                                bottomRight: Radius.circular(8),
+                              ),
+                            ),
+                            backgroundColor: const Color(0xFFE2F5ED),
+                          ),
+                    onPressed: () {
+                      selectedInedx != 0
+                          ? setState(() {
+                              selectedInedx = 0;
+                            })
+                          : null;
+                    },
+                    child: Text(
+                      'Transport',
+                      style: TextStyle(
+                        color: selectedInedx == 0 ? Colors.white : Colors.black,
+                      ),
+                    ),
+                  ),
                 ),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      shape: const RoundedRectangleBorder(
-                        side: BorderSide(color: Color(0xFF8AD4B5)),
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(8),
-                          bottomRight: Radius.circular(8),
-                        ),
-                      ),
-                      backgroundColor: const Color(0xFFE2F5ED),
-                    ),
-                    child: const Text(
+                    onPressed: () {
+                      selectedInedx != 1
+                          ? setState(() {
+                              selectedInedx = 1;
+                            })
+                          : null;
+                    },
+                    style: selectedInedx == 1
+                        ? null
+                        : ElevatedButton.styleFrom(
+                            shape: const RoundedRectangleBorder(
+                              side: BorderSide(color: Color(0xFF8AD4B5)),
+                              borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(8),
+                                bottomRight: Radius.circular(8),
+                              ),
+                            ),
+                            backgroundColor: const Color(0xFFE2F5ED),
+                          ),
+                    child: Text(
                       'Delivery',
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyle(
+                        color: selectedInedx == 1 ? Colors.white : Colors.black,
+                      ),
                     ),
                   ),
                 ),
