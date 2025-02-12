@@ -24,7 +24,7 @@ class CustomFavouriteAppBar extends StatelessWidget
             style: _menuButtonStyle(),
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(),
-            icon: SvgPicture.asset(AppIcons.menuIcon),
+            icon: SvgPicture.asset(MyIcons.iconsMenuIcon),
             onPressed: () {},
           ),
         ),
