@@ -10,14 +10,14 @@ import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
 import 'package:ride_share/features/authentication/sign_in/signin_screen.dart';
 import 'package:ride_share/features/authentication/verifyOtp/verify_otp_screen.dart';
-import '../../../core/constants/generated/images.dart';
 import '../widgets/back_arrow_widget.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
-  TextEditingController nameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController genderController = TextEditingController();
+
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController genderController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {

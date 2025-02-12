@@ -25,7 +25,7 @@ class AvailableVehicleContainerBody extends StatelessWidget {
                           const ListAvailableVehicleSameTypePage(),
                     ));
               },
-              title: "View car list")
+              title: "View car list",)
         ],
       ),
     );

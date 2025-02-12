@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/generated/images.dart';
 import '../../../core/constants/app_colors.dart';
-import '../../../core/constants/generated/images.dart';
 
 class ChooseImageWidget extends StatelessWidget {
   const ChooseImageWidget({super.key});

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/constants/app_colors.dart';
-import 'package:ride_share/core/constants/app_constants.dart';
 import 'package:ride_share/core/constants/app_decorations.dart';
 import 'package:ride_share/core/constants/app_styles.dart';
 
