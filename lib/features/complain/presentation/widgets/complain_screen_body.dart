@@ -6,6 +6,7 @@ import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/shared/dialogs/custom_success_dialog.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 
 class ComplainScreenBody extends StatefulWidget {
   const ComplainScreenBody({super.key});
@@ -109,9 +110,9 @@ class _ComplainScreenBodyState extends State<ComplainScreenBody> {
               context,
               AppStrings.sendSuccessful,
               AppStrings.sendComplainSuccessful,
-              AppStrings.backHome,
+              AppStrings.back,
               () {
-                // Go to home screen
+                context.pop();
               },
             );
           },
