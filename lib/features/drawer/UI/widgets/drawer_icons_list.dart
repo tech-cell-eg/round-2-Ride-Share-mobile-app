@@ -7,6 +7,7 @@ import 'package:ride_share/features/complain/presentation/screens/complain_scree
 import 'package:ride_share/features/drawer/UI/widgets/build_drawe_item.dart';
 import 'package:ride_share/features/help_and_support/help_and_support_screen.dart';
 import 'package:ride_share/features/history/UI/Screens/history_screen.dart';
+import 'package:ride_share/features/referral/presentation/screens/referral_screen.dart';
 import 'package:ride_share/features/settings/all_settings_screen.dart';
 
 class DrawerIconsList extends StatelessWidget {
@@ -37,7 +38,9 @@ class DrawerIconsList extends StatelessWidget {
         BuildDrawerItem(
           icon: MyIcons.referral,
           title: AppStrings.referral,
-          onTap: () {},
+          onTap: () {
+            context.push(const ReferralScreen());
+          },
         ),
         _drawerDivider(),
         BuildDrawerItem(

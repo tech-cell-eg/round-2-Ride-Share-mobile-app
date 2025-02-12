@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/config/routing/routes.dart';
+import 'package:ride_share/features/authentication/signup/signup_screen.dart';
 import 'package:ride_share/features/complain/presentation/screens/complain_screen.dart';
 import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
 import 'package:ride_share/features/history/UI/Screens/history_screen.dart';
@@ -19,6 +20,8 @@ class AppRouter {
     switch (settings.name) {
       case Routes.onBoarding:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
+      case Routes.signUpScreen:
+        return MaterialPageRoute(builder: (_) => SignupScreen());
       case Routes.main:
         return MaterialPageRoute(builder: (_) => const MainScreen());
       case Routes.notification:

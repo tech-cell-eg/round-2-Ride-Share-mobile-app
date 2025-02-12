@@ -25,10 +25,11 @@ class BottomsAction extends StatelessWidget {
             child: CustomFillButton(
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const RequestRentPage(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RequestRentPage(),
+                  ),
+                );
               },
               title: 'Ride Now',
             ),

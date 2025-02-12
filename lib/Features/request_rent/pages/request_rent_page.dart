@@ -15,13 +15,16 @@ class RequestRentPage extends StatelessWidget {
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 10),
         child: CustomFillButton(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const RequestRentConfirmPage()));
-            },
-            title: "Confirm Booking"),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const RequestRentConfirmPage(),
+              ),
+            );
+          },
+          title: "Confirm Booking",
+        ),
       ),
     );
   }

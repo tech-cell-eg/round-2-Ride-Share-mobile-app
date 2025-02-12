@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:ride_share/core/constants/generated/images.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/authentication/signup/signup_screen.dart';
 
 class GetUserLocationScreen extends StatefulWidget {
   const GetUserLocationScreen({super.key});
@@ -21,12 +24,24 @@ class _GetUserLocationScreenState extends State<GetUserLocationScreen> {
     if (permission == LocationPermission.denied) {
       permission = await Geolocator.requestPermission();
 
-      if (permission == LocationPermission.denied) {}
+      if (permission == LocationPermission.denied) {
+        context.pop();
+      }
 
-      if (permission == LocationPermission.whileInUse) {
+      if (permission == LocationPermission.whileInUse ||
+          permission == LocationPermission.always) {
         position = await Geolocator.getCurrentPosition();
+
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SignupScreen(),
+          ),
+        );
+
       }
     }
+
     return position;
   }
 
@@ -38,6 +53,13 @@ class _GetUserLocationScreenState extends State<GetUserLocationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: SizedBox(
+          height: double.infinity,
+          child: Image.asset(AppImages.googleMap, fit: BoxFit.fill),
+        ),
+      ),
+    );
   }
 }

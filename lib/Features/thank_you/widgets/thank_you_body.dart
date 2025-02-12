@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/app_styles.dart';
-import 'package:ride_share/core/constants/generated/images.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 
 class ThankYouBody extends StatelessWidget {
   const ThankYouBody({super.key});
@@ -13,7 +14,9 @@ class ThankYouBody extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(AppImages.imagesThankYou),
+            Flexible(
+              child: SvgPicture.asset(MyIcons.iconsSuccessIcon),
+            ),
             const SizedBox(height: 20),
             const Text("Thank you", style: AppStyles.medium20),
             const SizedBox(height: 8),

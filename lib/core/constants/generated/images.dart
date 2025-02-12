@@ -11,7 +11,6 @@ class AppImages {
 
   static const String cash = "assets/images/cash.svg";
 
-  static const String imagesCash = "assets/images/cash.png";
 
   static const String imagesCycle = "assets/images/Cycle.png";
 
@@ -39,8 +38,7 @@ class AppImages {
   static const String onBoarding2 = "assets/images/onBoarding2.png";
 
   static const String imagesPayment = "assets/images/Payment.png";
-
-  static const String imagesPaypal = "assets/images/paypal.png";
+  static const String visaCard = "assets/images/Visa.png";
 
   static const String imagesRealRedCar = "assets/images/real_red_car.png";
   static const String onBoarding3 = "assets/images/onBoarding3.png";
@@ -52,8 +50,6 @@ class AppImages {
   static const String imagesThankYou = "assets/images/thank_you.png";
 
   static const String imagesUserPic = "assets/images/user_pic.png";
-
-  static const String imagesVisa = "assets/images/Visa.png";
 
   static const String imagesVisaCard = "assets/images/visa_card.svg";
 
@@ -68,8 +64,6 @@ class AppImages {
   static const String taxi = "assets/images/Taxi.png";
 
   static const String userPic = "assets/images/user_pic.png";
-
-  static const String visaCard = "assets/images/visa_card.svg";
 
   static const String welcome = "assets/images/welcome.png";
 

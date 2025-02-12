@@ -13,6 +13,9 @@ abstract class AppStrings {
   static String sendComplainSuccessful =
       'Your complain has been send successful';
 
+  static String sendRefferalSuccessful =
+      'Your Refferal has been send successful';
+
   static const String helpAndSupport = 'Help and Support';
 
   static const String helpAndSupportBody =
@@ -136,4 +139,6 @@ abstract class AppStrings {
       'Thank you for your valuable feedback and tip';
 
   static const String notification = 'Notification';
+
+  static const String referralTitle = 'Refer a friend and Earn';
 }

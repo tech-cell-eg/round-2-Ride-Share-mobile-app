@@ -14,10 +14,11 @@ class AvailableVehicleContainerSameType extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const VehicleDetailsPage(),
-            ));
+          context,
+          MaterialPageRoute(
+            builder: (context) => const VehicleDetailsPage(),
+          ),
+        );
       },
       child: Container(
         width: double.infinity,

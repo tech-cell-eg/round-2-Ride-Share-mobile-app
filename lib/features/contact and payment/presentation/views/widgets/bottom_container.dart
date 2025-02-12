@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 
 import '../../../../../core/constants/generated/images.dart';
@@ -19,7 +20,7 @@ class BottomContainer extends StatelessWidget {
     return Align(
       alignment: Alignment.bottomCenter,
       child: Container(
-        height: MediaQuery.of(context).size.height * 0.5,
+        height: MediaQuery.of(context).size.height * 0.54,
         decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
@@ -27,11 +28,22 @@ class BottomContainer extends StatelessWidget {
             topRight: Radius.circular(30),
           ),
         ),
-        child: Column(
+        child: ListView(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(5.0),
-              child: CloseIcon(onTap: () {}),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const SizedBox.shrink(),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.4,
+                  height: 2,
+                  color: AppColors.dividerColor,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 18, right: 18),
+                  child: CloseIcon(onTap: () {}),
+                ),
+              ],
             ),
             const SizedBox(height: 10),
             const Padding(

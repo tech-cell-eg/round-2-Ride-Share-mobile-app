@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
+import 'package:ride_share/features/drawer/UI/widgets/user_info.dart';
 import 'package:ride_share/features/favourite/presentation/screens/favourite_screen.dart';
 import 'package:ride_share/features/home/UI/screens/home_screen.dart';
 import 'package:ride_share/features/main/UI/widgets/app_button_navigation_bar.dart';
@@ -36,7 +37,7 @@ class _MainScreenState extends State<MainScreen> {
               FavouriteScreen(scaffoldKey: _scaffoldKey),
               WalletScreen(scaffoldKey: _scaffoldKey),
               OfferScreen(scaffoldKey: _scaffoldKey),
-              Container(),
+              const UserInfo(),
             ],
           );
         },

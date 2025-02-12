@@ -46,6 +46,7 @@ class VerifyOtpScreen extends StatelessWidget {
                 length: 5,
                 fieldWidth: 50.w,
                 fieldHeight: 55.h,
+                activeFillColor: AppColors.whiteColor,
                 onCompleted: (code) {
                   if (kDebugMode) {
                     print("تم إدخال الكود: $code");

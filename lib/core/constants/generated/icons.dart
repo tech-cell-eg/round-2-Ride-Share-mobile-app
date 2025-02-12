@@ -28,7 +28,7 @@ class MyIcons {
 
   static const String iconsFavs = "assets/icons/favs.svg";
 
-  static const String iconsFual = "assets/icons/Fual.svg";
+  static const String iconsFual = "assets/icons/Maskgroup.svg";
 
   static const String iconsHelpSupport = "assets/icons/help_support.svg";
 
@@ -43,7 +43,7 @@ class MyIcons {
 
   static const String iconsLogout = "assets/icons/logout.svg";
 
-  static const String iconsMaxPower = "assets/icons/MaxPower.svg";
+  static const String iconsMaxPower = "assets/icons/power.svg";
 
   static const String iconsMenuIcon = "assets/icons/menu_icon.svg";
 
@@ -117,4 +117,6 @@ class MyIcons {
   static const String visaIcon = "assets/icons/visa_icon.svg";
 
   static const String wallet = "assets/icons/wallet.svg";
+
+  static String copyIcon = 'assets/icons/copy_Icon.svg';
 }

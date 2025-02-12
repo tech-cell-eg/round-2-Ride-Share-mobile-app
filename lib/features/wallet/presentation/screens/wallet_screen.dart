@@ -16,7 +16,7 @@ class WalletScreen extends StatelessWidget {
     return Scaffold(
       appBar: _buildAppBar(scaffoldKey),
       body: const WalletScreenBody(),
-    );
+    ); 
   }
 
   CustomAppBar _buildAppBar(scaffoldKey) {

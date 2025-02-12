@@ -270,4 +270,11 @@ class AppTextStyles {
     color: AppColors.dropDownTextColor,
   );
 
+
+  static const referralTitleTextStyle = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.bottomDialogTitleColor,
+  );
+
 }

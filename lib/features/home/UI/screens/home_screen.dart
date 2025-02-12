@@ -5,6 +5,8 @@ import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
 import 'package:ride_share/core/shared/app_bar/menu_icon.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/contact%20and%20payment/presentation/views/location_confirm_screen.dart';
+import 'package:ride_share/features/list_transportion/list_transportion_page.dart';
 import 'package:ride_share/features/notifications/UI/Screens/notifications_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -95,7 +97,9 @@ class HomeRentalButtonLocationButtons extends StatelessWidget {
       children: [
         Flexible(
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              context.push(const ListTransportionPage());
+            },
             style: ElevatedButton.styleFrom(
               padding:
                   const EdgeInsets.symmetric(horizontal: 60, vertical: 16.5),
@@ -103,13 +107,18 @@ class HomeRentalButtonLocationButtons extends StatelessWidget {
             child: const Text('Rental'),
           ),
         ),
-        Container(
-          padding: const EdgeInsets.all(3),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(4),
+        GestureDetector(
+          onTap: () {
+            context.push(const LocationConfirmScreen());
+          },
+          child: Container(
+            padding: const EdgeInsets.all(3),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(4),
+            ),
+            child: const Icon(Iconsax.location, color: Color(0xFF5A5A5A)),
           ),
-          child: const Icon(Iconsax.location, color: Color(0xFF5A5A5A)),
         ),
       ],
     );

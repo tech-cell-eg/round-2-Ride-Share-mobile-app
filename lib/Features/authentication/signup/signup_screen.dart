@@ -2,43 +2,48 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
+import 'package:ride_share/core/constants/app_sizes.dart';
 
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/constants/generated/images.dart';
+import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
+import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
 import 'package:ride_share/features/authentication/sign_in/signin_screen.dart';
 import 'package:ride_share/features/authentication/verifyOtp/verify_otp_screen.dart';
-import '../widgets/back_arrow_widget.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
-
   final TextEditingController nameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController genderController = TextEditingController();
 
+  static var routeName = 'SignUp';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const CustomAppBar(
+        leading: ArrowBackIcon(),
+        leadingWidth: 85,
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(20.0).w,
+            padding:
+                const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
             child: Column(
               children: [
-                const ArrowBackWidget(),
-                SizedBox(
-                  height: 30.h,
-                ),
+                const SizedBox(height: AppSizes.appBarSpace),
                 Text(
                   'Sign up with your email or phone number',
                   style: AppTextStyles.s24w500
                       .copyWith(color: AppColors.blackColor),
                 ),
                 SizedBox(
-                  height: 30.h,
+                  height: AppSizes.spaceBtwTextFields.h,
                 ),
                 CustomTextField(
                   controller: emailController,
@@ -48,7 +53,7 @@ class SignupScreen extends StatelessWidget {
                   borderSideColor: AppColors.mediumGray,
                 ),
                 SizedBox(
-                  height: 30.h,
+                  height: AppSizes.spaceBtwTextFields.h,
                 ),
                 CustomTextField(
                   controller: genderController,
@@ -58,7 +63,7 @@ class SignupScreen extends StatelessWidget {
                   borderSideColor: AppColors.mediumGray,
                 ),
                 SizedBox(
-                  height: 30.h,
+                  height: AppSizes.spaceBtwTextFields.h,
                 ),
                 CustomTextField(
                   controller: nameController,

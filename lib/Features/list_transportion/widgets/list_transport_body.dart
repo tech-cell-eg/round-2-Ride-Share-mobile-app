@@ -43,17 +43,38 @@ class ListTransportBody extends StatelessWidget {
                   text: "Cars",
                 ),
                 TransportComponent(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const ListAvailableVehiclePage(),
+                        ));
+                  },
                   image: AppImages.bike,
                   text: "Bike",
                 ),
                 TransportComponent(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const ListAvailableVehiclePage(),
+                        ));
+                  },
                   image: AppImages.imagesCycle,
                   text: "Cycle",
                 ),
                 TransportComponent(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const ListAvailableVehiclePage(),
+                        ));
+                  },
                   image: AppImages.taxi,
                   text: "Taxi",
                 ),

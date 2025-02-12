@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ride_share/Features/authentication/widgets/back_arrow_widget.dart';
+import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
+import 'package:ride_share/core/shared/app_bar/arrow_back_icon.dart';
+import 'package:ride_share/core/shared/app_bar/custom_app_bar.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/core/widgets/custom_button.dart';
 import 'package:ride_share/core/widgets/custom_text_form_field.dart';
@@ -21,33 +23,21 @@ class CompleteProfieScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const CustomAppBar(
+        title: Text('Profile'),
+        leading: ArrowBackIcon(),
+        leadingWidth: 85,
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(25.0).w,
+            padding:
+                const EdgeInsets.symmetric(horizontal: AppSizes.screenPadding),
             child: Column(
               children: [
-                Row(
-                  children: [
-                    const ArrowBackWidget(),
-                    SizedBox(
-                      width: 70.w,
-                    ),
-                    const Expanded(
-                      child: Text(
-                        'profile',
-                        style: AppTextStyles.s18w500,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 25.h,
-                ),
+                const SizedBox(height: AppSizes.appBarSpace),
                 const ChooseImageWidget(),
-                SizedBox(
-                  height: 20.h,
-                ),
+                const SizedBox(height: AppSizes.appBarSpace),
                 CustomTextField(
                   controller: fullNameController,
                   hintText: 'Full Name',
@@ -55,8 +45,8 @@ class CompleteProfieScreen extends StatelessWidget {
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
                 ),
-                SizedBox(
-                  height: 20.h,
+                const SizedBox(
+                  height: AppSizes.spaceBtwTextFields,
                 ),
                 CustomTextField(
                   controller: fullNameController,
@@ -65,8 +55,8 @@ class CompleteProfieScreen extends StatelessWidget {
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
                 ),
-                SizedBox(
-                  height: 20.h,
+                const SizedBox(
+                  height: AppSizes.spaceBtwTextFields,
                 ),
                 CustomTextField(
                   controller: emailController,
@@ -75,8 +65,8 @@ class CompleteProfieScreen extends StatelessWidget {
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
                 ),
-                SizedBox(
-                  height: 20.h,
+                const SizedBox(
+                  height: AppSizes.spaceBtwTextFields,
                 ),
                 CustomTextField(
                   controller: streetController,
@@ -85,8 +75,8 @@ class CompleteProfieScreen extends StatelessWidget {
                       .copyWith(color: AppColors.lightGray),
                   borderSideColor: AppColors.mediumGray,
                 ),
-                SizedBox(
-                  height: 20.h,
+                const SizedBox(
+                  height: AppSizes.spaceBtwTextFields,
                 ),
                 CustomTextField(
                   controller: cityController,

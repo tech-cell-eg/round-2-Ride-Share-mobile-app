@@ -1,10 +1,10 @@
 import 'package:dashed_circular_progress_bar/dashed_circular_progress_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/authentication/signup/signup_screen.dart';
 
 class PrograssButton extends StatelessWidget {
   const PrograssButton({
@@ -47,7 +47,7 @@ class PrograssButton extends StatelessWidget {
                   )
                 : GestureDetector(
                     onTap: () {
-                      context.pushNamed(Routes.main);
+                      context.push(SignupScreen());
                     },
                     child: Center(
                       child: Text(

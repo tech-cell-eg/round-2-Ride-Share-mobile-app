@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/Features/thank_you/widgets/thank_you_body.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/core/widgets/custom_fill_button.dart';
 import 'package:ride_share/core/widgets/project_appbar.dart';
+import 'package:ride_share/features/main/UI/screens/main_screen.dart';
 
 class ThankYouPage extends StatelessWidget {
   const ThankYouPage({super.key});
@@ -13,7 +15,12 @@ class ThankYouPage extends StatelessWidget {
       body: const ThankYouBody(),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 10),
-        child: CustomFillButton(onTap: () {}, title: "Confirm Ride"),
+        child: CustomFillButton(
+          onTap: () {
+            context.pushAndRemoveAll(const MainScreen());
+          },
+          title: "Confirm Ride",
+        ),
       ),
     );
   }

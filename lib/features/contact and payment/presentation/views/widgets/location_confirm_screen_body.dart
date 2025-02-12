@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'bottom_container.dart';
-import 'drawer_notifications_icons_row.dart';
 
 class LocationConfirmScreenBody extends StatelessWidget {
   const LocationConfirmScreenBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Stack(
+    return const Column(
       children: [
         //CustomGoogleMap(),
-        DrawerNotificationsIconsRow(),
-        BottomContainer(),
+        
       ],
     );
   }

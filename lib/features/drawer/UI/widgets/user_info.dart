@@ -12,24 +12,26 @@ class UserInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SizedBox(height: 15),
-          Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(35),
-              border: Border.all(color: AppColors.mainColor),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 15),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(35),
+                border: Border.all(color: AppColors.mainColor),
+              ),
+              child: const CircleAvatar(
+                radius: 35,
+                backgroundImage: AssetImage(AppImages.man),
+              ),
             ),
-            child: const CircleAvatar(
-              radius: 35,
-              backgroundImage: AssetImage(AppImages.man),
-            ),
-          ),
-          const SizedBox(height: 15),
-          Text('Nata Samaon', style: AppTextStyles.font20Grey41Medium),
-          Text('nata@gmail.com', style: AppTextStyles.font12Grey41Medium),
-        ],
+            const SizedBox(height: 15),
+            Text('Nata Samaon', style: AppTextStyles.font20Grey41Medium),
+            Text('nata@gmail.com', style: AppTextStyles.font12Grey41Medium),
+          ],
+        ),
       ),
     );
   }

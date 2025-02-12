@@ -9,8 +9,9 @@ class VehicleDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        appBar: ProjectAppbar(),
-        body: VehicleDetailsBody(),
-        bottomNavigationBar: BottomsAction());
+      appBar: ProjectAppbar(),
+      body: VehicleDetailsBody(),
+      bottomNavigationBar: BottomsAction(),
+    );
   }
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/Features/authentication/widgets/back_arrow_widget.dart';
+import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
+import 'package:ride_share/features/authentication/verifyOtp/verify_otp_screen.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/widgets/custom_button.dart';
@@ -39,7 +41,9 @@ class SendVerificationScreen extends StatelessWidget {
               const Spacer(),
               CustomButton(
                 text: 'Send OTP',
-                onPressed: () {},
+                onPressed: () {
+                  context.push(const VerifyOtpScreen());
+                },
                 height: 54.h,
                 width: 340.w,
                 color: AppColors.primaryColor,

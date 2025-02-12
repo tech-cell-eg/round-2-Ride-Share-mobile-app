@@ -6,7 +6,7 @@ import '../../../core/constants/app_colors.dart';
 class OtpInputField extends StatelessWidget {
   final int length;
   final ValueChanged<String> onCompleted;
-   
+
   final Color activeFillColor;
   final double fieldWidth;
   final double fieldHeight;
@@ -16,7 +16,6 @@ class OtpInputField extends StatelessWidget {
     super.key,
     required this.length,
     required this.onCompleted,
-    
     this.activeFillColor = Colors.white,
     this.fieldWidth = 40,
     this.fieldHeight = 50,
@@ -26,27 +25,27 @@ class OtpInputField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PinCodeTextField(
-       cursorColor: AppColors.greyColor,
+      cursorColor: AppColors.greyColor,
       length: length, // عدد الخانات الديناميكي
       obscureText: obscureText, // هل يكون مخفي (مثل كلمة المرور)
       animationType: AnimationType.fade,
+
       pinTheme: PinTheme(
         shape: PinCodeFieldShape.box,
         borderRadius: BorderRadius.circular(5),
         fieldHeight: fieldHeight, // الطول الديناميكي للخانة
         fieldWidth: fieldWidth, // العرض الديناميكي للخانة
         activeFillColor: activeFillColor, // لون الخلفية عند الكتابة
-        
-        activeColor:  AppColors.whiteColor,
-        disabledColor:  AppColors.whiteColor,
+
+        activeColor: AppColors.whiteColor,
+        disabledColor: AppColors.whiteColor,
         inactiveColor: AppColors.whiteColor,
         selectedFillColor: AppColors.whiteColor,
-        selectedColor:  AppColors.greyColor,
-        inactiveFillColor: Colors.grey,
-      
+        selectedColor: AppColors.greyColor,
+        inactiveFillColor: const Color.fromARGB(255, 209, 204, 204),
       ),
       animationDuration: const Duration(milliseconds: 300),
-       enableActiveFill: true,
+      enableActiveFill: true,
       onCompleted: onCompleted, // عند الانتهاء من الإدخال
       appContext: context,
     );

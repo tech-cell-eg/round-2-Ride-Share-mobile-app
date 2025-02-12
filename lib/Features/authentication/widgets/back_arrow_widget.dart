@@ -12,18 +12,21 @@ class ArrowBackWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Icon(
-          Icons.arrow_back_ios,
-          size: 25.sp,
-          color: AppColors.greyColor,
-        ),
-        Text(
-          'Back',
-          style: AppTextStyles.s16w400.copyWith(color: AppColors.blackColor),
-        ),
-      ],
+    return GestureDetector(
+      onTap: () => Navigator.pop(context),
+      child: Row(
+        children: [
+          Icon(
+            Icons.arrow_back_ios,
+            size: 25.sp,
+            color: AppColors.greyColor,
+          ),
+          Text(
+            'Back',
+            style: AppTextStyles.s16w400.copyWith(color: AppColors.blackColor),
+          ),
+        ],
+      ),
     );
   }
 }

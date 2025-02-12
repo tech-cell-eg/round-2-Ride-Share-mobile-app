@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/Features/request_rent/widgets/method_component.dart';
+import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/core/constants/generated/images.dart';
 
 class Methods extends StatelessWidget {
@@ -13,7 +14,7 @@ class Methods extends StatelessWidget {
       {
         "title": "**** **** **** 8970",
         "subTitle": "Expires: 12/26",
-        "image": AppImages.imagesVisa,
+        "image": AppImages.visaCard,
       },
       {
         "title": "**** **** **** 8970",
@@ -23,20 +24,27 @@ class Methods extends StatelessWidget {
       {
         "title": "mailaddress@mail.com",
         "subTitle": "Expires: 12/26",
-        "image": AppImages.imagesPaypal,
+        "image": AppImages.visaCard,
       },
       {
         "title": "Cash",
         "subTitle": "Expires: 12/26",
-        "image": AppImages.imagesCash,
+        "image": AppImages.imagesPayment,
       }
     ];
 
     return Column(
       children: methods.map(
         (e) {
-          return MethodComponent(
-              title: e["title"]!, subTitle: e["subTitle"]!, image: e["image"]!);
+          return Padding(
+            padding:
+                const EdgeInsets.only(bottom: AppSizes.spaceBtwPaymentCard),
+            child: MethodComponent(
+              title: e["title"]!,
+              subTitle: e["subTitle"]!,
+              image: e["image"]!,
+            ),
+          );
         },
       ).toList(),
     );
