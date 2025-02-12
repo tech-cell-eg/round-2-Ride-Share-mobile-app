@@ -173,20 +173,19 @@ class _SearchTransportDelivaryBoxState
               children: [
                 Expanded(
                   child: ElevatedButton(
-                    style: selectedInedx == 0
-                        ? null
-                        : ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                              side: BorderSide(color: Color(0xFF8AD4B5)),
-                              borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(8),
-                                bottomRight: Radius.circular(8),
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            backgroundColor: const Color(0xFFE2F5ED),
-                          ),
+                    style: ElevatedButton.styleFrom(
+                      shape: const RoundedRectangleBorder(
+                        side: BorderSide(color: Color(0xFF8AD4B5)),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(8),
+                          bottomRight: Radius.circular(8),
+                          topLeft: Radius.circular(8),
+                          bottomLeft: Radius.circular(8),
+                        ),
+                      ),
+                      backgroundColor:
+                          selectedInedx != 0 ? const Color(0xFFE2F5ED) : null,
+                    ),
                     onPressed: () {
                       selectedInedx != 0
                           ? setState(() {
@@ -211,20 +210,19 @@ class _SearchTransportDelivaryBoxState
                             })
                           : null;
                     },
-                    style: selectedInedx == 1
-                        ? null
-                        : ElevatedButton.styleFrom(
-                            shape: const RoundedRectangleBorder(
-                              side: BorderSide(color: Color(0xFF8AD4B5)),
-                              borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(8),
-                                bottomRight: Radius.circular(8),
-                                topLeft: Radius.circular(8),
-                                bottomLeft: Radius.circular(8),
-                              ),
-                            ),
-                            backgroundColor: const Color(0xFFE2F5ED),
-                          ),
+                    style: ElevatedButton.styleFrom(
+                      shape: const RoundedRectangleBorder(
+                        side: BorderSide(color: Color(0xFF8AD4B5)),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(8),
+                          bottomRight: Radius.circular(8),
+                          topLeft: Radius.circular(8),
+                          bottomLeft: Radius.circular(8),
+                        ),
+                      ),
+                      backgroundColor:
+                          selectedInedx != 1 ? const Color(0xFFE2F5ED) : null,
+                    ),
                     child: Text(
                       'Delivery',
                       style: TextStyle(
