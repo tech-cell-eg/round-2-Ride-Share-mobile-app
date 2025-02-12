@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/constants/app_text_styles.dart';
-
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/features/authentication/signup/signup_screen.dart';
-import 'package:ride_share/features/onBoarding/UI/Widgets/on_boarding_pages.dart';
-import 'package:ride_share/features/onBoarding/UI/Widgets/prograss_button.dart';
-
+import 'package:ride_share/features/onboarding/presentation/Widgets/on_boarding_pages.dart';
+import 'package:ride_share/features/onboarding/presentation/Widgets/prograss_button.dart';
 import '../../../../core/constants/generated/images.dart';
 
 class OnboardingScreen extends StatefulWidget {

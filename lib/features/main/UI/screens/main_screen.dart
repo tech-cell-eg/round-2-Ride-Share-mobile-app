@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
-import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
 import 'package:ride_share/features/favourite/presentation/screens/favourite_screen.dart';
 import 'package:ride_share/features/home/UI/screens/home_screen.dart';
@@ -26,22 +24,6 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       drawer: const DrawerScreen(),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        actions: [
-          IconButton(
-              onPressed: () {
-                context.pushNamed(Routes.notification);
-              },
-              icon: SvgPicture.asset(MyIcons.notification))
-        ],
-        leading: IconButton(
-            onPressed: () {
-              _scaffoldKey.currentState!.openDrawer();
-            },
-            icon: SvgPicture.asset(MyIcons.sidemenue)),
-      ),
       resizeToAvoidBottomInset: false,
       key: _scaffoldKey,
       body: ValueListenableBuilder<int>(

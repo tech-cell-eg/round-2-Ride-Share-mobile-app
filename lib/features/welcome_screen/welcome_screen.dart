@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
 import 'package:ride_share/core/constants/generated/images.dart';
-
 import '../../core/constants/app_text_styles.dart';
-import '../../core/constants/generated/images.dart';
 import '../../core/widgets/custom_button.dart';
 
 class WelcomeScreen extends StatelessWidget {

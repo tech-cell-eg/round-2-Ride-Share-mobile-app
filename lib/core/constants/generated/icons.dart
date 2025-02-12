@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_single_quotes
+
 class MyIcons {
   MyIcons._();
 
@@ -49,8 +49,6 @@ class MyIcons {
 
   static const String iconsMph = "assets/icons/mph.svg";
 
-  static const String iconsNotification = "assets/icons/notification.svg";
-
   static const String iconsNotificationIcon =
       "assets/icons/notification_icon.svg";
 
@@ -97,8 +95,6 @@ class MyIcons {
   static const String logout = "assets/icons/logout.svg";
 
   static const String menuIcon = "assets/icons/menu_icon.svg";
-
-  static const String notification = "assets/icons/notification .svg";
 
   static const String notificationIcon = "assets/icons/notification_icon.svg";
 
