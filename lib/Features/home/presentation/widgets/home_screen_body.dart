@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/features/home/presentation/widgets/map/map_view_section.dart';
-import 'package:ride_share/features/home/presentation/widgets/service_panel/Service_panel.dart';
+import 'package:ride_share/features/home/presentation/widgets/service_panel/service_panel.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key});
