@@ -26,7 +26,7 @@ class ReferralScreenBody extends StatelessWidget {
             decoration: InputDecoration(
               hintText: 'RkMFucd',
               suffixIcon: SvgPicture.asset(
-                MyIcons.copyIcon,
+                AppIcons.copyIcon,
                 fit: BoxFit.scaleDown,
               ),
             ),

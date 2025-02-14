@@ -22,7 +22,7 @@ class DefaultAppBar extends StatelessWidget implements PreferredSizeWidget {
         leadingWidth: 85,
         leading: Row(
           children: [
-            SvgPicture.asset(MyIcons.arrowLeftIcon),
+            SvgPicture.asset(AppIcons.arrowLeftIcon),
             const SizedBox(width: 8),
             const Text(
               AppStrings.back,

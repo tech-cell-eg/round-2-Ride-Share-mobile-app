@@ -26,7 +26,7 @@ class BigPhoneCallingTalking extends StatelessWidget {
         child: FittedBox(
           fit: BoxFit.scaleDown,
           child: SvgPicture.asset(
-            isCalling ? MyIcons.callingPhone : MyIcons.callingPhoneDown,
+            isCalling ? AppIcons.callingPhone : AppIcons.callingPhoneDown,
             height: 30,
             colorFilter: const ColorFilter.mode(
               Colors.white,

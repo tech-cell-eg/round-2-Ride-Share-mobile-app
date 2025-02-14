@@ -1,6 +1,6 @@
 
-class MyIcons {
-  MyIcons._();
+class AppIcons {
+  AppIcons._();
 
   static const String iconsAboutUs = "assets/icons/about_us.svg";
 

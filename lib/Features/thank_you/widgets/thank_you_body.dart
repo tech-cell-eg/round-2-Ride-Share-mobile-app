@@ -15,13 +15,16 @@ class ThankYouBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Flexible(
-              child: SvgPicture.asset(MyIcons.iconsSuccessIcon),
+              child: SvgPicture.asset(AppIcons.iconsSuccessIcon),
             ),
             const SizedBox(height: 20),
             const Text("Thank you", style: AppStyles.medium20),
             const SizedBox(height: 8),
-            const Text("Your booking has been placed sent to Md. Sharif Ahmed",
-                textAlign: TextAlign.center, style: AppStyles.medium12B),
+            const Text(
+              "Your booking has been placed sent to Md. Sharif Ahmed",
+              textAlign: TextAlign.center,
+              style: AppStyles.medium12B,
+            ),
           ],
         ),
       ),

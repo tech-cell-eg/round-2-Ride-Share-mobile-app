@@ -41,7 +41,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                   ),
                   const SizedBox(height: 12),
                   Flexible(
-                    child: SvgPicture.asset(MyIcons.iconsSuccessIcon),
+                    child: SvgPicture.asset(AppIcons.iconsSuccessIcon),
                   ),
                   const SizedBox(height: 23),
                   const Column(

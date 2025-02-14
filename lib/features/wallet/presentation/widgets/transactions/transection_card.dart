@@ -44,7 +44,7 @@ class TransectionCard extends StatelessWidget {
                 shape: CircleBorder(),
                 color: AppColors.upVectorBgColor,
               ),
-              child: SvgPicture.asset(MyIcons.iconsUpVector),
+              child: SvgPicture.asset(AppIcons.iconsUpVector),
             ),
             const SizedBox(width: 13),
             Expanded(

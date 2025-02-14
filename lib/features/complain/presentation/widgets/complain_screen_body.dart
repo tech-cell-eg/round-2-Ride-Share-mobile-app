@@ -45,7 +45,7 @@ class _ComplainScreenBodyState extends State<ComplainScreenBody> {
                     borderRadius: BorderRadius.circular(8),
                     style: AppTextStyles.dropDownButtonStyle,
                     dropdownColor: AppColors.white,
-                    icon: SvgPicture.asset(MyIcons.iconsArrowDownIcon),
+                    icon: SvgPicture.asset(AppIcons.iconsArrowDownIcon),
                     items: items.map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,

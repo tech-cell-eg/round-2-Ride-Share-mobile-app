@@ -26,7 +26,7 @@ class WalletScreen extends StatelessWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: AppSizes.screenPadding),
-          child: SvgPicture.asset(MyIcons.notificationIcon),
+          child: SvgPicture.asset(AppIcons.notificationIcon),
         ),
       ],
     );

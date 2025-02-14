@@ -9,10 +9,10 @@ class VehicleDetailesSpecification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> specifications = [
-      {"icon": MyIcons.iconsMaxPower, "title": "Max power", "value": "10000hp"},
-      {"icon": MyIcons.iconsFual, "title": "Fual", "value": "10000hp"},
-      {"icon": MyIcons.iconsSpeed, "title": "Max. speed", "value": "10000hp"},
-      {"icon": MyIcons.iconsMph, "title": "0-60mph", "value": "10000hp"},
+      {"icon": AppIcons.iconsMaxPower, "title": "Max power", "value": "10000hp"},
+      {"icon": AppIcons.iconsFual, "title": "Fual", "value": "10000hp"},
+      {"icon": AppIcons.iconsSpeed, "title": "Max. speed", "value": "10000hp"},
+      {"icon": AppIcons.iconsMph, "title": "0-60mph", "value": "10000hp"},
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

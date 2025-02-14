@@ -27,7 +27,7 @@ class AddPaymentScreenBody extends StatelessWidget {
                       borderRadius:
                           BorderRadius.circular(AppSizes.outlinedButtonRadius),
                       child: SvgPicture.asset(
-                        MyIcons.iconsArrowDownIcon,
+                        AppIcons.iconsArrowDownIcon,
                         fit: BoxFit.scaleDown,
                       ),
                     ),

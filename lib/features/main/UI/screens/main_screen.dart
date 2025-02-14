@@ -4,7 +4,7 @@ import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
 import 'package:ride_share/features/drawer/UI/widgets/user_info.dart';
 import 'package:ride_share/features/favourite/presentation/screens/favourite_screen.dart';
-import 'package:ride_share/features/home/UI/screens/home_screen.dart';
+import 'package:ride_share/features/home/presentation/screens/home_screen.dart';
 import 'package:ride_share/features/main/UI/widgets/app_button_navigation_bar.dart';
 import 'package:ride_share/features/offer/presentation/screens/offer_screen.dart';
 import 'package:ride_share/features/wallet/presentation/screens/wallet_screen.dart';
@@ -61,7 +61,7 @@ class _MainScreenState extends State<MainScreen> {
         onPressed: () {
           selectedIndex.value = 2;
         },
-        child: SvgPicture.asset(MyIcons.wallet),
+        child: SvgPicture.asset(AppIcons.wallet),
       ),
     );
   }

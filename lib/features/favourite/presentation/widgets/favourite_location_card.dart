@@ -18,7 +18,7 @@ class FavoriteLocationCard extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 1),
-            child: SvgPicture.asset(MyIcons.iconsLocationIcon),
+            child: SvgPicture.asset(AppIcons.iconsLocationIcon),
           ),
           const SizedBox(width: AppSizes.spaceBtnItemInFavCard),
           const Expanded(
@@ -41,7 +41,7 @@ class FavoriteLocationCard extends StatelessWidget {
               ],
             ),
           ),
-          SvgPicture.asset(MyIcons.iconsRemoveIcon),
+          SvgPicture.asset(AppIcons.iconsRemoveIcon),
         ],
       ),
     );
