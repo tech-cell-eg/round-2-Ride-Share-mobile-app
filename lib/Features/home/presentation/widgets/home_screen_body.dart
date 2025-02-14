@@ -9,6 +9,7 @@ class HomeScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Stack(
       children: [
+        // --map--
         Positioned(
           top: 0,
           bottom: 0,
@@ -16,12 +17,8 @@ class HomeScreenBody extends StatelessWidget {
           left: 0,
           child: MapViewSection(),
         ),
-        Positioned(
-          bottom: 85,
-          right: 0,
-          left: 0,
-          child: ServicePanel(),
-        ),
+        // --rental service and service options--
+        Positioned(bottom: 85, right: 0, left: 0, child: ServicePanel()),
       ],
     );
   }

@@ -37,5 +37,7 @@ class AppSizes {
   static const double successDialogPadding = 11.0;
 
   static const double spaceBtwOfferCards = 24.0;
+
+  static const double serviseOptionsSpace = 15.0;
 }
 

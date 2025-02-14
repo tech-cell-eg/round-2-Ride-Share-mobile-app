@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/app_colors.dart';
+import 'package:ride_share/core/constants/app_sizes.dart';
 import 'package:ride_share/features/home/presentation/widgets/service_panel/destination_search.dart';
 import 'package:ride_share/features/home/presentation/widgets/service_panel/transport_mode_selector.dart';
 
@@ -17,8 +18,9 @@ class ServiceOptions extends StatelessWidget {
         children: [
           // --destination search--
           DestinationSearch(),
-          SizedBox(height: 15),
-          // --transport mode selector and delivery mode selector--
+          // --space--
+          SizedBox(height: AppSizes.serviseOptionsSpace),
+          // --transport and delivery selector--
           TransportModeSelector(),
         ],
       ),

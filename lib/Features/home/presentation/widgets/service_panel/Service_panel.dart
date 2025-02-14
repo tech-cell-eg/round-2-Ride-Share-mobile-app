@@ -13,9 +13,11 @@ class ServicePanel extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            // --rental service and service options--
+            // --rental service--
             const RentalService(),
+
             const SizedBox(height: 15),
+            // --service options---
             const ServiceOptions(),
             // --for bottom padding when keyboard is open--
             AnimatedPadding(
