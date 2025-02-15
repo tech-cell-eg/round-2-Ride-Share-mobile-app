@@ -1,0 +1,2 @@
+D:/Tech cell/ride_share/android/app/.cxx/RelWithDebInfo/k5a381uy/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Tech cell/ride_share/android/app/.cxx/RelWithDebInfo/k5a381uy/armeabi-v7a/CMakeFiles/rebuild_cache.dir

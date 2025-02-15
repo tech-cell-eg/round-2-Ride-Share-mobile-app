@@ -26,6 +26,7 @@ class _TransportModeSelectorState extends State<TransportModeSelector> {
   Widget _buildModeButton(int index) {
     bool isSelected = selectedIndex == index;
     return ElevatedButton(
+      key: ValueKey(modes[index]),
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(
           side: const BorderSide(color: Color(0xFF8AD4B5)),

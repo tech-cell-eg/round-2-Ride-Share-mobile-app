@@ -31,14 +31,18 @@ class WalletMonyCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '\$$moneyQuantity',
-              style: AppTextStyles.walletMoneyCardTitleStyle,
+            FittedBox(
+              child: Text(
+                '\$$moneyQuantity',
+                style: AppTextStyles.walletMoneyCardTitleStyle,
+              ),
             ),
             const SizedBox(height: 21),
-            Text(
-              title,
-              style: AppTextStyles.walletMoneyCardSubTitleStyle,
+            FittedBox(
+              child: Text(
+                title,
+                style: AppTextStyles.walletMoneyCardSubTitleStyle,
+              ),
             ),
           ],
         ),

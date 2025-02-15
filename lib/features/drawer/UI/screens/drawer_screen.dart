@@ -26,7 +26,7 @@ class DrawerScreen extends StatelessWidget {
             ),
             UserInfo(),
             SizedBox(height: 26),
-            Expanded(child: DrawerIconsList())
+            Expanded(child: DrawerIconsList()),
           ],
         ),
       ),

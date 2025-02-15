@@ -39,6 +39,11 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       drawer: const DrawerScreen(),
+      onDrawerChanged: (isOpened) {
+        if (!isOpened) {
+          FocusManager.instance.primaryFocus?.unfocus();
+        }
+      },
       resizeToAvoidBottomInset: false,
       key: _scaffoldKey,
       extendBody: true,
