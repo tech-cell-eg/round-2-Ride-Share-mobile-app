@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
 import 'package:ride_share/features/contact%20and%20payment/presentation/views/location_confirm_screen.dart';
 import 'package:ride_share/features/list_transportion/list_transportion_page.dart';
@@ -36,7 +37,7 @@ class RentalService extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(4),
             ),
-            child: const Icon(Iconsax.location, color: Color(0xFF5A5A5A)),
+            child: SvgPicture.asset(AppIcons.locationTarhget),
           ),
         ),
       ],

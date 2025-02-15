@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ride_share/core/constants/generated/app_icons.dart';
 
 class DestinationSearch extends StatelessWidget {
   const DestinationSearch({super.key});
@@ -10,13 +11,16 @@ class DestinationSearch extends StatelessWidget {
     return TextField(
       style: const TextStyle(color: Color(0xFFA0A0A0)),
       controller: controller,
-      decoration: const InputDecoration(
+      decoration: InputDecoration(
         filled: true,
-        fillColor: Color(0xFFE2F5ED),
-        prefixIcon: Icon(Icons.search),
-        suffixIcon: Icon(Iconsax.heart),
+        fillColor: const Color(0xFFE2F5ED),
+        prefixIcon: SvgPicture.asset(
+          AppIcons.searchIcon,
+          fit: BoxFit.scaleDown,
+        ),
+        suffixIcon: SvgPicture.asset(AppIcons.heartIcon, fit: BoxFit.scaleDown),
         hintText: 'Search for a location',
-        enabledBorder: OutlineInputBorder(
+        enabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: Color(0xFF8AD4B5)),
         ),
       ),
