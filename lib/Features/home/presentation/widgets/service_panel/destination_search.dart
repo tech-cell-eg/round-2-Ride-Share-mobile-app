@@ -6,9 +6,11 @@ class DestinationSearch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TextField(
-      style: TextStyle(color: Color(0xFFA0A0A0)),
-      decoration: InputDecoration(
+    TextEditingController controller = TextEditingController();
+    return TextField(
+      style: const TextStyle(color: Color(0xFFA0A0A0)),
+      controller: controller,
+      decoration: const InputDecoration(
         filled: true,
         fillColor: Color(0xFFE2F5ED),
         prefixIcon: Icon(Icons.search),

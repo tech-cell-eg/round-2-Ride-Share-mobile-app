@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ride_share/core/constants/generated/icons.dart';
 import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
 import 'package:ride_share/features/drawer/UI/widgets/user_info.dart';
@@ -20,6 +20,20 @@ class _MainScreenState extends State<MainScreen> {
   final ValueNotifier<int> selectedIndex = ValueNotifier<int>(0);
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
+  final List<Widget> _screens = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _screens.addAll([
+      HomeScreen(scaffoldKey: _scaffoldKey),
+      FavouriteScreen(scaffoldKey: _scaffoldKey),
+      WalletScreen(scaffoldKey: _scaffoldKey),
+      OfferScreen(scaffoldKey: _scaffoldKey),
+      const UserInfo(),
+    ]);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,16 +45,7 @@ class _MainScreenState extends State<MainScreen> {
       body: ValueListenableBuilder<int>(
         valueListenable: selectedIndex,
         builder: (context, index, child) {
-          return IndexedStack(
-            index: selectedIndex.value,
-            children: [
-              HomeScreen(scaffoldKey: _scaffoldKey),
-              FavouriteScreen(scaffoldKey: _scaffoldKey),
-              WalletScreen(scaffoldKey: _scaffoldKey),
-              OfferScreen(scaffoldKey: _scaffoldKey),
-              const UserInfo(),
-            ],
-          );
+          return IndexedStack(index: index, children: _screens);
         },
       ),
       bottomNavigationBar: AppBottomNavigationBar(selectedIndex: selectedIndex),
@@ -49,7 +54,7 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 
-  Container _buildWalletButton() {
+  Widget _buildWalletButton() {
     return Container(
       height: 100,
       width: 100,
@@ -59,6 +64,7 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: const Color(0xFF08b783),
         shape: const StarBorder.polygon(sides: 6, pointRounding: 0.15),
         onPressed: () {
+          FocusManager.instance.primaryFocus?.unfocus();
           selectedIndex.value = 2;
         },
         child: SvgPicture.asset(AppIcons.wallet),
