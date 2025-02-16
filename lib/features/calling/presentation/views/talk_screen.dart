@@ -5,7 +5,6 @@ import 'widgets/calling_screen_body.dart';
 
 class TalkScreen extends StatelessWidget {
   const TalkScreen({super.key});
-  static const routeName = '/talk';
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

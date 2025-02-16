@@ -1,9 +1,21 @@
-class Routes {
-  static const String onBoarding = 'onBoarding';
-  static const String main = 'main';
-  static const String signUpScreen = 'signUpScreen';
-  static const String notification = 'notification';
-  static const String drawer = 'drawer';
-  static const String history = 'history';
-  static const String complain = 'complain';
+enum Routes {
+  onboarding,
+  navigation,
+  signUp,
+  notification,
+  history,
+  complain,
+  locationConfirm,
+  calling,
+  talk,
+  chat,
+  payment
 }
+
+extension RoutesExtension on Routes {
+  String get name => toString().split('.').last;
+}
+
+// String example = "Routes.onboarding";
+//List<String> parts = example.split('.'); // ["Routes", "onboarding"]
+//String lastPart = parts.last; // "onboarding"

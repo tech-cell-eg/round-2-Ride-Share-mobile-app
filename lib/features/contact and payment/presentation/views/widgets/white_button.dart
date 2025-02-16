@@ -1,22 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/config/routing/routes.dart';
 import 'package:ride_share/core/constants/app_strings.dart';
 import 'package:ride_share/core/utils/helpers/extensions/navigation_extension.dart';
-import 'package:ride_share/features/calling/presentation/views/calling_screen.dart';
-
-
-
-
-
 
 class WhiteButton extends StatelessWidget {
-  const WhiteButton({
-    super.key,
-  });
+  const WhiteButton({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () => context.pushNamed(CallingScreen.routeName),
+      onPressed: () => context.pushNamed(Routes.calling.name),
       style: ElevatedButton.styleFrom(
         minimumSize: const Size(170, 54),
         backgroundColor: Colors.white,

@@ -5,18 +5,18 @@ import 'package:ride_share/features/drawer/UI/screens/drawer_screen.dart';
 import 'package:ride_share/features/drawer/UI/widgets/user_info.dart';
 import 'package:ride_share/features/favourite/presentation/screens/favourite_screen.dart';
 import 'package:ride_share/features/home/presentation/screens/home_screen.dart';
-import 'package:ride_share/features/main/UI/widgets/app_button_navigation_bar.dart';
+import 'package:ride_share/features/navigation/persentation/widgets/app_button_navigation_bar.dart';
 import 'package:ride_share/features/offer/presentation/screens/offer_screen.dart';
 import 'package:ride_share/features/wallet/presentation/screens/wallet_screen.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+class NavigationScreen extends StatefulWidget {
+  const NavigationScreen({super.key});
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<NavigationScreen> createState() => _NavigationScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _NavigationScreenState extends State<NavigationScreen> {
   final ValueNotifier<int> selectedIndex = ValueNotifier<int>(0);
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 

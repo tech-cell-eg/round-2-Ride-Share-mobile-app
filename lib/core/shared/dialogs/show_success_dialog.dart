@@ -40,9 +40,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  Flexible(
-                    child: SvgPicture.asset(AppIcons.iconsSuccessIcon),
-                  ),
+                  Flexible(child: SvgPicture.asset(AppIcons.iconsSuccessIcon)),
                   const SizedBox(height: 23),
                   const Column(
                     children: [
@@ -82,7 +80,7 @@ void showSuccessDialog(BuildContext context, {required double amount}) {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: () {
-                          context.pushNamedAndRemoveUntil(Routes.main);
+                          context.pushNamedAndRemoveUntil(Routes.navigation);
                         },
                         child: const FittedBox(
                           child: Text(AppStrings.backHomeButtonTitle),

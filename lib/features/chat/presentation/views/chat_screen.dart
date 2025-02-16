@@ -6,7 +6,6 @@ import 'widgets/chat_screen_body.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
-  static const routeName = '/chat';
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

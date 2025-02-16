@@ -5,7 +5,6 @@ import 'widgets/calling_screen_body.dart';
 
 class CallingScreen extends StatelessWidget {
   const CallingScreen({super.key});
-  static const routeName = '/calling';
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
